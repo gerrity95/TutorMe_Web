@@ -1,0 +1,48 @@
+.full_box {
+        padding: 50px;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: left;
+        background: #dbdfe5;
+		border-radius:5px;
+    }
+	
+	#full_top {
+        padding: 50px;
+        font-size: 16px;
+        text-align: center;
+        background: #dbdfe5;
+    }
+	
+	.main-content
+	{
+		min-height:330px;
+		background:#dbdfe5;
+	}
+	
+	 .sidebar-content{
+        min-height: 150px;
+        margin-bottom: 30px;
+        background: #b4bac0;
+		
+    }
+	
+	.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+	.feature_images {
+	width:70%;
+	height:70%;
+	border-radius:35px;
+	max-height:200px;
+	max-width:200px;
+	}
+	
+	.register_forms {
+	padding-top:10px;
+	color:white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	}
