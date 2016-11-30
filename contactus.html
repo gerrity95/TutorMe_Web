@@ -59,20 +59,105 @@
 	<div class="page-header">
 		<h1>TutorMe <small style="font-family: 'Source Sans Pro', sans-serif;">Find the perfect tutor.</small></h1>
 	</div>
-        <p style="" class="lead">TutorMe makes sure you never have to worry about a grind again.</p>
-        <p><a href="register.html" target="_blank" class="btn btn-success btn-lg">Get started today</a></p>
+        <p style="" class="lead">Want to get in touch? Just fill out the form below and we will get back to you as soon as possible.</p>
     </div>
 </div>
 
 <div class="header-2">
-	<div class="page-header header-filter" style="background-image: url('images/blurred-background-4.jpg');background-size:cover;min-height:750px">
+	<div class="page-header header-filter" style="background-image: url('images/purple_gradient.jpg');background-size:cover;min-height:750px">
 	<div class="container-fluid">
 		<div class="row">
 		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1 ">
+      <h2 class="register_forms">Contact Us </h2>
 
+      <form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="register_forms" for="form_name">Firstname *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Firstname" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="register_forms" for="form_lastname">Surname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Surname" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="register_forms" for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="register_forms" for="form_phone">Phone</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Phone">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label class="register_forms" for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message..." rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <br><p class="register_forms"><strong>*</strong> These fields are required.</p>
+            </div>
+        </div>
+    </div>
+
+</form>
 		</div>
 
-		<div style="margin-top:50px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+
+      <h3 class="register_forms">Other ways to contact TutorMe</h3>
+<!--
+        <p class="register_forms">By email: TutorMe@mail.com</p>
+        <p class="register_forms">By phone: +3531234567</p>
+        <p style="margin-bottom:30px;" class="register_forms">Through Facebook: <a href="#">TutorMe on Facebook</a></p>
+        <center><img style="padding-top:30px;" class="feature_images" src="images/LogoWhiteLarge.png" /></center>
+-->
+        <h4 class="register_forms">Email</h4>
+        <p class="white_text">TutorMe@mail.com</p>
+
+        <h4 class="register_forms">Phone</h4>
+        <p class="white_text">+353891234567</p>
+
+        <h4 class="register_forms">Address</h4>
+        <p class="white_text">Faculty of Computing,
+        <br>Dublin City University,
+        <br>Dublin 9,
+        <br>Ireland
+      </p>
+
+        <ul style="padding-top:30px;" class="social-icons icon-rounded icon-zoom  list-unstyled list-inline">
+    		<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+    		<li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+    		<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+    		</ul>
+
 
 		</div>
 
@@ -86,7 +171,7 @@
 	<div style="border-top:1px solid #dbdfe5" class="row">
 		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
 		<br>
-		<h3 style="text-align:center;font-family: 'Lato', sans-serif;">Follow Us Below!</h3>
+		<h3 style="text-align:center;font-family: 'Lato', sans-serif;">Connect with us.</h3>
 		<center><ul style="padding-top:30px;" class="social-icons icon-rounded icon-zoom  list-unstyled list-inline">
 		<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
 		<li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -96,21 +181,32 @@
 		</div>
 
 		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
-			<ul style="padding-top:30px">
-			<li><a href="#">Home</a>
-			<li><a href="#">About</a>
-			<li><a href="#">Contact</a>
-			<li><a href="#">How It Works</a>
-			</ul>
+
 
 		</div>
 
 		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
 
-		<center><img class="feature_images" style="padding-top:30px" src="images/LogoLarge.png" /></center>
+      <ul style="padding-top:30px;list-style:none">
+			<li><a class="footer_links" href="#">Home</a>
+			<li><a class="footer_links" href="#">About</a>
+			<li><a class="footer_links" href="#">Contact</a>
+			<li><a  class="footer_links"href="#">How It Works</a>
+			</ul>
+      <br>
+      <ul style="list-style:none">
+      <li><a class="footer_links" href="#">Login</a>
+      <li><a class="footer_links" href="#">Register</a>
+      </ul>
 
 		</div>
 	</div>
 </div>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/validator.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>

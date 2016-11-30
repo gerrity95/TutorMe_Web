@@ -6,27 +6,27 @@
         background: #dbdfe5;
 		border-radius:5px;
     }
-	
+
 	#full_top {
         padding: 50px;
         font-size: 16px;
         text-align: center;
         background: #dbdfe5;
     }
-	
+
 	.main-content
 	{
 		min-height:330px;
 		background:#dbdfe5;
 	}
-	
+
 	 .sidebar-content{
         min-height: 150px;
         margin-bottom: 30px;
         background: #b4bac0;
-		
+
     }
-	
+
 	.col-centered{
     float: none;
     margin: 0 auto;
@@ -39,10 +39,45 @@
 	max-height:200px;
 	max-width:200px;
 	}
-	
+
 	.register_forms {
 	padding-top:10px;
 	color:white;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	}
+
+  .white_text {
+	color:white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	}
+
+.footer_links {
+
+}
+
+
+.footer_links:link {
+    color:black;
+    font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+}
+
+.footer_links:visited {
+    color: black;
+    font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+}
+
+.footer_links:hover {
+    text-decoration: underline;
+    font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+}
+
+.footer_links:active {
+    color: black;
+    font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+}
