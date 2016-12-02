@@ -53,6 +53,36 @@
 	font-weight: 400;
 	}
 
+  .contact_background {
+    margin-top: 60px;
+    background-color: #ededed;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 12px 10px -6px #777;
+       -moz-box-shadow: 0 12px 10px -6px #777;
+            box-shadow: 0 12px 10px -6px #777;
+
+  }
+
+  .general_text {
+    color:black;
+  	font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+
+
+  }
+
+  .google_map {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 12px 6px -6px #777;
+       -moz-box-shadow: 0 12px 6px -6px #777;
+            box-shadow: 0 12px 6px -6px #777;
+  }
+
+
+
 .footer_links {
 
 }

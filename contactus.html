@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/my_style.css">
   <link rel="stylesheet" href="social_media/css/button_style.css">
+  <link rel='stylesheet' href='icons/font/typicons.min.css' />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -45,11 +46,17 @@
                 <li><a href="#" target="_blank">Home</a></li>
                 <li><a href="#" target="_blank">About</a></li>
                 <li class="active"><a href="#" target="_blank">Contact</a></li>
-                <li><a href="#" target="_blank">How it Works</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">How it Works <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">For a student</a></li>
+                    <li><a href="#">For a tutor</a></li>
+                  </ul>
+                </li>
             </ul>
 			<ul class="nav navbar-nav navbar-right">
-			<li><a href="index.html">Login</a></li>
-			<li><a href="register.html">Register</a></li>
+			<li><a href="index.html"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a></li>
+			<li><a href="register.html"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
         </div>
     </div>
 </nav>
@@ -64,7 +71,7 @@
 </div>
 
 <div class="header-2">
-	<div class="page-header header-filter" style="background-image: url('images/purple_gradient.jpg');background-size:cover;min-height:750px">
+	<div class="page-header header-filter" style="margin-bottom:0px;background-image: url('images/blurred-background-4.jpg');background-size:cover;min-height:750px;">
 	<div class="container-fluid">
 		<div class="row">
 		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1 ">
@@ -130,27 +137,31 @@
 </form>
 		</div>
 
-		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+		<div class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1 contact_background">
 
-      <h3 class="register_forms">Other ways to contact TutorMe</h3>
+      <h3 class="general_text">Other ways to contact TutorMe</h3>
 <!--
         <p class="register_forms">By email: TutorMe@mail.com</p>
         <p class="register_forms">By phone: +3531234567</p>
         <p style="margin-bottom:30px;" class="register_forms">Through Facebook: <a href="#">TutorMe on Facebook</a></p>
         <center><img style="padding-top:30px;" class="feature_images" src="images/LogoWhiteLarge.png" /></center>
 -->
-        <h4 class="register_forms">Email</h4>
-        <p class="white_text">TutorMe@mail.com</p>
+        <br>
+        <img src="icons\png-24px\mail.png">
+        <h4 style="display: inline;" class="general_text">Email us directly</h4><br>
+        <p class="general_text">tutormeire@gmail.com</p><br>
 
-        <h4 class="register_forms">Phone</h4>
-        <p class="white_text">+353891234567</p>
+        <img src="icons\png-24px\phone-outline.png">
+        <h4 style="display: inline"class="general_text">Give us a call</h4><br>
+        <p class="general_text">+353891234567</p><br>
 
-        <h4 class="register_forms">Address</h4>
-        <p class="white_text">Faculty of Computing,
+        <img src="icons\png-24px\home-outline.png">
+        <h4 style="display: inline" class="general_text">Where you can find us</h4><br>
+        <p class="general_text  ">School of Computing,
         <br>Dublin City University,
         <br>Dublin 9,
         <br>Ireland
-      </p>
+      </p><br>
 
         <ul style="padding-top:30px;" class="social-icons icon-rounded icon-zoom  list-unstyled list-inline">
     		<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -167,7 +178,15 @@
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid overlay" onClick="style.pointerEvents='none'" style="padding-left:0px;padding-right:0px;">
+
+<!-- Add the Google Map in Here -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.636004935249!2d-6.259728683839165!3d53.38556197998734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e113b293d85%3A0xc81174de93fa22d6!2sSchool+of+Computing%2C+Dublin+City+University!5e0!3m2!1sen!2sie!4v1480694368387" width="100%" height="500" frameborder="0" class="google_map" style="border:0" allowfullscreen></iframe>
+
+</div>
+
+
+<div class="container-fluid" style="margin-bottom:20px;">
 	<div style="border-top:1px solid #dbdfe5" class="row">
 		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
 		<br>
@@ -181,24 +200,29 @@
 		</div>
 
 		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
-
+      <h3 style="padding-top:30px;padding-left:30px;font-family: 'Lato', sans-serif;">Navigation</h3>
+    <ul style="padding-top:10px;list-style:none;">
+    <li><a class="footer_links" href="#">Home</a>
+    <li><a class="footer_links" href="#">About</a>
+    <li><a class="footer_links" href="#">Contact</a>
+    <li><a  class="footer_links"href="#">How It Works: Student</a>
+    <li><a  class="footer_links"href="#">How It Works: Tutor</a>
+    </ul>
+    <br>
+    <ul style="list-style:none">
+    <li><a class="footer_links" href="#">Login</a>
+    <li><a class="footer_links" href="#">Register</a>
+    </ul>
 
 		</div>
 
 		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
-
-      <ul style="padding-top:30px;list-style:none">
-			<li><a class="footer_links" href="#">Home</a>
-			<li><a class="footer_links" href="#">About</a>
-			<li><a class="footer_links" href="#">Contact</a>
-			<li><a  class="footer_links"href="#">How It Works</a>
-			</ul>
-      <br>
-      <ul style="list-style:none">
-      <li><a class="footer_links" href="#">Login</a>
-      <li><a class="footer_links" href="#">Register</a>
-      </ul>
-
+        <center><img src="images/Logo.png"></center>
+        <center><ul style="padding-top:30px;" class="list-unstyled list-inline">
+        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">Sitemap</a></li>
+        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">Privacy Policy</a></li>
+        <li> <a class="footer_links" href="#">Terms of Service</a></li>
+        </ul></center>
 		</div>
 	</div>
 </div>
