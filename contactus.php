@@ -98,6 +98,7 @@
         </div>
 
         <input type="submit" name="submit" value="Submit" id="submit" class="btn btn-success btn-lg pull-right ">
+        <p class="white_text">* All fields required</p>
         <div id="msgSubmit" class="h3 text-center hidden"></div>
       </form>
 		</div>
@@ -155,12 +156,15 @@
 		<p style="text-align:center"><br>&#169; TutorMe, Mark Gerrity, James Burke</p>
 		</div>
 
-		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
+    <div style="border-left:1px solid #dbdfe5" class="col-xs-4">
       <h3 style="text-align:center;padding-top:30px;font-family: 'Lato', sans-serif;">Navigation</h3>
       <ul style="padding-top:30px;text-align:center" class="list-unstyled list-inline">
           <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">Home</a></li>
         <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">About</a></li>
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">Contact</a></li>
+        <li> <a class="footer_links" href="#">Contact</a></li>
+      </ul>
+
+      <ul style="padding-top:10px;text-align:center" class="list-unstyled list-inline">
         <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">How it works</a></li>
         <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">Login</a></li>
         <li> <a class="footer_links" style="" href="#">Register</a></li>
