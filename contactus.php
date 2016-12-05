@@ -26,7 +26,6 @@
 
 
 
-
 </head>
 <body style="background:#dbdfe5">
 	<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
@@ -50,7 +49,7 @@
                 <li class="active"><a href="#" target="_blank">Contact</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">How it Works <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
+                  <ul style="" class="dropdown-menu">
                     <li><a href="#">For a student</a></li>
                     <li><a href="#">For a tutor</a></li>
                   </ul>
@@ -79,7 +78,7 @@
 		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1 ">
       <h2 class="register_forms">Contact Us </h2>
 
-      <form role="form" id="contactForm">
+      <form style="padding-bottom:30px" role="form" id="contactForm">
         <div class="row">
           <div class="form-group col-sm-6">
             <label for="name" class="h4 register_forms">Name *</label>
@@ -99,7 +98,6 @@
         </div>
 
         <input type="submit" name="submit" value="Submit" id="submit" class="btn btn-success btn-lg pull-right ">
-        <p class="register_forms"><strong>*</strong> These fields are required.</p>
         <div id="msgSubmit" class="h3 text-center hidden"></div>
       </form>
 		</div>
@@ -131,19 +129,15 @@
     		<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
     		</ul>
 
-
 		</div>
-
-
 	 </div>
 	</div>
   </div>
 </div>
 
-<div class="container-fluid overlay" onClick="style.pointerEvents='none'" style="padding-left:0px;padding-right:0px;">
-
+<div class="container-fluid" style="padding-left:0px;padding-right:0px;">
 <!-- Add the Google Map in Here -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.636004935249!2d-6.259728683839165!3d53.38556197998734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e113b293d85%3A0xc81174de93fa22d6!2sSchool+of+Computing%2C+Dublin+City+University!5e0!3m2!1sen!2sie!4v1480694368387" width="100%" height="500" frameborder="0" class="google_map" style="border:0" allowfullscreen></iframe>
+	<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.636004935249!2d-6.259728683839165!3d53.38556197998734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e113b293d85%3A0xc81174de93fa22d6!2sSchool+of+Computing%2C+Dublin+City+University!5e0!3m2!1sen!2sie!4v1480694368387"></iframe>
 
 </div>
 
@@ -187,7 +181,9 @@
 
 
 </body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/contact.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mapSettings.js"></script>
+
 </html>
