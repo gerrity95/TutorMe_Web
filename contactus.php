@@ -1,3 +1,4 @@
+<!Doctype html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -19,6 +20,7 @@
   <link rel="stylesheet" href="social_media/css/button_style.css">
   <link rel='stylesheet' href='icons/font/typicons.min.css' />
   <link rel="stylesheet" href="css/my_style.css">
+  <link rel="stylesheet" href="css/animations.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -77,40 +79,29 @@
 		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1 ">
       <h2 class="register_forms">Contact Us </h2>
 
-      <form id="contactForm" role="form">
-    <div class="controls">
-
+      <form role="form" id="contactForm">
         <div class="row">
-            <div class="form group col-md-12">
-                    <label class="register_forms" for="name">Name *</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name" required>
-                    <div class="help-block with-errors"></div>
-            </div>
+          <div class="form-group col-sm-6">
+            <label for="name" class="h4 register_forms">Name *</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+            <div class="help-block with-errors"></div>
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="email" class="h4 register_forms">Email *</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            <div class="help-block with-errors"></div>
+          </div>
         </div>
-        <div class="row">
-            <div class="form-group col-md-12">
-                    <label class="register_forms" for="form_email">Email *</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-                    <div class="help-block with-errors"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="form-group col-md-12">
-                    <label class="register_forms" for="form_message">Message *</label>
-                    <textarea id="message" class="form-control" placeholder="Message..." rows="4" required></textarea>
-                    <div class="help-block with-errors"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-              <input type="submit" name="submit" value="Submit" id="submit" class="btn btn-success btn-lg pull-right ">
-              <div id="msgSubmit" class="h3 text-center hidden"></div>
-              <p class="register_forms"><strong>*</strong> These fields are required.</p>
-            </div>
+        <div class="form-group">
+          <label for="message" class="h4 register_forms">Message *</label>
+          <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+          <div class="help-block with-errors"></div>
         </div>
 
-    </div>
-</form>
+        <input type="submit" name="submit" value="Submit" id="submit" class="btn btn-success btn-lg pull-right ">
+        <p class="register_forms"><strong>*</strong> These fields are required.</p>
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+      </form>
 		</div>
 
 		<div class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1 contact_background">
@@ -194,9 +185,11 @@
 </div>
 
 
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/contact.js"></script>
+
 </body>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
 </html>
