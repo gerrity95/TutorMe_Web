@@ -1,4 +1,3 @@
-<!-- The PHP script for the server side workings on the contact form -->
 <?php
 $errorMSG = "";
 
@@ -26,9 +25,7 @@ if (empty($_POST["message"])) {
 $EmailTo = "tutormeire@gmail.com";
 $Subject = "New Message Received: Contact Form";
 
-
-//Preparation for the body of the email
-
+// prepare email body text
 $Body = "Name: ";
 $Body .= $name;
 $Body .= "\n";

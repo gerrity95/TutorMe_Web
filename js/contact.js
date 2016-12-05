@@ -1,5 +1,3 @@
-//This is the javascript for the contact form
-
 $("#contactForm").submit(function(event){
     // cancels the form submission
     event.preventDefault();
@@ -26,22 +24,14 @@ function submitForm(){
         }
     });
 }
-
-//This produces a message if its a successful submission
 function formSuccess(){
+
     var msgClasses = "h3 text-center";
     var msg = "Message Submitted!";
 
     $( "#msgSubmit" ).removeClass().addClass(msgClasses).text(msg);
-
-/*
-If i wanted to redirect to a new URL:
-window.location.replace("#");
-*/
-
 }
 
-//This produces a message if its an unsucessful submission
 function formError(){
 
     var msgClasses = "h3 text-center";
