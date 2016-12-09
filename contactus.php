@@ -1,34 +1,35 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap stylesheets -->
-  <title>Contact TutorMe</title>
-  <!-- To incorporate Lato - a Google font -->
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'  type='text/css'>
+  <title>TutorMe Login</title>
+<!-- To incorporate Lato - a Google font -->
+ <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'  type='text/css'>
 
-  <!-- For social media buttons -->
-  <!-- The stylesheet where we add our own stylings -->
-  <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+<!-- For social media buttons -->
+<!-- The stylesheet where we add our own stylings -->
+<link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
 
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/my_style.css">
+<link rel="stylesheet" href="social_media/css/button_style.css">
+<link rel="stylesheet" href="css/animate.css">
 
-  <link rel="stylesheet" href="social_media/css/button_style.css">
-  <link rel='stylesheet' href='icons/font/typicons.min.css' />
-  <link rel="stylesheet" href="css/my_style.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
 
 </head>
 <body style="background:#dbdfe5">
-	<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container-fluid">
         <div class="navbar-header">
@@ -44,24 +45,67 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav">
-                <li><a href="#" target="_blank">Home</a></li>
-                <li><a href="#" target="_blank">About</a></li>
-                <li class="active"><a href="#" target="_blank">Contact</a></li>
+                <li class="active"><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contactus.php">Contact</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">How it Works <span class="caret"></span></a>
                   <ul style="" class="dropdown-menu">
-                    <li><a href="#">For a student</a></li>
-                    <li><a href="#">For a tutor</a></li>
+                    <li><a href="student_how.html">For a student</a></li>
+                    <li><a href="tutor_how.html">For a tutor</a></li>
                   </ul>
                 </li>
             </ul>
 			<ul class="nav navbar-nav navbar-right">
-			<li><a href="index.html"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a></li>
-			<li><a href="register.html"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
-        </div>
-    </div>
-</nav>
+        <!-- <li><a href="index.html"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a></li> -->
+        <li><a href="register.html" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
+        <li class="dropdown">
+    <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
+    <ul class="dropdown-menu dropdown_width animated slideInRight" style="width:350px" role="menu">
+        <div class="col-lg-12">
+            <div class="text-center"><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Login</h3><br>
+            <form id="" action="" method="post" role="form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
+                </div>
 
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <input type="checkbox" tabindex="3" name="remember" id="remember">
+                            <label for="remember">Remember Me</label>
+                        </div>
+                        <div class="col-xs-5 pull-right">
+                            <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center">
+                                <a href="" tabindex="5" class="forgot-password">Forgot Password?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </ul>
+</li>
+
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
 <div class="jumbotron">
     <div class="container-fluid">
 	<div class="page-header">
@@ -156,27 +200,28 @@
 		<p style="text-align:center"><br>&#169; TutorMe, Mark Gerrity, James Burke</p>
 		</div>
 
-    <div style="border-left:1px solid #dbdfe5" class="col-xs-4">
+		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
       <h3 style="text-align:center;padding-top:30px;font-family: 'Lato', sans-serif;">Navigation</h3>
       <ul style="padding-top:30px;text-align:center" class="list-unstyled list-inline">
-          <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">Home</a></li>
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">About</a></li>
-        <li> <a class="footer_links" href="#">Contact</a></li>
+          <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="index.html">Home</a></li>
+        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="aboutus.html">About</a></li>
+        <li> <a class="footer_links" href="contactus.php">Contact</a></li>
       </ul>
 
       <ul style="padding-top:10px;text-align:center" class="list-unstyled list-inline">
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">How it works</a></li>
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">Login</a></li>
-        <li> <a class="footer_links" style="" href="#">Register</a></li>
+        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="student_how.html">How it works</a></li>
+        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="index.html">Login</a></li>
+        <li> <a class="footer_links" style="" href="register.html">Register</a></li>
       </ul>
+
 		</div>
 
 		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
         <center><img src="images/Logo.png"></center>
         <center><ul style="padding-top:0px;" class="list-unstyled list-inline">
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">Sitemap</a></li>
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">Privacy Policy</a></li>
-        <li> <a class="footer_links" href="#">Terms of Service</a></li>
+        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="sitemap.html">Sitemap</a></li>
+        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="privacy.html">Privacy Policy</a></li>
+        <li> <a class="footer_links" href="service_terms.html">Terms of Service</a></li>
         </ul></center>
 		</div>
 	</div>
@@ -185,9 +230,10 @@
 
 
 </body>
+<!--
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+-->
 <script type="text/javascript" src="js/contact.js"></script>
-<script type="text/javascript" src="js/mapSettings.js"></script>
 
 </html>

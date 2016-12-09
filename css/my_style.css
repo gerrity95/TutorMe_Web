@@ -62,13 +62,19 @@ background: #383838; /* For browsers that do not support gradients */
 	font-weight: 400;
 	}
 
+  .menu_text {
+    color:white;
+  	font-family: 'Lato', sans-serif;
+  	padding-left: 10px;
+  }
+
   .contact_background {
     margin-top: 60px;
     background-color: #ededed;
     padding-top: 20px;
     padding-left: 50px;
     padding-bottom: 40px;
-    border-radius: 5px;
+    border-radius: 3px;
     -webkit-box-shadow: 0 12px 10px -6px #777;
        -moz-box-shadow: 0 12px 10px -6px #777;
             box-shadow: 0 12px 10px -6px #777;
@@ -120,3 +126,21 @@ background: #383838; /* For browsers that do not support gradients */
     font-family: 'Lato', sans-serif;
   	font-weight: 400;
 }
+
+/* General sizing */
+ul.dropdown-lr {
+  width: 500px;
+}
+
+.dropdown_width {
+  width: 300px !important;
+}
+
+/* mobile fix */
+@media (max-width: 768px) {
+	.dropdown-lr h3 {
+		color: #eee;
+	}
+	.dropdown-lr label {
+		color: #eee;
+	}
