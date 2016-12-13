@@ -54,8 +54,8 @@
         <li class="dropdown">
           <a href="#" style="padding-right:20px" class="dropdown-toggle" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Joe Bloggs</a>
           <ul style="" class="dropdown-menu">
-            <li><a href="student_how.html">Settings</a></li>
-            <li><a href="tutor_how.html">Logout</a></li>
+            <li><a href="">Settings</a></li>
+            <li><a href="backend/logout.php">Logout</a></li>
           </ul>
         </li>
 
@@ -86,6 +86,10 @@
   		</div>
 
   		<div style="margin-top:50px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+        <!--
+        In here we must put it in the script to determine the type of user it is.
+        -->
+
   			<div refer-HTML="tutor_register.html">
 
         </div>

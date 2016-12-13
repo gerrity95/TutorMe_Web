@@ -1,3 +1,14 @@
+<?php
+include("backend/registerserv.php");
+
+if((isset($_SESSION['username']) != ''))
+{
+  header("Location: "); //Redirect to the homepage, statement to check the type of user?
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap stylesheets -->
-    <title>TutorMe Login</title>
+    <title>TutorMe Register</title>
+
 	<!-- To incorporate Lato - a Google font -->
 	 <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'  type='text/css'>
 
@@ -54,55 +66,55 @@
                   </ul>
                 </li>
             </ul>
-			<ul class="nav navbar-nav navbar-right">
-        <!-- <li><a href="index.html"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a></li> -->
-        <li><a href="register.html" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
-        <li class="dropdown">
-    <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
-    <ul class="dropdown-menu dropdown_width animated slideInRight" style="width:350px" role="menu">
-        <div class="col-lg-12">
-            <div class="text-center"><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Login</h3><br>
-            <form id="" action="" method="post" role="form">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
-                </div>
+            <ul class="nav navbar-nav navbar-right">
+              <!-- <li><a href="index.html"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a></li> -->
+              <li><a href="register.html" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
+              <li class="dropdown">
+          <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
+          <ul class="dropdown-menu dropdown_width animated slideInRight" style="width:350px" role="menu">
+              <div class="col-lg-12">
+                  <div class="text-center"><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Login</h3><br>
+                  <form id="" action="" method="POST">
+                      <div class="form-group">
+                          <label for="username">Username</label>
+                          <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="on">
+                      </div>
 
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
-                </div>
+                      <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
+                      </div>
 
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-xs-7">
-                            <input type="checkbox" tabindex="3" name="remember" id="remember">
-                            <label for="remember">Remember Me</label>
-                        </div>
-                        <div class="col-xs-5 pull-right">
-                            <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
-                        </div>
-                    </div>
-                </div>
+                      <div class="form-group">
+                          <div class="row">
+                              <div class="col-xs-7">
+                                  <input type="checkbox" tabindex="3" name="remember" id="remember">
+                                  <label for="remember">Remember Me</label>
+                              </div>
+                              <div class="col-xs-5 pull-right">
+                                  <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                              </div>
+                          </div>
+                      </div>
 
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">
-                                <a href="" tabindex="5" class="forgot-password">Forgot Password?</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
+                      <div class="form-group">
+                          <div class="row">
+                              <div class="col-lg-12">
+                                  <div class="text-center">
+                                      <a href="" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </ul>
+        </li>
+
+              </div>
+            </ul>
         </div>
-    </ul>
-</li>
-
-        </div>
-      </ul>
     </div>
-  </div>
 </nav>
 
 <div class="jumbotron">
@@ -111,12 +123,9 @@
 		<h1>TutorMe <small style="font-family: 'Source Sans Pro', sans-serif;">Find the perfect tutor.</small></h1>
 	</div>
         <p style="" class="lead">TutorMe makes sure you never have to worry about a grind again.</p>
-        <p><a href="register.html" target="_blank" class="btn btn-success btn-lg">Get started today</a></p>
+        <p><a href="index.html" target="_blank" class="btn btn-success btn-lg">Login Here</a></p>
     </div>
 </div>
-
-
-
 
 <div class="header-2">
 	<div class="page-header header-filter" style="background-image: url('images/blurred-background-4.jpg');background-size:cover;min-height:750px">
@@ -124,35 +133,49 @@
 		<div class="row">
 		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1 ">
 			<center><img class="feature_images" src="images/LogoWhiteLarge.png" /></center>
-			<h2 class="register_forms">Finding you the perfect Tutor </h2>
-			<h2><small style="color:white;font-family: 'Lato', sans-serif;">Here at TutorMe our number one focus is finding the best tutor for you.</small> </h2>
+			<h2 style="padding-top:10px;color:white;font-family: 'Lato', sans-serif;">Want to join us at TutorMe? </h2>
+			<h2><small style="color:white;font-family: 'Lato', sans-serif;">We would love to have you. All you have to do is just fill in a few details and then we will be ready to get you started.</small> </h2>
+
 		</div>
 
-		<div style="margin-top:50px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-			<h3 class="register_forms">Login Here</h3>
-			<br>
-			<form>
-        <div class="form-group">
-            <input style="border-radius:3px" type="text" class="form-control" id="inputUsername" placeholder="Username">
+		<div style="margin-top:50px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+			<h3 class="register_forms">Register For TutorMe</h3><br>
+			 <form action="" method="POST">
+			 <div class="form-group">
+				<label style="color:white" class="radio-inline">
+					<input type="radio" name="optradio" required>Tutor
+				</label>
+				<label style="color:white" class="radio-inline">
+					<input type="radio" name="optradio" required>Student
+				</label>
+			</div>
+			 <div class="form-group">
+         <label for="email" class="h4 register_forms">Email *</label>
+            <input style="border-radius:5px" type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+            <div class="help-block with-errors"></div>
         </div><br>
-        <div class="form-group">
-            <input style="border-radius:3px" type="password" class="form-control" id="inputPassword" placeholder="Password">
-        </div>
-        	<p class="muted"><a style="color:blue;" href="#">Forgot your password...</a></p>
-        <div class="checkbox">
-            <input type="checkbox"><h3><small class="register_forms">Remember Me</small></h3>
-        </div>
-        <button type="submit" class="btn btn-success">Login into TutorMe</button>
-    </form>
+		<div class="form-group">
+      <label for="username" class="h4 register_forms">Username *</label>
+            <input style="border-radius:5px" type="text" class="form-control" name="username" id="username" placeholder="Username" required>
+            <div class="help-block with-errors"></div>
+        </div><br>
+		<div class="form-group">
+      <label for="password" class="h4 register_forms">Password *</label>
+            <input style="border-radius:5px" type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+            <div class="help-block with-errors"></div>
+        </div><br>
+        <input type="submit" name="submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">
+        <p class="white_text">* All fields required</p>
+        <!-- Error Message -->
+        <span><?php echo $error; ?></span>
 	<br>
-  <p class="muted"><a style="color:blue;" href="#">Not a member yet? Register here.</a></p>
 
 		</div>
 
 
-	 </div>
 	</div>
-  </div>
+	</div>
+</div>
 </div>
 
 <div class="container-fluid">
@@ -169,12 +192,13 @@
 			<h3 style="text-align:center"><small>Connect with your tutor or student seamlessly. No need to go anywhere else to find out what they need or to ask them any questions.</small></h3>
              <br><center><img class="feature_images" src="images/messaging_symbol.png"></center>
         </div>
-        <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-">
+        <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-4">
             <h2 style="text-align:center">Tutor Search</h2>
 			  <h3 style="text-align:center"><small>Never worry that the tutor doesn't best suit your needs. Easily search through all the tutors in your area to find the one that best suits you.<br></small></h3>
 			  <center><img class="feature_images" src="images/greenUser.png"></center>
 		</div>
 
+	</div>
 </div>
 
 
@@ -218,7 +242,5 @@
 	</div>
 </div>
 
-
 </body>
-
 </html>
