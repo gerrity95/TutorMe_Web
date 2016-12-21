@@ -62,7 +62,7 @@
       <input type="submit" name="submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">
       <p class="general_text">* All fields required</p>
 <br>
-
+</form>
   </div>
 
 

@@ -31,7 +31,7 @@
     <h3 class="general_text">Tutor Registration for TutorMe</h3><br>
      <form>
      <div class="form-group">
-       <label for="first_name" class="h4 general_text">First Name *</label>
+       <label for="firstname" class="h4 general_text">First Name *</label>
           <input style="border-radius:5px" type="text" class="form-control" name="firstname" id="inputFirstName" placeholder="First Name" required>
           <div class="help-block with-errors"></div>
       </div><br>
@@ -46,10 +46,11 @@
         <div class="help-block with-errors"></div>
     </div><br>
     <div class="form-group">
-    <label for="phone_number" class="h4 general_text">Phone Number *</label>
+    <label for="phone" class="h4 general_text">Phone Number *</label>
        <input style="border-radius:5px" type="text" class="form-control" name="phone" id="inputPhoneNumber" placeholder="Phone Number" required>
        <div class="help-block with-errors"></div>
    </div><br>
+   <div class="form-group"
    <label for="price" class="h4 general_text">Price *</label>
       <input style="border-radius:5px" type="text" class="form-control" name="price" id="inputPrice" placeholder="Price" required>
       <div class="help-block with-errors"></div>
@@ -62,7 +63,7 @@
       <input type="submit" name="submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">
       <p class="general_text">* All fields required</p>
 <br>
-
+</form>
   </div>
 
 </body>

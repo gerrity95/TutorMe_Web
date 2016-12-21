@@ -86,17 +86,28 @@
   		</div>
 
   		<div style="margin-top:50px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+        <?php
+        $userType = "student";
+        if ($userType == "student"){
+          include 'student_register.php';
+        } else {
+          include 'tutor_register.php';
+        }
+
+        ?>
         <!--
         In here we must put it in the script to determine the type of user it is.
         -->
-
+<!--
   			<div refer-HTML="tutor_register.html">
 
         </div>
         <script>
         referHTML()
         </script>
-  		</div>
+-->
+
+    	</div>
 
 
   	 </div>
