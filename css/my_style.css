@@ -48,6 +48,14 @@ background: #383838; /* For browsers that do not support gradients */
     margin: 0 auto;
 }
 
+.search_images {
+
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+
+
+}
+
 	.feature_images {
 	width:70%;
 	height:70%;
@@ -55,12 +63,6 @@ background: #383838; /* For browsers that do not support gradients */
 	max-height:200px;
 	max-width:200px;
 	}
-
-  .search_image {
-    border:1px solid #cccccc;
-    border-radius:5px;
-  }
-
 
 	.register_forms {
 	padding-top:10px;
