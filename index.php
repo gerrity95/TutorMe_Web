@@ -141,7 +141,10 @@ if((isset($_SESSION['username']) != ''))
 			<h2><small style="color:white;font-family: 'Lato', sans-serif;">Here at TutorMe our number one focus is finding the best tutor for you.</small> </h2>
 		</div>
 
-		<div style="margin-top:50px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+		<div style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+
+		<center><input type="image" style="border:1px solid #cccccc;border-radius:5px;" class="search_image" src="images/orig_search.png" name="saveForm" class="btTxt submit" id="saveForm" /></center>
+<!--
 			<h3 class="register_forms">Login Here</h3>
 			<br>
 			<form action="" method="POST">
@@ -156,13 +159,13 @@ if((isset($_SESSION['username']) != ''))
         <div class="checkbox">
             <input type="checkbox"><h3><small class="register_forms">Remember Me</small></h3>
         </div> -->
-        <input type="submit" name="submit" value="Login" id="submit" class="btn btn-success btn-lg pull-right">
+        <!-- <input type="submit" name="submit" value="Login" id="submit" class="btn btn-success btn-lg pull-right">
 				<!-- Error Message -->
-				<span><?php echo $error; ?></span>
+			<!--	<span> <?php echo $error; ?></span>
     </form>
 
   <p class="muted"><a style="color:blue;" href="#">Not a member yet? Register here.</a></p>
-
+-->
 		</div>
 
 
