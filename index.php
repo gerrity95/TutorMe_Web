@@ -1,5 +1,5 @@
 <?php
-include("backend/loginserv.php");
+//include("backend/loginserv.php");
 
 if((isset($_SESSION['username']) != ''))
 {
@@ -69,47 +69,7 @@ if((isset($_SESSION['username']) != ''))
         <li><a href="register.html" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
         <li class="dropdown">
     <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
-    <ul class="dropdown-menu dropdown_width animated slideInRight" style="width:350px" role="menu">
-        <div class="col-lg-12">
-            <div class="text-center"><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Login</h3><br>
-            <form id="" action="" method="POST" role="form">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-xs-7">
-                            <input type="checkbox" tabindex="3" name="remember" id="remember">
-                            <label for="remember">Remember Me</label>
-                        </div>
-                        <div class="col-xs-5 pull-right">
-                            <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">
-                                <a href="" tabindex="5" class="forgot-password">Forgot Password?</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Error Message -->
-                <span><?php echo $error; ?></span>
-
-            </form>
-        </div>
-    </ul>
+  	<?php include("forms/dropdown_login_form.php"); ?>
 </li>
 
         </div>
@@ -141,9 +101,23 @@ if((isset($_SESSION['username']) != ''))
 			<h2><small style="color:white;font-family: 'Lato', sans-serif;">Here at TutorMe our number one focus is finding the best tutor for you.</small> </h2>
 		</div>
 
-		<div style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+		<div id="search_form" style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-2">
 
-		<center><input type="image" class="search_images" src="images/orig_search.png" name="saveForm" class="btTxt submit" id="saveForm" /></center>
+			<li style="list-style: none;" class="dropdown">
+	<a href="#" data-toggle="dropdown"><img alt="Tutor Search" class="search_images" src="images/orig_search.png"></a>
+	<?php include("forms/index_search.php"); ?>
+</li>
+
+		<!--<center><input onClick="check()" type="image" class="search_images" src="images/orig_search.png" name="saveForm" class="btTxt submit" id="saveForm" /></center>
+
+		<center><a href="#"><img alt="Tutor Search" class="search_images" src="images/orig_search.png"></a></center>
+		<script>
+		function check() {
+			alert("Check me out");
+		}
+
+		</script>
+-->
 <!--
 			<h3 class="register_forms">Login Here</h3>
 			<br>
