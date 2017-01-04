@@ -61,7 +61,6 @@ if((isset($_SESSION['username']) != ''))
                 </li>
             </ul>
 			<ul class="nav navbar-nav navbar-right">
-        <!-- <li><a href="index.html"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a></li> -->
         <li><a href="register.html" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
         <li class="dropdown">
     <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
@@ -91,13 +90,13 @@ if((isset($_SESSION['username']) != ''))
 	<div class="page-header header-filter" style="background-image: url('images/blurred-background-4.jpg');background-size:cover;min-height:750px">
 	<div class="container-fluid">
 		<div class="row">
-		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1 ">
+		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 ">
 			<center><img class="feature_images" src="images/LogoWhiteLarge.png" /></center>
 			<h2 class="register_forms">Finding you the perfect Tutor </h2>
 			<h2><small style="color:white;font-family: 'Lato', sans-serif;">Here at TutorMe our number one focus is finding the best tutor for you.</small> </h2>
 		</div>
 
-		<div style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-2">
+		<div style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
 			<li style="list-style: none;" class="dropdown">
 	<a href="#" onClick="getForm()" data-toggle="dropdown"><img alt="Tutor Search" class="search_images" src="images/orig_search.png"></a>
 		<div id="search_form"></div>
@@ -181,30 +180,8 @@ if((isset($_SESSION['username']) != ''))
 <script type="text/javascript">
 function getForm() {
 $( "#search_form" ).load("forms/index_search.php");
-$('#cycle').selectpicker("refresh");
 }
 
-//$( "#search_form" ).load( "forms/index_search.php" );
-/*
-$('.tutsearch_drop').click(function(e) {
-       e.stopPropagation();
-   });
-
-	 $('.selectpicker').selectpicker({
-    container: 'body'
-});
-
-$('body').on('click', function(event) {
-    var target = $(event.target);
-    if (target.parents('.bootstrap-select').length) {
-        event.stopPropagation();
-        $('.bootstrap-select.open').removeClass('open');
-
-
-
-    }
-});
-*/
 </script>
 </body>
 
