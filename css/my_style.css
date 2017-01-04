@@ -28,6 +28,9 @@ background: #383838; /* For browsers that do not support gradients */
   background-color: #FFFFFF;
   margin-top: 20px;
   border-radius: 5px;
+  -moz-box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+  -webkit-box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+  box-shadow:5px 5px 5px rgba(0,0,0,0.3);
 }
 
 	#full_top {

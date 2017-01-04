@@ -181,7 +181,9 @@ if((isset($_SESSION['username']) != ''))
 <script type="text/javascript">
 function getForm() {
 $( "#search_form" ).load("forms/index_search.php");
+$('#cycle').selectpicker("refresh");
 }
+
 //$( "#search_form" ).load( "forms/index_search.php" );
 /*
 $('.tutsearch_drop').click(function(e) {
