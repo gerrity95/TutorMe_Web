@@ -23,6 +23,13 @@ background: #383838; /* For browsers that do not support gradients */
 		border-radius:5px;
     }
 
+.index_search_style
+{
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
 	#full_top {
         padding: 50px;
         font-size: 16px;

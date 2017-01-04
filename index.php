@@ -24,16 +24,12 @@ if((isset($_SESSION['username']) != ''))
 	<link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
 
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.css">
 	<link rel="stylesheet" href="css/my_style.css">
 	<link rel="stylesheet" href="social_media/css/button_style.css">
   <link rel="stylesheet" href="css/animate.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
 
 </head>
 <body style="background:#dbdfe5">
@@ -101,45 +97,13 @@ if((isset($_SESSION['username']) != ''))
 			<h2><small style="color:white;font-family: 'Lato', sans-serif;">Here at TutorMe our number one focus is finding the best tutor for you.</small> </h2>
 		</div>
 
-		<div id="search_form" style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-2">
-
+		<div style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-2">
 			<li style="list-style: none;" class="dropdown">
-	<a href="#" data-toggle="dropdown"><img alt="Tutor Search" class="search_images" src="images/orig_search.png"></a>
-	<?php include("forms/index_search.php"); ?>
+	<a href="#" onClick="getForm()" data-toggle="dropdown"><img alt="Tutor Search" class="search_images" src="images/orig_search.png"></a>
+		<div id="search_form"></div>
 </li>
 
-		<!--<center><input onClick="check()" type="image" class="search_images" src="images/orig_search.png" name="saveForm" class="btTxt submit" id="saveForm" /></center>
 
-		<center><a href="#"><img alt="Tutor Search" class="search_images" src="images/orig_search.png"></a></center>
-		<script>
-		function check() {
-			alert("Check me out");
-		}
-
-		</script>
--->
-<!--
-			<h3 class="register_forms">Login Here</h3>
-			<br>
-			<form action="" method="POST">
-        <div class="form-group">
-            <input style="border-radius:3px" type="text" class="form-control" id="inputUsername" placeholder="Username">
-        </div><br>
-        <div class="form-group">
-            <input style="border-radius:3px" type="password" class="form-control" id="inputPassword" placeholder="Password">
-        </div>
-        	<p class="muted"><a style="color:blue;" href="#">Forgot your password...</a></p>
-<!--
-        <div class="checkbox">
-            <input type="checkbox"><h3><small class="register_forms">Remember Me</small></h3>
-        </div> -->
-        <!-- <input type="submit" name="submit" value="Login" id="submit" class="btn btn-success btn-lg pull-right">
-				<!-- Error Message -->
-			<!--	<span> <?php echo $error; ?></span>
-    </form>
-
-  <p class="muted"><a style="color:blue;" href="#">Not a member yet? Register here.</a></p>
--->
 		</div>
 
 
@@ -211,7 +175,35 @@ if((isset($_SESSION['username']) != ''))
 	</div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/bootstrap-select.js"></script>
+<script type="text/javascript">
+function getForm() {
+$( "#search_form" ).load("forms/index_search.php");
+}
+//$( "#search_form" ).load( "forms/index_search.php" );
+/*
+$('.tutsearch_drop').click(function(e) {
+       e.stopPropagation();
+   });
 
+	 $('.selectpicker').selectpicker({
+    container: 'body'
+});
+
+$('body').on('click', function(event) {
+    var target = $(event.target);
+    if (target.parents('.bootstrap-select').length) {
+        event.stopPropagation();
+        $('.bootstrap-select.open').removeClass('open');
+
+
+
+    }
+});
+*/
+</script>
 </body>
 
 </html>
