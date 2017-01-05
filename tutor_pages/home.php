@@ -55,7 +55,7 @@
           <a href="#" style="padding-right:20px" class="dropdown-toggle" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Joe Bloggs</a>
           <ul style="" class="dropdown-menu">
             <li><a href="">Settings</a></li>
-            <li><a href="backend/logout.php">Logout</a></li>
+            <li><a href="../backend/logout.php">Logout</a></li>
           </ul>
         </li>
 

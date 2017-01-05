@@ -1,10 +1,25 @@
 <?php
-//include("backend/loginserv.php");
+include("backend/loginserv.php");
 
+/*
+The below is not an ideal sollution, would be better if we could reference the queries from query.php
+This is so if the user is already in a session, they are still redirected to the correct page
+*/
 if((isset($_SESSION['username']) != ''))
 {
-	header('Location: #'); //Will redirect to the homepage, statement to check type of user?
+	$_SESSION['username'] = $user;
+	$check_reg = "SELECT full_reg FROM users WHERE username='$user'";
+	$result = $conn->query($check_reg)->fetch_object()->full_reg;
+
+	if ($result == "false")
+	{
+		header("Location: register_full.php");
+	}
+	else {
+		header("Location: tutor_pages/home.php"); // Redirect to another page
+	}
 }
+
 ?>
 
 

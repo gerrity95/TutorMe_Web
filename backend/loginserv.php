@@ -2,21 +2,24 @@
 
 session_start();
 include("connection.php"); //Establising connection with the database
-include("queries.php");
+//include("queries.php");
 
 $error=""; //variable to store error message;
 
 if(isset($_POST['submit']))
 {
-	if(empty($_POST['user']) || empty($_POST['pass']))
+	if(empty($_POST['username']) || empty($_POST['password']))
 	{
 		$error = "Both fields are required";
+		echo "<script language='javascript'>
+		alert('Both fields required');
+	</script>";
 	}
 	else
 	{
 		//Define $user and $pass
-		$user = $_POST['user'];
-		$pass = $_POST['pass'];
+		$user = $_POST['username'];
+		$pass = $_POST['password'];
 
 		//SQL Query to fetch info of registered users and find a match
 
@@ -35,10 +38,10 @@ if(isset($_POST['submit']))
 
 			if ($result == "false")
 			{
-				header("Location: fullreg.php"); //This means the user hasn't fully registered, will be directed to here
+				header("Location: register_full.php"); //This means the user hasn't fully registered, will be directed to here
 			}
 			else {
-				header("Location: welcome.php"); // Redirect to another page
+				header("Location: ./tutor_pages/home.php"); // Redirect to another page - It's at tutor_pages for test purposes
 			}
 		}
 		else

@@ -1,3 +1,7 @@
+<?php
+include ("backend/check.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
