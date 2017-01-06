@@ -1,10 +1,26 @@
 <?php
 include("backend/loginserv.php");
 
+/*
+The below is not an ideal sollution, would be better if we could reference the queries from query.php
+This is so if the user is already in a session, they are still redirected to the correct page
+*/
+
 if((isset($_SESSION['username']) != ''))
 {
-	header('Location: #'); //Will redirect to the homepage, statement to check type of user?
+	$_SESSION['username'] = $user;
+	$check_reg = "SELECT full_reg FROM users WHERE username='$user'";
+	$result = $conn->query($check_reg)->fetch_object()->full_reg;
+
+	if ($result == "false")
+	{
+		header("Location: register_full.php");
+	}
+	else {
+		header("Location: tutor_pages/home.php"); // Redirect to another page
+	}
 }
+
 ?>
 
 
@@ -64,56 +80,13 @@ if((isset($_SESSION['username']) != ''))
                   </ul>
                 </li>
             </ul>
-			<ul class="nav navbar-nav navbar-right">
-        <!-- <li><a href="index.html"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a></li> -->
-        <li><a href="register.html" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
-        <li class="dropdown">
-    <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
-    <ul class="dropdown-menu dropdown_width animated slideInRight" style="width:350px" role="menu">
-        <div class="col-lg-12">
-            <div class="text-center"><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Login</h3><br>
-            <form id="" action="" method="POST" role="form">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-xs-7">
-                            <input type="checkbox" tabindex="3" name="remember" id="remember">
-                            <label for="remember">Remember Me</label>
-                        </div>
-                        <div class="col-xs-5 pull-right">
-                            <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">
-                                <a href="" tabindex="5" class="forgot-password">Forgot Password?</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Error Message -->
-                <span><?php echo $error; ?></span>
-
-            </form>
-        </div>
-    </ul>
-</li>
-
-        </div>
-      </ul>
+						<ul class="nav navbar-nav navbar-right">
+			        <li><a href="register.html" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
+			        <li class="dropdown">
+							    <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
+							  	<?php include("forms/dropdown_login_form.php"); ?>
+							</li>
+			    </ul>
     </div>
   </div>
 </nav>
@@ -146,17 +119,17 @@ if((isset($_SESSION['username']) != ''))
 			<br>
 			<form action="" method="POST">
         <div class="form-group">
-            <input style="border-radius:3px" type="text" class="form-control" id="inputUsername" placeholder="Username">
+            <input style="border-radius:3px" type="text" name="username" class="form-control" id="inputUsername" placeholder="Username">
         </div><br>
         <div class="form-group">
-            <input style="border-radius:3px" type="password" class="form-control" id="inputPassword" placeholder="Password">
+            <input style="border-radius:3px" type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
         </div>
         	<p class="muted"><a style="color:blue;" href="#">Forgot your password...</a></p>
 <!--
         <div class="checkbox">
             <input type="checkbox"><h3><small class="register_forms">Remember Me</small></h3>
         </div> -->
-        <input type="submit" name="submit" value="Login" id="submit" class="btn btn-success btn-lg pull-right">
+        <input type="submit" name="login-submit" value="Login" id="submit" class="btn btn-success btn-lg pull-right">
 				<!-- Error Message -->
 				<span><?php echo $error; ?></span>
     </form>

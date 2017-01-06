@@ -1,10 +1,13 @@
 <?php
-include("backend/loginserv.php");
+//include("backend/loginserv.php");
 
 /*
 The below is not an ideal sollution, would be better if we could reference the queries from query.php
 This is so if the user is already in a session, they are still redirected to the correct page
 */
+
+
+
 if((isset($_SESSION['username']) != ''))
 {
 	$_SESSION['username'] = $user;
@@ -82,7 +85,6 @@ if((isset($_SESSION['username']) != ''))
   	<?php include("forms/dropdown_login_form.php"); ?>
 </li>
 
-        </div>
       </ul>
     </div>
   </div>

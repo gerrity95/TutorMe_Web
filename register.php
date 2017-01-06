@@ -3,7 +3,7 @@ include("backend/registerserv.php");
 
 if((isset($_SESSION['username']) != ''))
 {
-  header("Location: "); //Redirect to the homepage, statement to check the type of user?
+  header("Location: tutor_pages/home.php"); //Redirect to the homepage, statement to check the type of user?
 }
 
 ?>
@@ -67,52 +67,12 @@ if((isset($_SESSION['username']) != ''))
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <!-- <li><a href="index.html"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a></li> -->
               <li><a href="register.html" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
               <li class="dropdown">
-          <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
-          <ul class="dropdown-menu dropdown_width animated slideInRight" style="width:350px" role="menu">
-              <div class="col-lg-12">
-                  <div class="text-center"><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Login</h3><br>
-                  <form id="" action="" method="POST">
-                      <div class="form-group">
-                          <label for="username">Username</label>
-                          <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="on">
-                      </div>
-
-                      <div class="form-group">
-                          <label for="password">Password</label>
-                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
-                      </div>
-
-                      <div class="form-group">
-                          <div class="row">
-                              <div class="col-xs-7">
-                                  <input type="checkbox" tabindex="3" name="remember" id="remember">
-                                  <label for="remember">Remember Me</label>
-                              </div>
-                              <div class="col-xs-5 pull-right">
-                                  <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="form-group">
-                          <div class="row">
-                              <div class="col-lg-12">
-                                  <div class="text-center">
-                                      <a href="" tabindex="5" class="forgot-password">Forgot Password?</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </form>
-              </div>
+                  <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
+                  <?php include("forms/dropdown_login_form.php"); ?>
+              </li>
           </ul>
-        </li>
-
-              </div>
-            </ul>
         </div>
     </div>
 </nav>
@@ -151,20 +111,22 @@ if((isset($_SESSION['username']) != ''))
 			</div>
 			 <div class="form-group">
          <label for="email" class="h4 register_forms">Email *</label>
-            <input style="border-radius:5px" type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+            <input style="border-radius:5px" type="email" class="form-control" name="email" id="register-email" placeholder="Email" required>
             <div class="help-block with-errors"></div>
         </div><br>
 		<div class="form-group">
       <label for="username" class="h4 register_forms">Username *</label>
-            <input style="border-radius:5px" type="text" class="form-control" name="username" id="username" placeholder="Username" required>
+            <input style="border-radius:5px" type="text" class="form-control" name="username" id="reg-username" placeholder="Username" required>
             <div class="help-block with-errors"></div>
         </div><br>
 		<div class="form-group">
       <label for="password" class="h4 register_forms">Password *</label>
-            <input style="border-radius:5px" type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+            <input style="border-radius:5px" type="password" class="form-control" name="password" id="reg-password" placeholder="Password" required>
             <div class="help-block with-errors"></div>
         </div><br>
-        <input type="submit" name="submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">
+        <input type="submit" name="register-submit" value="Register" id="reg-submit" class="btn btn-success btn-lg pull-right ">
+
+      </form>
         <p class="white_text">* All fields required</p>
         <!-- Error Message -->
         <span><?php echo $error; ?></span>
@@ -203,43 +165,7 @@ if((isset($_SESSION['username']) != ''))
 
 
 <div class="container-fluid" style="margin-bottom:20px;">
-	<div style="border-top:1px solid #dbdfe5" class="row">
-		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
-		<br>
-		<h3 style="text-align:center;font-family: 'Lato', sans-serif;">Connect with us.</h3>
-		<center><ul style="padding-top:30px;" class="social-icons icon-rounded icon-zoom  list-unstyled list-inline">
-		<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-		<li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
-		<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-		</ul></center>
-		<p style="text-align:center"><br>&#169; TutorMe, Mark Gerrity, James Burke</p>
-		</div>
-
-		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
-      <h3 style="text-align:center;padding-top:30px;font-family: 'Lato', sans-serif;">Navigation</h3>
-      <ul style="padding-top:30px;text-align:center" class="list-unstyled list-inline">
-          <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="index.html">Home</a></li>
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="aboutus.html">About</a></li>
-        <li> <a class="footer_links" href="contactus.php">Contact</a></li>
-      </ul>
-
-      <ul style="padding-top:10px;text-align:center" class="list-unstyled list-inline">
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="student_how.html">How it works</a></li>
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="index.html">Login</a></li>
-        <li> <a class="footer_links" style="" href="register.html">Register</a></li>
-      </ul>
-
-		</div>
-
-		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
-        <center><img src="images/Logo.png"></center>
-        <center><ul style="padding-top:0px;" class="list-unstyled list-inline">
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="sitemap.html">Sitemap</a></li>
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="privacy.html">Privacy Policy</a></li>
-        <li> <a class="footer_links" href="service_terms.html">Terms of Service</a></li>
-        </ul></center>
-		</div>
-	</div>
+  <?php include("content_pages/footer.html"); ?>
 </div>
 
 </body>

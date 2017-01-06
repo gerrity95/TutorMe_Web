@@ -2,18 +2,18 @@
 
 session_start();
 include("connection.php"); //Establising connection with the database
-//include("queries.php");
+//include ("query.php");
 
 $error=""; //variable to store error message;
 
-if(isset($_POST['submit']))
+if(isset($_POST['login-submit']))
 {
 	if(empty($_POST['username']) || empty($_POST['password']))
 	{
 		$error = "Both fields are required";
 		echo "<script language='javascript'>
-		alert('Both fields required');
-	</script>";
+			alert('Both fields required');
+		</script>";
 	}
 	else
 	{
@@ -21,9 +21,8 @@ if(isset($_POST['submit']))
 		$user = $_POST['username'];
 		$pass = $_POST['password'];
 
-		//SQL Query to fetch info of registered users and find a match
 
-		//Used to check if the user is fully registered:
+		//Used to check if the user has fully registered.
 		$check_reg = "SELECT full_reg FROM users WHERE password='$pass' and username='$user'";
 
 		$result = $conn->query($check_reg)->fetch_object()->full_reg;
@@ -38,20 +37,23 @@ if(isset($_POST['submit']))
 
 			if ($result == "false")
 			{
-				header("Location: register_full.php"); //This means the user hasn't fully registered, will be directed to here
+				header("Location: ./register_full.php");
 			}
 			else {
-				header("Location: ./tutor_pages/home.php"); // Redirect to another page - It's at tutor_pages for test purposes
+				header("Location: ./tutor_pages/home.php"); // Redirect to another page
 			}
 		}
 		else
 		{
 			$error = "Username or Password is invalid";
+			$error = "Both fields are required";
+			echo "<script language='javascript'>
+				alert('Username or Password is invalid.');
+			</script>";
 		}
 
 
 	}
 }
-
 
 ?>
