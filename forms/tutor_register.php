@@ -1,4 +1,4 @@
-<?php include("../backend/tut_fullreg.php") ?>
+<?php include("backend/tut_fullreg.php") ?>
 
 <html>
 <head>
@@ -8,7 +8,7 @@
 
   <div style="margin-top:50px" class="">
     <h3 class="general_text">Tutor Registration for TutorMe</h3><br>
-     <form>
+     <form action="" method="POST">
      <div class="form-group">
        <label for="firstname" class="h4 general_text">First Name *</label>
           <input style="border-radius:5px" type="text" class="form-control" name="firstname" id="inputFirstName" placeholder="First Name" required>
@@ -39,7 +39,7 @@
      <input style="border-radius:5px" type="text" class="form-control" name="subjects" id="inputSubjects" placeholder="Subjects" required>
      <div class="help-block with-errors"></div>
  </div><br>
-      <input type="submit" name="submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">
+      <input type="submit" name="tutorreg-submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">
       <p class="general_text">* All fields required</p>
 <br>
 </form>

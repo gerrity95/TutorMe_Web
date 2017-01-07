@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap stylesheets -->
-  <title>Student Home</title> <!-- Potentially change to the user's name -->
+  <title>Tutor Home</title> <!-- Potentially change to the user's name -->
 <!-- To incorporate Lato - a Google font -->
  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'  type='text/css'>
 

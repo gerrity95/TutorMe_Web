@@ -35,12 +35,22 @@ if(isset($_POST['login-submit']))
 		{
 			$_SESSION['username'] = $user;
 
+			$check_userType = "SELECT user_type FROM users WHERE username = '$user'";
+
+			$userType = $conn->query($check_userType)->fetch_object()->user_type;
+
 			if ($result == "false")
 			{
 				header("Location: ./register_full.php");
 			}
 			else {
-				header("Location: ./tutor_pages/home.php"); // Redirect to another page
+
+				if($userType == "student")
+				{
+						header("Location: ./student_pages/home.php"); // Redirect to another page
+				} else {
+						header("Location: ./tutor_pages/home.php"); // Redirect to another page
+				}
 			}
 		}
 		else

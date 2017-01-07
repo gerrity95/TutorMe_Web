@@ -1,7 +1,6 @@
 <?php
 include("backend/connection.php");
 include ("backend/check.php");
-include("forms/stu_fullreg.php");
 ?>
 
 <!DOCTYPE html>

@@ -8,12 +8,12 @@ include("backend/loginserv.php");
         <form id="" action="" method="POST" role="form">
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
+                <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" required>
             </div>
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
+                <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" required>
             </div>
 
             <div class="form-group">
