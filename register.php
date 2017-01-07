@@ -103,10 +103,10 @@ if((isset($_SESSION['username']) != ''))
 			 <form action="" method="POST">
 			 <div class="form-group">
 				<label style="color:white" class="radio-inline">
-					<input type="radio" name="optradio" required>Tutor
+					<input type="radio" name="optradio" value="tutor" required>Tutor
 				</label>
 				<label style="color:white" class="radio-inline">
-					<input type="radio" name="optradio" required>Student
+					<input type="radio" name="optradio" value="student" required>Student
 				</label>
 			</div>
 			 <div class="form-group">

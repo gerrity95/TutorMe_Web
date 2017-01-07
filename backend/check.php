@@ -2,9 +2,9 @@
 
 include("connection.php");
 session_start();
-$user_check=$_SESSION['username'];
+$userSession=$_SESSION['username'];
 
-$sql = mysqli_query($conn, "SELECT username FROM users WHERE username = '$user_check'");
+$sql = mysqli_query($conn, "SELECT username FROM users WHERE username = '$userSession'");
 
 $row=mysqli_fetch_array($sql, MYSQLI_ASSOC);
 
@@ -12,9 +12,9 @@ $check_reg = "SELECT user_type FROM users WHERE username = '$userSession'";
 
 $userType = $conn->query($check_reg)->fetch_object()->user_type;
 
-$login_user=$row['user'];
+$login_user=$row['username'];
 
-if(!isset($user_check))
+if(!isset($userSession))
 {
 	header("Location: login.php");
 }

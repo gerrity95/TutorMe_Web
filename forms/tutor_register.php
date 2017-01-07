@@ -1,3 +1,5 @@
+<?php include("../backend/tut_fullreg.php") ?>
+
 <html>
 <head>
 

@@ -1,5 +1,7 @@
 <?php
+include("backend/connection.php");
 include ("backend/check.php");
+include("forms/stu_fullreg.php");
 ?>
 
 <!DOCTYPE html>
@@ -86,7 +88,6 @@ include ("backend/check.php");
 
   		<div style="margin-top:50px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
         <?php
-        $userType = "student";
         if ($userType == "student"){
           include 'forms/student_register.php';
         } else {
