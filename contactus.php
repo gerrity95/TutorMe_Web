@@ -185,55 +185,14 @@
 	<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.636004935249!2d-6.259728683839165!3d53.38556197998734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e113b293d85%3A0xc81174de93fa22d6!2sSchool+of+Computing%2C+Dublin+City+University!5e0!3m2!1sen!2sie!4v1480694368387"></iframe>
 
 </div>
-
-
 <div class="container-fluid" style="margin-bottom:20px;">
-	<div style="border-top:1px solid #dbdfe5" class="row">
-		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
-		<br>
-		<h3 style="text-align:center;font-family: 'Lato', sans-serif;">Connect with us.</h3>
-		<center><ul style="padding-top:30px;" class="social-icons icon-rounded icon-zoom  list-unstyled list-inline">
-		<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-		<li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
-		<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-		</ul></center>
-		<p style="text-align:center"><br>&#169; TutorMe, Mark Gerrity, James Burke</p>
-		</div>
-
-		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
-      <h3 style="text-align:center;padding-top:30px;font-family: 'Lato', sans-serif;">Navigation</h3>
-      <ul style="padding-top:30px;text-align:center" class="list-unstyled list-inline">
-          <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="index.html">Home</a></li>
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="aboutus.html">About</a></li>
-        <li> <a class="footer_links" href="contactus.php">Contact</a></li>
-      </ul>
-
-      <ul style="padding-top:10px;text-align:center" class="list-unstyled list-inline">
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="student_how.html">How it works</a></li>
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="index.html">Login</a></li>
-        <li> <a class="footer_links" style="" href="register.html">Register</a></li>
-      </ul>
-
-		</div>
-
-		<div style="border-left:1px solid #dbdfe5" class="col-xs-4">
-        <center><img src="images/Logo.png"></center>
-        <center><ul style="padding-top:0px;" class="list-unstyled list-inline">
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="sitemap.html">Sitemap</a></li>
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="privacy.html">Privacy Policy</a></li>
-        <li> <a class="footer_links" href="service_terms.html">Terms of Service</a></li>
-        </ul></center>
-		</div>
-	</div>
+  <?php include("content_pages/footer.html"); ?>
 </div>
-
-
-
-</body>
 <!--
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 -->
 <script type="text/javascript" src="js/contact.js"></script>
+</body>
 
 </html>
