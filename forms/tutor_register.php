@@ -20,9 +20,8 @@
          <div class="help-block with-errors"></div>
      </div><br>
      <div class="form-group">
-     <label for="location" class="h4 general_text">Location *</label>
-        <input style="border-radius:5px" type="text" class="form-control" name="location" id="inputLocation" placeholder="Location" required>
-        <div class="help-block with-errors"></div>
+     <label for="location" class="h4 general_text">Location *</label><br>
+        <?php include("dropdown_files/locationDrop.php"); ?>
     </div><br>
     <div class="form-group">
     <label for="phone" class="h4 general_text">Phone Number *</label>

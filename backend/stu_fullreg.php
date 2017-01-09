@@ -1,8 +1,5 @@
 <!-- This is the backend for the student full registration form. -->
 <?php
-include("connection.php"); //Establising connection with the database
-include("check.php");
-
 $error=""; //variable to store error message;
 
 if(isset($_POST['stu-register_submit']))

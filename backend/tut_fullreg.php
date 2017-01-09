@@ -24,9 +24,12 @@ if(isset($_POST['tutorreg-submit']))
 		$student_insert = "INSERT INTO user_tutor (user_id, price, subject) VALUES ((SELECT user_id FROM users WHERE username = '$userSession'), '$price', '$subject')";
 		$general_insert = "UPDATE `users` SET first_name='$firstname', surname='$surname', location='$location', phone_number='$phoneNum', full_reg='true' WHERE username='$userSession'";
 
+		$location_insert = "UPDATE users SET location = (SELECT location_name FROM Location WHERE location_id='$location') WHERE username='$userSession'";
+
 
 		mysqli_query($conn, $general_insert);
 		mysqli_query($conn, $student_insert);
+		mysqli_query($conn, $location_insert);
 
 		echo "<script language='javascript'>
 			alert('Your account has been created succesfully');
