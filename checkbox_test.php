@@ -32,17 +32,27 @@
 </head>
 <body style="background:#dbdfe5">
 
-                <div class="checkbox checkbox-circle checkbox_scroller">
-    <input id="checkbox1" class="styled" type="checkbox"><label for="checkbox1">Checkbox1 </label><br>
-    <input id="checkbox2" class="styled" type="checkbox"><label for="checkbox2">Checkbox2 </label><br>
-    <input id="checkbox3" class="styled" type="checkbox"><label for="checkbox3">Checkbox3 </label><br>
-    <input id="checkbox4" class="styled" type="checkbox"><label for="checkbox4">Checkbox4 </label><br>
-    <input id="checkbox5" class="styled" type="checkbox"><label for="checkbox5">Checkbox5 </label><br>
-    <input id="checkbox6" class="styled" type="checkbox"><label for="checkbox6">Checkbox6 </label><br>
-    <input id="checkbox7" class="styled" type="checkbox"><label for="checkbox7">Checkbox7 </label><br>
-    <input id="checkbox8" class="styled" type="checkbox"><label for="checkbox8">Checkbox8 </label><br>
-    <input id="checkbox9" class="styled" type="checkbox"><label for="checkbox9">Checkbox9 </label><br>
-    <input id="checkbox10" class="styled" type="checkbox"><label for="checkbox10">Checkbox10 </label><br>
+                <div class="checkbox checkbox-info checkbox_scroller" style="height: 150px;width:350px;">
+    <input id="jc1" class="styled" type="checkbox"><label for="jc1">jc1 </label><br>
+    <input id="jc2" class="styled" type="checkbox"><label for="jc2">jc2 </label><br>
+    <input id="jc3" class="styled" type="checkbox"><label for="jc3">jc3 </label><br>
+    <input id="jc4" class="styled" type="checkbox"><label for="jc4">jc4 </label><br>
+    <input id="jc5" class="styled" type="checkbox"><label for="jc5">jc5 </label><br>
+    <input id="jc6" class="styled" type="checkbox"><label for="jc6">jc6 </label><br>
+    <input id="jc7" class="styled" type="checkbox"><label for="jc7">jc7 </label><br>
+    <input id="jc8" class="styled" type="checkbox"><label for="jc8">jc8 </label><br>
+    <input id="jc9" class="styled" type="checkbox"><label for="jc9">jc9 </label><br>
+    <input id="jc10" class="styled" type="checkbox"><label for="jc10">jc10 </label><br>
+    <input id="jc11" class="styled" type="checkbox"><label for="jc11">jc11 </label><br>
+    <input id="jc12" class="styled" type="checkbox"><label for="jc12">jc12 </label><br>
+    <input id="jc13" class="styled" type="checkbox"><label for="jc13">jc13 </label><br>
+    <input id="jc14" class="styled" type="checkbox"><label for="jc14">jc14 </label><br>
+    <input id="jc15" class="styled" type="checkbox"><label for="jc15">jc15 </label><br>
+    <input id="jc16" class="styled" type="checkbox"><label for="jc16">jc16 </label><br>
+    <input id="jc17" class="styled" type="checkbox"><label for="jc17">jc17 </label><br>
+    <input id="jc18" class="styled" type="checkbox"><label for="jc18">jc18 </label><br>
+    <input id="jc19" class="styled" type="checkbox"><label for="jc19">jc19 </label><br>
+    <input id="jc20" class="styled" type="checkbox"><label for="jc20">jc20 </label><br>
 </div>
 
                       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
