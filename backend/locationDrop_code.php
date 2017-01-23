@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/my_style.css">
+
 <?php
 
 //include("connection.php");
@@ -6,7 +8,8 @@ $sql = $conn->query("SELECT location_id, location_name from Location");
 
 echo "<html>";
     echo "<body>";
-    echo "<select name='location'>";
+    echo "<div>";
+    echo "<select style='' name='location' class='selectpicker show-tick' data-live-search='true'>";
 
     while ($row = $sql->fetch_assoc()) {
 
@@ -18,6 +21,7 @@ echo "<html>";
     }
 
         echo "</select>";
+        echo "</div>";
         echo "</body>";
         echo "</html>";
 

@@ -31,17 +31,7 @@
    <label for="phone_number" class="h4 general_text">School *</label>
       <input style="border-radius:5px" type="text" class="form-control" name="school" id="inputSchool" placeholder="Phone Number" required>
       <div class="help-block with-errors"></div>
-  </div><br><!--
-  <div class="form-group">
-  <label for="phone_number" class="h4 general_text">Cycle *</label>
-     <input style="border-radius:5px" type="text" class="form-control" name="cycle" id="inputCycle" placeholder="Phone Number" required>
-     <div class="help-block with-errors"></div>
- </div><br>
- <div class="form-group">
- <label for="subjects" class="h4 general_text">Subjects *</label>
-    <input style="border-radius:5px" type="text" class="form-control" name="subjects" id="inputSubjects" placeholder="Phone Number" required>
-    <div class="help-block with-errors"></div>
-</div><br> -->
+  </div><br>
   <?php include("dropdown_files/cycleSubject.php"); ?>
 
       <input type="submit" name="stu-register_submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">

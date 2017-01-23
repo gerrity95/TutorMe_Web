@@ -9,11 +9,14 @@ include("cycleSubject_code.php");
  </head>
 <body>
 
-<span>Cycle</span>
-<select name="cycle" id="cycleChoice"></select>
-<span>Subjects</span>
-<select name="subjects" id="subjectChoice"></select>
-
+<div class="form-group">
+  <label for="cycle" class="h4 general_text">Cycle *</label><br>
+  <select name="cycle" id="cycleChoice" class="form-control"></select>
+</div><br>
+<div class="form-group">
+  <label for="cycle" class="h4 general_text">Subject(s) *</label><br>
+  <select name="subjects" id="subjectChoice" class="form-control"></select>
+</div><br>
 
 </body>
 </html>
