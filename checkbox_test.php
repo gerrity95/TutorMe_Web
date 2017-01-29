@@ -14,42 +14,19 @@ echo "<html>";
                       unset($id, $name);
                       $id = $row['subject_id'];
                       $name = $row['subject_name'];
-                      echo '<input id="'.$name.'" type="checkbox" value="'.$id.'"><label for="'.$name.'">'.$name.'</label><br>';
+                      echo '<input id="'.$name.'" name="checkso[]" type="checkbox" value="'.$id.'"><label for="'.$name.'">'.$name.'</label><br>';
     }
 
-        echo "</select>";
         echo "</div>";
         echo "</body>";
         echo "</html>";
+
+$test = "hello";
+
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap stylesheets -->
-    <title>TutorMe Login</title>
-	<!-- To incorporate Lato - a Google font -->
-	 <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'  type='text/css'>
 
-	<!-- For social media buttons -->
-	<!-- The stylesheet where we add our own stylings -->
-
-  <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
-
-
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="css/bootstrap-select.css">
-  <link rel="stylesheet" href="css/my_style.css">
-  <link rel="stylesheet" href="social_media/css/button_style.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/checkbox.css">
-
-
-</head>
 <body style="background:#dbdfe5">
+  <!--
 <center><h4>Manual Input</h4></center>
 <form action="" method="POST">
                 <div class="checkbox checkbox-info checkbox_scroller" style="height: 150px;width:350px;">
@@ -77,7 +54,7 @@ echo "<html>";
 
 <center><input type="submit" name="register-submit" value="Register" id="reg-submit" class="btn btn-success "></center>
 </form>
-
+-->
 
                       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
                       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
