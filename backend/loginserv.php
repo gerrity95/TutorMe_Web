@@ -19,6 +19,7 @@ if(isset($_POST['login-submit']))
 	{
 		//Define $user and $pass
 		$user = $_POST['username'];
+		$pass = md5($_POST['password']);
 		$pass = sha1($_POST['password']);
 
 
