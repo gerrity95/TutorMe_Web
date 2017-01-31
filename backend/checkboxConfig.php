@@ -1,8 +1,9 @@
 <?php
 
-include("backend/connection.php");
+//include("backend/connection.php");
+//include("backend/check.php");
 
-if(isset($_POST['submit']))
+if(isset($_POST['tutorreg-submit']))
 {
 
   $jc_subjects = $_POST['jc'];
@@ -13,8 +14,6 @@ if(isset($_POST['submit']))
   $lc_count = count($lc_subjects);
   $uni_count = count($uni_subjects);
 
-  $theUserID = "2";
-  $userSession = "joe_bloggs";
 
   if(!empty($_POST['jc']))
   {

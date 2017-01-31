@@ -3,11 +3,7 @@
 
 $lc_sql = $conn->query("SELECT subject_id, subject_name from Subjects WHERE cycle_id = '2' ORDER BY  `Subjects`.`subject_name` ASC ");
 
-echo "<html>";
-    echo "<body>";
-    echo "<center><h4>Leaving Cert Subjects</h4></center>";
-    //echo "<form action='' method='POST' style=''>";
-    echo "<div class='checkbox checkbox-info checkbox_scroller' style='height:150px;width:350px;'>";
+echo "<div class='checkbox checkbox-info checkbox_scroller' style='height:150px;width:350px;'>";
     //echo "<select style='' name='location' class='selectpicker show-tick' data-live-search='true'>";
 
     while ($lc_row = $lc_sql->fetch_assoc()) {
@@ -20,7 +16,5 @@ echo "<html>";
         echo "</div>";
         //echo "<center><input onClick='' type='submit' value='Submit' name='submit'></center>";
       //  echo "</form>";
-        echo "</body>";
-        echo "</html>";
 
 ?>

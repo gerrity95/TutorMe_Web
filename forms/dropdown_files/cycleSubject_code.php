@@ -8,7 +8,6 @@ function State() {
   $('#cycleChoice').empty();
   $('#cycleChoice').append("<option>Loading.....</option>");
   $('#subjectChoice').append("<option value='0'>--Select Subject--</option>");
-
   $.ajax({
     type:"POST",
     url:"backend/cycleSubject_backend.php",
@@ -25,11 +24,9 @@ function State() {
     }
   });
 }
-
 function District(sid) {
   $('#subjectChoice').empty();
   $('#subjectChoice').append("<option>Loading.....</option>");
-
   $.ajax({
     type:"POST",
     url:"backend/subject_backend.php?sid="+sid,
@@ -46,7 +43,6 @@ function District(sid) {
     }
   });
 }
-
 $(document).ready(function() {
   State();
   $("#cycleChoice").change(function() {

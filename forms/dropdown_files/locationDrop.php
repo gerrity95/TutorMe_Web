@@ -1,5 +1,4 @@
 <?php
-
 ?>
 
 <form action="" method="POST" style="text-align:center;">
@@ -10,5 +9,4 @@
 -->
 
 <script>
-
 </script>

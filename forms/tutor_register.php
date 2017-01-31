@@ -1,4 +1,6 @@
-<?php include("backend/tut_fullreg.php") ?>
+<?php
+include("backend/tut_fullreg.php");
+include("backend/checkboxConfig.php"); ?>
 
 <html>
 <head>
@@ -28,27 +30,24 @@
        <input style="border-radius:5px" type="text" class="form-control" name="phone" id="inputPhoneNumber" placeholder="Phone Number" required>
        <div class="help-block with-errors"></div>
    </div><br>
-   <div class="form-group"
+   <div class="form-group">
    <label for="price" class="h4 general_text">Price *</label>
       <input style="border-radius:5px" type="text" class="form-control" name="price" id="inputPrice" placeholder="Price" required>
       <div class="help-block with-errors"></div>
   </div><br>
   <div class="form-group">
-    <label for="jc" class="h4 general_text">Junior Cert Subjects</label><br>
-    <?php include("dropdown_files/jc_subjectDrop.php"); ?>
-    <!-- Change to include jc_checkbox -->
+    <label for="jc" class="h4 general_text">Junior Cert Subjects</label>
+    <?php include("checkboxes/jc_checkbox.php"); ?>
   </div>
   <div class="form-group">
-    <label for="lc" class="h4 general_text">Leaving Cert Subjects</label><br>
-      <?php include("dropdown_files/lc_subjectDrop.php"); ?>
-      <!-- Change to include jc_checkbox -->
+    <label for="lc" class="h4 general_text">Leaving Cert Subjects</label>
+      <?php include("checkboxes/lc_checkbox.php"); ?>
     </div>
     <div class="form-group">
-      <label for="tl" class="h4 general_text">Third Level Subjects</label><br>
-      <?php include("dropdown_files/tl_subjectDrop.php"); ?>
-      <!-- Change to include jc_checkbox -->
+      <label for="tl" class="h4 general_text">Third Level Subjects</label>
+      <?php include("checkboxes/uni_checkbox.php"); ?>
  </div>
-      <input type="submit" name="tutorreg-submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">
+      <br><input type="submit" name="tutorreg-submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">
       <p class="general_text">* All fields required</p>
 <br>
 </form>
