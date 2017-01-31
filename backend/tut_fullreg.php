@@ -5,7 +5,7 @@ $error=""; //variable to store error message;
 
 if(isset($_POST['tutorreg-submit']))
 {
-	if(empty($_POST['firstname']) || empty($_POST['surname']) || empty($_POST['location']) || empty($_POST['phone']) || empty($_POST['price']) || empty($_POST['jc_subjects']) || empty($_POST['lc_subjects']) || empty($_POST['tl_subjects']))
+	if(empty($_POST['firstname']) || empty($_POST['surname']) || empty($_POST['location']) || empty($_POST['phone']) || empty($_POST['price']))
 	{
 		$error = "All fields are required";
 	}
@@ -16,9 +16,6 @@ if(isset($_POST['tutorreg-submit']))
     $location = $_POST['location'];
     $phoneNum = $_POST['phone'];
     $price = $_POST['price'];
-		$jc_subjects = $_POST['jc_subjects'];
-		$lc_subjects = $_POST['lc_subjects'];
-		$tl_subjects = $_POST['tl_subjects'];
 
 
     //Get the username by getting $userSession from check.php

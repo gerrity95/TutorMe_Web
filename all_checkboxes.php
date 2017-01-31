@@ -1,31 +1,8 @@
 <?php
+  include("checkbox_testForm.php");
 
-include("backend/connection.php");
+ ?>
 
-if(isset($_POST['submit']))
-{
-  if(empty($_POST['checkso']))
-  {
-    echo "<script language='javascript'>
-    alert('all fields are required');
-    </script>";
-  }
-  $answer = $_POST['checkso'];
-  $count = count($answer);
-  $theUserID = "2";
-  $userSession = "joe_bloggs";
-
-  for($i=0;$i <= count; $i++)
-  {
-    $addthem = "INSERT INTO tutor_subjects (user_id, cycle_id, subject_id) VALUES ((SELECT user_id FROM users WHERE username = '$userSession'), '1', '$answer')";
-  }
-
-  //$jc_insert = "UPDATE user_tutor SET jc_subjects = (SELECT subject_name FROM Subjects WHERE subject_id='$answer') WHERE user_id='$theUserID'";
-
-  //mysqli_query($conn, $jc_insert);
-
-}
-?>
 
 <!DOCTYPE html>
 <html>
@@ -54,23 +31,20 @@ if(isset($_POST['submit']))
 
 
 </head>
-<body style="background:#dbdfe5">
 
+<body>
+<form method="POST" action="">
+  <?php
 
-<form action="" method="POST" style="">
-<?php include("checkbox_test.php");
- ?>
+  include("jc_checkbox.php");
+  include("lc_checkbox.php");
+  include("uni_checkbox.php");
 
-<center><input onClick="" type="submit" value="Submit" name="submit"></center>
+  ?>
+
+  <center><input onClick='' type='submit' value='Submit' name='submit'></center>
+
 </form>
 
-<script>
-var sauce = "<?php echo $test; ?>";
-
-function check()
-{
-  alert(sauce);
-}
-</script>
 
 </body>

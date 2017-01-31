@@ -25,6 +25,7 @@ include ("backend/check.php");
 <link rel="stylesheet" href="css/my_style.css">
 <link rel="stylesheet" href="social_media/css/button_style.css">
 <link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/checkbox.css">
 
 </head>
 
