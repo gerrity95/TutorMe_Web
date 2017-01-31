@@ -36,14 +36,17 @@
   <div class="form-group">
     <label for="jc" class="h4 general_text">Junior Cert Subjects</label><br>
     <?php include("dropdown_files/jc_subjectDrop.php"); ?>
+    <!-- Change to include jc_checkbox -->
   </div>
   <div class="form-group">
     <label for="lc" class="h4 general_text">Leaving Cert Subjects</label><br>
       <?php include("dropdown_files/lc_subjectDrop.php"); ?>
+      <!-- Change to include jc_checkbox -->
     </div>
     <div class="form-group">
       <label for="tl" class="h4 general_text">Third Level Subjects</label><br>
       <?php include("dropdown_files/tl_subjectDrop.php"); ?>
+      <!-- Change to include jc_checkbox -->
  </div>
       <input type="submit" name="tutorreg-submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">
       <p class="general_text">* All fields required</p>

@@ -4,22 +4,48 @@ include("backend/connection.php");
 
 if(isset($_POST['submit']))
 {
-  if(empty($_POST['checkso']))
-  {
-    echo "<script language='javascript'>
-    alert('all fields are required');
-    </script>";
-  }
-  $answer = $_POST['checkso'];
-  $count = count($answer);
+
+  $jc_subjects = $_POST['jc'];
+  $lc_subjects = $_POST['lc'];
+  $uni_subjects = $_POST['uni'];
+
+  $jc_count = count($jc_subjects);
+  $lc_count = count($lc_subjects);
+  $uni_count = count($uni_subjects);
+
   $theUserID = "2";
   $userSession = "joe_bloggs";
 
-  for($i=0;$i < $count; $i++)
+  if(!empty($_POST['jc']))
   {
+    for($i=0;$i < $jc_count; $i++)
+    {
 
-    $addthem = "INSERT INTO tutor_subjects (user_id, cycle_id, subject_id) VALUES ((SELECT user_id FROM users WHERE username = '$userSession'), '1', '$answer[$i]')";
-    mysqli_query($conn, $addthem);
+      $addjc = "INSERT INTO tutor_subjects (user_id, cycle_id, subject_id) VALUES ((SELECT user_id FROM users WHERE username = '$userSession'), '1', '$jc_subjects[$i]')";
+      mysqli_query($conn, $addjc);
+    }
   }
+
+  if(!empty($_POST['lc']))
+  {
+    for($i=0;$i < $lc_count; $i++)
+    {
+
+      $addlc = "INSERT INTO tutor_subjects (user_id, cycle_id, subject_id) VALUES ((SELECT user_id FROM users WHERE username = '$userSession'), '2', '$lc_subjects[$i]')";
+      mysqli_query($conn, $addlc);
+    }
+  }
+
+  if(!empty($_POST['uni']))
+  {
+    for($i=0;$i < $lc_count; $i++)
+    {
+
+      $adduni = "INSERT INTO tutor_subjects (user_id, cycle_id, subject_id) VALUES ((SELECT user_id FROM users WHERE username = '$userSession'), '3', '$uni_subjects[$i]')";
+      mysqli_query($conn, $adduni);
+    }
+  }
+
+
 }
 ?>
