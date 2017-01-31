@@ -21,8 +21,8 @@ if(isset($_POST['register-submit']))
 		$email = $_POST['email'];
 		$user = $_POST['username'];
 		$pass = $_POST['password'];
-		$pass = md5($post['password']);
-		
+		$pass = md5($post["password"]);
+
 
 		//We will need 3 queries, the instert query, a query to check against other emails and a query to check against other usernames
 
