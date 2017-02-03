@@ -19,13 +19,13 @@
 
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="../css/bootstrap-select.css">
+<link rel="stylesheet" href="css/bootstrap-select.css">
 <link rel="stylesheet" href="../css/my_style.css">
 <link rel="stylesheet" href="../social_media/css/button_style.css">
 <link rel="stylesheet" href="../css/animate.css">
 
 </head>
-<body style="background:#dbdfe5">
+<body style="background-color:#ededed">
   <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container-fluid">
@@ -62,35 +62,30 @@
   </div>
   </nav>
 
-  <div class="jumbotron">
-      <div class="container-fluid">
-  	<div class="page-header">
-  		<h1>TutorMe <small style="font-family: 'Source Sans Pro', sans-serif;">Find the perfect tutor.</small></h1>
-  	</div>
-          <p style="" class="lead">TutorMe makes sure you never have to worry about a grind again.</p>
-          <p><a href="register.html" target="_blank" class="btn btn-success btn-lg">Get started today</a></p>
-      </div>
-  </div>
-
   <div class="header-2">
-  	<div class="page-header header-filter" style="background-image: url('../images/blurred-background-4.jpg');background-size:cover;min-height:750px">
+  	<div class="page-header header-filter" style="">
   	   <div class="container-fluid">
 
          <div class="row"> <!-- Upcoming Grinds Row -->
            <div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 ">
             <!-- Put logo in here -->
-             <h2><small style="color:white;font-family: 'Lato', sans-serif;">Message about upcoming grinds</small> </h2>
+             <h2><small style="font-family: 'Lato', sans-serif;">Welcome Message</small> </h2>
 
            </div>
 
-           <div style="margin-top:60px;" class="index_search_style col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-             <p>Include Upcoming Grinds Here
+           <div style="margin-top:60px;padding-bottom:20px" class="index_search_style col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+             <h3 style="text-align:center;font-family: 'Lato', sans-serif;">Upcoming Grinds</h3><br>
+             <p style="">Name: </p>
+             <p style="">Location: </p>
+             <p style="">Address: </p>
+             <p style="">Price: </p>
+             <p style="">Date/Time: </p>
           </div>
          </div>
 
   		    <div class="row"> <!-- Search Bar Row -->
         		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 ">
-             <h2><small style="color:white;font-family: 'Lato', sans-serif;">Message about searching for a tutor</small> </h2>
+             <h2><small style="font-family: 'Lato', sans-serif;">Message API Section</small> </h2>
             </div>
 
         		<div style="margin-top:60px;" class="index_search_style col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
@@ -102,7 +97,9 @@
             <form id="" action="" method="POST" role="form">
               <div class="row">
                 <div class="form-group col-xs-6">
+
                     <select id="location" title="Location" class="selectpicker show-tick form-control" data-live-search="true">
+                      <option value="" disabled selected style="display: none;">Location</option>
                       <option>Sligo</option>
                       <option>Dublin</option>
                       <option>Cork</option>
@@ -110,7 +107,8 @@
                 </div>
                 <div class="form-group col-xs-6">
 
-                  <select id="subject" title="Subject" class="" data-live-search="true">
+                  <select id="subject" title="Subject" class="selectpicker show-tick form-control" data-live-search="true">
+                    <option value="" disabled selected style="display: none;">Subject</option>
                     <option>Maths</option>
                     <option>Spanish</option>
                     <option>English</option>
@@ -121,7 +119,7 @@
               <div class="row">
                 <div class="form-group col-xs-6">
 
-                  <select id="cycle" title="Cycle" class="" data-live-search="true">
+                  <select id="cycle" title="Cycle" class="selectpicker show-tick form-control" data-live-search="true">
                     <option value="" disabled selected style="display: none;">Cycle</option>
                     <option>Junior Certificate</option>
                     <option>Leaving Certificate</option>
@@ -130,7 +128,7 @@
                 </div>
                 <div class="form-group col-xs-6">
                         <div class="col-xs-10 pull-right">
-                            <input style="" class="" type="image" src="../images/small_search1.png" name="login-submit" id="login-submit" tabindex="2" class=""> <!-- Change this a search icon -->
+                          <input type="submit" value="Search" class="btn btn-success pull-right">
                         </div>
                 </div>
               </div>
@@ -143,21 +141,11 @@
             </div>
           </div>
 
-          <div class="row"> <!-- Messaging Row -->
-        		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 ">
-        		</div>
-
-        		<div style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-            </div>
-          </div>
-
           <div class="row"> <!-- Schedule Row -->
-        		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 ">
+        		<div style="margin-top:60px" class="index_search_style col-sm-12 col-md-8 col-lg-8 col-xs-offset-2 ">
+              <center><iframe style="padding-top:20px;padding-bottom:10px" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mark.gerrity2%40mail.dcu.ie&amp;color=%2329527A&amp;ctz=Europe%2FDublin" style="border-width:0" width="700" height="500" frameborder="0" scrolling="no"></iframe></center>
         		</div>
 
-        		<div style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-
-            </div>
           </div>
 
 
