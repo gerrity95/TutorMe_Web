@@ -152,7 +152,9 @@
         </div>
       </div>
     </div>
-
+    <div class="container-fluid" style="margin-bottom:20px;">
+      <?php include("../content_pages/user_footer.php"); ?>
+    </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
