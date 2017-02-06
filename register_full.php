@@ -1,6 +1,6 @@
 <?php
-include("backend/connection.php");
-include ("backend/check.php");
+include($root . "backend/connection.php");
+include($root . "backend/check.php");
 ?>
 
 <!DOCTYPE html>

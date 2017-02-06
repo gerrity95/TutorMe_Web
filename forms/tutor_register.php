@@ -1,6 +1,6 @@
 <?php
-include("backend/tut_fullreg.php");
-include("backend/checkboxConfig.php"); ?>
+include($root . "backend/tut_fullreg.php");
+include($root . "backend/checkboxConfig.php"); ?>
 
 <html>
 <head>
@@ -23,7 +23,7 @@ include("backend/checkboxConfig.php"); ?>
      </div><br>
      <div class="form-group">
      <label for="location" class="h4 general_text">Location *</label><br>
-        <?php include("dropdown_files/locationDrop.php"); ?>
+        <?php include($root . "forms/dropdown_files/locationDrop.php"); ?>
     </div><br>
     <div class="form-group">
     <label for="phone" class="h4 general_text">Phone Number *</label>
@@ -37,15 +37,15 @@ include("backend/checkboxConfig.php"); ?>
   </div><br>
   <div class="form-group">
     <label for="jc" class="h4 general_text">Junior Cert Subjects</label>
-    <?php include("checkboxes/jc_checkbox.php"); ?>
+    <?php include($root . "forms/checkboxes/jc_checkbox.php"); ?>
   </div>
   <div class="form-group">
     <label for="lc" class="h4 general_text">Leaving Cert Subjects</label>
-      <?php include("checkboxes/lc_checkbox.php"); ?>
+      <?php include($root . "forms/checkboxes/lc_checkbox.php"); ?>
     </div>
     <div class="form-group">
       <label for="tl" class="h4 general_text">Third Level Subjects</label>
-      <?php include("checkboxes/uni_checkbox.php"); ?>
+      <?php include($root . "forms/checkboxes/uni_checkbox.php"); ?>
  </div>
       <br><input type="submit" name="tutorreg-submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">
       <p class="general_text">* All fields required</p>

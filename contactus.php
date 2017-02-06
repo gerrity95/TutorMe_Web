@@ -1,3 +1,5 @@
+<?php include("backend/connection.php"); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -186,7 +188,7 @@
 
 </div>
 <div class="container-fluid" style="margin-bottom:20px;">
-  <?php include("content_pages/footer.html"); ?>
+  <?php include($root . "content_pages/footer.html"); ?>
 </div>
 <!--
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

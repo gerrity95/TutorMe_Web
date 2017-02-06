@@ -1,4 +1,4 @@
-<?php include("backend/stu_fullreg.php"); ?>
+<?php include($root . "backend/stu_fullreg.php"); ?>
 
 <html>
 <head>
@@ -20,7 +20,7 @@
      </div><br>
      <div class="form-group">
      <label for="location" class="h4 general_text">Location *</label><br>
-        <?php include("dropdown_files/locationDrop.php"); ?>
+        <?php include($root . "forms/dropdown_files/locationDrop.php"); ?>
     </div><br>
     <div class="form-group">
     <label for="phone_number" class="h4 general_text">Phone Number *</label>
@@ -32,7 +32,7 @@
       <input style="border-radius:5px" type="text" class="form-control" name="school" id="inputSchool" placeholder="Phone Number" required>
       <div class="help-block with-errors"></div>
   </div><br>
-  <?php include("dropdown_files/cycleSubject.php"); ?>
+  <?php include($root . "forms/dropdown_files/cycleSubject.php"); ?>
 
       <input type="submit" name="stu-register_submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">
       <p class="general_text">* All fields required</p>

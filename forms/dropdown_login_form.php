@@ -1,5 +1,5 @@
 <?php
-include("backend/loginserv.php");
+include($root . "backend/loginserv.php");
 ?>
 
 <ul class="dropdown-menu dropdown_width animated slideInRight" style="width:350px" role="menu">

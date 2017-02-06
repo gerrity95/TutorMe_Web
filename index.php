@@ -6,6 +6,7 @@ The below is not an ideal sollution, would be better if we could reference the q
 This is so if the user is already in a session, they are still redirected to the correct page
 */
 
+include("backend/connection.php");
 
 
 if((isset($_SESSION['username']) != ''))
@@ -82,7 +83,7 @@ if((isset($_SESSION['username']) != ''))
         <li><a href="register.html" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
         <li class="dropdown">
     <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
-  	<?php include("forms/dropdown_login_form.php"); ?>
+  	<?php include($root . "forms/dropdown_login_form.php"); ?>
 </li>
 
       </ul>
@@ -151,7 +152,7 @@ if((isset($_SESSION['username']) != ''))
 </div>
 
 <div class="container-fluid" style="margin-bottom:20px;">
-  <?php include("content_pages/footer.html"); ?>
+  <?php include($root . "content_pages/footer.html"); ?>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

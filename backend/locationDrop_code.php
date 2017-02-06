@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/my_style.css">
+<link rel="stylesheet" href="/TutorMe_Web/css/my_style.css">
 
 <?php
 
@@ -9,7 +9,7 @@ $sql = $conn->query("SELECT location_id, location_name from Location");
 echo "<html>";
     echo "<body>";
     echo "<div>";
-    echo "<select style='' name='location' class='selectpicker show-tick' data-live-search='true'>";
+    echo "<select style='' name='location' class='form-control' data-live-search='true'>";
 
     while ($row = $sql->fetch_assoc()) {
 

@@ -20,7 +20,7 @@ $login_user=$row['username'];
 
 if(!isset($userSession))
 {
-	header("Location: login.php");
+	header("Location: /TutorMe_Web/index.php");
 }
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include("backend/connection.php"); //Establising connection with the database
+include("connection.php"); //Establising connection with the database
 //include("queries.php");
 
 
