@@ -37,7 +37,7 @@
             </div>
             <div class="form-group col-xs-6">
                     <div class="col-xs-10 pull-right">
-                        <input style="" class="" type="image" src="images/small_search1.png" name="login-submit" id="login-submit" tabindex="2" class=""> <!-- Change this a search icon -->
+                        <input type="submit" value="Search" class="btn btn-success pull-right"> <!-- Change this a search icon -->
                     </div>
             </div>
           </div>

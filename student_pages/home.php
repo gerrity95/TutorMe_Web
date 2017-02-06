@@ -75,11 +75,11 @@
 
            <div style="margin-top:60px;padding-bottom:20px" class="index_search_style col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
              <h3 style="text-align:center;font-family: 'Lato', sans-serif;">Upcoming Grinds</h3><br>
-             <p style="">Name: </p>
-             <p style="">Location: </p>
-             <p style="">Address: </p>
-             <p style="">Price: </p>
-             <p style="">Date/Time: </p>
+             <p class="general_text" style="">Name: </p>
+             <p class="general_text" style="">Location: </p>
+             <p class="general_text" style="">Address: </p>
+             <p class="general_text" style="">Price: </p>
+             <p class="general_text" style="">Date/Time: </p>
           </div>
          </div>
 
@@ -88,12 +88,10 @@
              <h2><small style="font-family: 'Lato', sans-serif;">Message API Section</small> </h2>
             </div>
 
-        		<div style="margin-top:60px;" class="index_search_style col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-              <!--<li style="list-style: none;" class="dropdown">
-              <a href="#" onClick="getForm()" data-toggle="dropdown"><img alt="Tutor Search" class="search_images" src="../images/orig_search.png"></a>
-              <div id="search_form"></div>
-            </li> -->
-            <div class=""><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Find a Tutor </h3><br>
+        		<div style="margin-top:60px;" class=" col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+              <?php include("../forms/index_search.php"); ?>
+
+              <!--
             <form id="" action="" method="POST" role="form">
               <div class="row">
                 <div class="form-group col-xs-6">
@@ -132,10 +130,8 @@
                         </div>
                 </div>
               </div>
-                <!-- Error Message -->
-                <span><?php echo $error; ?></span>
 
-            </form>
+            </form> -->
         </div>
 
             </div>
