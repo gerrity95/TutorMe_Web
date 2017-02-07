@@ -11,11 +11,11 @@ if(isset($_POST['tutorreg-submit']))
 	}
 	else
 	{
-    $firstname = $_POST['firstname'];
-    $surname = $_POST['surname'];
-    $location = $_POST['location'];
-    $phoneNum = $_POST['phone'];
-    $price = $_POST['price'];
+    $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+    $surname = mysqli_real_escape_string($conn, $_POST['surname']);
+    $location = mysqli_real_escape_string($conn, $_POST['location']);
+    $phoneNum = mysqli_real_escape_string($conn, $_POST['phone']);
+    $price = mysqli_real_escape_string($conn, $_POST['price']);
 
 
     //Get the username by getting $userSession from check.php

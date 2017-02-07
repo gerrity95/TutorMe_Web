@@ -1,18 +1,22 @@
 <?php
 $errorMSG = "";
 
+
+//include("backend/connection.php");
+//include("check.php");
+
 // NAME
 if (empty($_POST["name"])) {
     $errorMSG = "Name is required ";
 } else {
-    $name = $_POST["name"];
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
 }
 
 // EMAIL
 if (empty($_POST["email"])) {
     $errorMSG .= "Email is required ";
 } else {
-    $email = $_POST["email"];
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
 }
 
 $EmailTo = "tutormeire@gmail.com";
@@ -35,12 +39,12 @@ $success = mail($Email, $Subject, 'Hello' .$name . "\n\nYour new password is: " 
 
 //Need to add new row for whether password changed or not. ********************************************************
 
-//Function to Change Password
-function change_password($user_id, $password) {
-  $user_id = (int)$user_id;
-  $password = md5($password);
+// Function to Change Password
+// function change_password($email, $password) {
+//  $email = (Var)$email;
+//  $password = md5($password);
 
-  mysql_db_query ("UPDATE 'users' SET 'password' = '$NewPassword' WHERE 'user_id' = $user_id");
+  //mysqli_query ($conn, "UPDATE 'users' SET 'password' = '$NewPassword' WHERE 'email' = $email");
 
 }
 

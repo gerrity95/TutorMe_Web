@@ -11,13 +11,13 @@ if(isset($_POST['stu-register_submit']))
 	}
 	else
 	{
-    $firstname = $_POST['firstname'];
-    $surname = $_POST['surname'];
-    $location = $_POST['location'];
-    $phoneNum = $_POST['phone'];
-    $schoolName = $_POST['school'];
-    $cycle = $_POST['cycle'];
-		$subjects = $_POST['subjects'];
+    $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+    $surname = mysqli_real_escape_string($conn, $_POST['surname']);
+    $location = mysqli_real_escape_string($conn, $_POST['location']);
+    $phoneNum = mysqli_real_escape_string($conn, $_POST['phone']);
+    $schoolName = mysqli_real_escape_string($conn, $_POST['school']);
+    $cycle = mysqli_real_escape_string($conn, $_POST['cycle']);
+		$subjects = mysqli_real_escape_string($conn, $_POST['subjects']);
 
     //Get the username by getting $userSession from check.php
     //Insert into the user, user_student and change value of full_reg

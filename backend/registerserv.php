@@ -17,16 +17,14 @@ if(isset($_POST['register-submit']))
 	{
 
 		//Define $email, $user and $pass
-		$user_type = $_POST['optradio'];
-		$email = $_POST['email'];
-		$user = $_POST['username'];
-		$pass = $_POST['password'];
+		$user_type = mysqli_real_escape_string($conn, $_POST['optradio']);
+		$email = mysqli_real_escape_string($conn, $_POST['email']);
+		$user = mysqli_real_escape_string($conn, $_POST['username']);
+		$pass = mysqli_real_escape_string($conn, $_POST['password']);
 		$pass = md5($_POST['password']);
 		$pass = sha1($_POST['password']);
 
-
-
-		//We will need 3 queries, the instert query, a query to check against other emails and a query to check against other usernames
+		//We will need 3 queries, the insert query, a query to check against other emails and a query to check against other usernames
 
 		$userCheck = mysqli_query($conn, "SELECT username FROM users WHERE username='$user'");
 		$emailCheck = mysqli_query($conn, "SELECT email FROM users WHERE email='$email'");

@@ -18,7 +18,7 @@ if(isset($_POST['login-submit']))
 	else
 	{
 		//Define $user and $pass
-		$user = $_POST['username'];
+		$user = mysqli_real_escape_string($conn, $_POST['username']);
 		$pass = md5($_POST['password']);
 		$pass = sha1($_POST['password']);
 

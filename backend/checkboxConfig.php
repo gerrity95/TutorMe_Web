@@ -6,9 +6,9 @@
 if(isset($_POST['tutorreg-submit']))
 {
 
-  $jc_subjects = $_POST['jc'];
-  $lc_subjects = $_POST['lc'];
-  $uni_subjects = $_POST['uni'];
+  $jc_subjects = mysqli_real_escape_string($conn, $_POST['jc']);
+  $lc_subjects = mysqli_real_escape_string($conn, $_POST['lc']);
+  $uni_subjects = mysqli_real_escape_string($conn, $_POST['uni']);
 
   $jc_count = count($jc_subjects);
   $lc_count = count($lc_subjects);
