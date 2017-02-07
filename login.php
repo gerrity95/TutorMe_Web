@@ -2,6 +2,7 @@
 include("backend/loginserv.php");
 
 
+/*
 if((isset($_SESSION['username']) != ''))
 {
 	$_SESSION['username'] = $user;
@@ -9,21 +10,20 @@ if((isset($_SESSION['username']) != ''))
 	$result = $conn->query($check_reg)->fetch_object()->full_reg;
 
 	echo "<script language='javascript'>
-	var x = $result;
-	alert(x);
+		var val = '$user';
+		alert(val);
+
 	</script>";
 
 	if ($result == "false")
 	{
 		header("Location: register_full.php");
-
-
 	}
 	else {
 		header("Location: tutor_pages/home.php"); // Redirect to another page
 	}
 }
-
+*/
 ?>
 
 

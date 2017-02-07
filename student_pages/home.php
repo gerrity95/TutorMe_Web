@@ -1,6 +1,6 @@
 <?php
-//include("/TutorMe_Web/backend/check.php");
-include("../backend/connection.php");
+include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
+//include($root . "backend/check.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -75,7 +75,7 @@ include("../backend/connection.php");
            </div>
 
            <div style="margin-top:60px;padding-bottom:20px" class="index_search_style col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-             <h3 style="text-align:center;font-family: 'Lato', sans-serif;">Upcoming Grinds</h3><br>
+             <h3 style="text-align:center;font-family: 'Lato', sans-serif;">Upcoming Grind</h3><br>
              <p class="general_text" style="">Name: </p>
              <p class="general_text" style="">Location: </p>
              <p class="general_text" style="">Address: </p>
@@ -99,11 +99,7 @@ include("../backend/connection.php");
                   </div>
       						<div class="form-group col-xs-6">
       							<label for="location" class="h4 general_text">Subject</label><br>
-      							<select id="subject" title="Subject" class="selectpicker show-tick form-control" data-live-search="true">
-      								<option>Maths</option>
-      								<option>Spanish</option>
-      								<option>English</option>
-      							</select>
+                      <?php include($root . "forms/dropdown_files/subjectDrop.php"); ?>
       						</div>
                 </div>
 
