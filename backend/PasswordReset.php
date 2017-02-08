@@ -2,8 +2,8 @@
 $errorMSG = "";
 
 
-//include("backend/connection.php");
-//include("check.php");
+include("backend/connection.php");
+include("check.php");
 
 // NAME
 if (empty($_POST["name"])) {
@@ -40,11 +40,11 @@ $success = mail($Email, $Subject, 'Hello' .$name . "\n\nYour new password is: " 
 //Need to add new row for whether password changed or not. ********************************************************
 
 // Function to Change Password
-// function change_password($email, $password) {
-//  $email = (Var)$email;
-//  $password = md5($password);
+  function change_password($email, $password) {
+  $email = (Var)$email;
+  $password = md5($NewPassword);
 
-  //mysqli_query ($conn, "UPDATE 'users' SET 'password' = '$NewPassword' WHERE 'email' = $email");
+  mysqli_query ($conn, "UPDATE 'users' SET 'password' = '$NewPassword' WHERE 'email' = $email");
 
 }
 

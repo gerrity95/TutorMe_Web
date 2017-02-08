@@ -17,15 +17,19 @@
                 </select>
             </div>
 						<div class="form-group col-xs-6">
-							<label for="location" class="h4 general_text">Subject</label><br>
+							<label for="subject" class="h4 general_text">Subject</label><br>
 							<select id="subject" title="Subject" class="selectpicker show-tick form-control" data-live-search="true">
 								<option>Maths</option>
 								<option>Spanish</option>
 								<option>English</option>
 							</select>
 						</div>
-          </div>
 
+					<div class="form-group col-xs-6">
+					  <label for="cycle" class="h4 general_text">Cycle</label><br>
+					  <select id="cycle" title="Cycle" class="selectpicker show-tick form-control"></select>
+					</div></div>
+				</div>
           <div class="row">
 						<div class="form-group col-xs-7">
                     <div class="col-xs-10">
