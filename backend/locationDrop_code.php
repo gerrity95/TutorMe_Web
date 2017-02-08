@@ -10,6 +10,7 @@ echo "<html>";
     echo "<body>";
     echo "<div>";
     echo "<select style='' name='location' class='form-control' data-live-search='true'>";
+    echo "<option value='' disabled selected>Location</option>";
 
     while ($row = $sql->fetch_assoc()) {
 

@@ -1,5 +1,8 @@
 <?php
+
+
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
+/*
 include($root . "backend/check.php");
 
 
@@ -19,7 +22,7 @@ else {
     header("Location: /TutorMe_Web/register_full.php");
   }
 }
-
+*/
 
 ?>
 <!DOCTYPE html>
@@ -116,18 +119,26 @@ else {
             -->
 
         		<div style="margin-top:60px;min-height:200px;" class="index_search_style col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-              <h3 style="text-align:center" class="">Tutor Search</h3>
+              <h3 style="text-align:center" class="">Tutor Profile</h3>
+              <h3><small class="general_text">Quick Edit</small></h3>
               <form id="" action="" method="POST" role="form">
                 <div class="row">
                   <div class="form-group col-xs-6">
-      							<label for="location" class="h4 general_text">Location</label><br>
                       <?php include($root . "forms/dropdown_files/locationDrop.php"); ?>
                   </div>
-      						<div class="form-group col-xs-6">
-      							<label for="location" class="h4 general_text">Subject</label><br>
-                      <?php include($root . "forms/dropdown_files/subjectDrop.php"); ?>
-      						</div>
+                <div class="form-group col-xs-6">
+                    <input style="border-radius:5px" type="text" class="form-control" name="price" id="inputPrice" placeholder="Price">
                 </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                    <input style="border-radius:5px" type="text" class="form-control" name="phoneNumber" id="inputAddress" placeholder="Phone Number">
+                </div>
+              <div class="form-group col-xs-6">
+                    <input style="border-radius:5px" type="text" class="form-control" name="address" id="inputAddress" placeholder="Address">
+              </div>
+            </div>
+
 
                 <div class="row">
       						<div class="form-group col-xs-7">
@@ -137,7 +148,7 @@ else {
                   </div>
       						<div class="form-group col-xs-5">
                           <div class="col-xs-10 pull-right">
-                              <input type="submit" value="Search" class="btn btn-success pull-right"> <!-- Change this a search icon -->
+                              <input type="submit" value="Submit" class="btn btn-success pull-right"> <!-- Change this a search icon -->
                           </div>
                   </div>
 

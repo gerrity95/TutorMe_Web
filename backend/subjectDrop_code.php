@@ -11,6 +11,7 @@ echo "<html>";
     echo "<body>";
     echo "<div>";
     echo "<select style='' name='subject' class='form-control' data-live-search='true'>";
+    echo "<option value='' disabled selected>Subject</option>";
 
     while ($row = $sql->fetch_assoc()) {
 

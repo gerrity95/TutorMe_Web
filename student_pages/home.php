@@ -90,15 +90,13 @@ include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
             </div>
 
         		<div style="margin-top:60px;min-height:200px;" class="index_search_style col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-              <h3 style="text-align:center" class="">Tutor Search</h3>
+              <h3 style="text-align:center" class="">Tutor Search</h3><br>
               <form id="" action="" method="POST" role="form">
                 <div class="row">
                   <div class="form-group col-xs-6">
-      							<label for="location" class="h4 general_text">Location</label><br>
                       <?php include($root . "forms/dropdown_files/locationDrop.php"); ?>
                   </div>
       						<div class="form-group col-xs-6">
-      							<label for="location" class="h4 general_text">Subject</label><br>
                       <?php include($root . "forms/dropdown_files/subjectDrop.php"); ?>
       						</div>
                 </div>
