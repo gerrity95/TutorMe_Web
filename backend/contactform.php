@@ -6,8 +6,6 @@ $errorMSG = "";
 
 // NAME
 
-if(isset($_POST['submit']))
-{
   if (empty($_POST["name"])) {
       $errorMSG = "Name is required ";
   } else {
@@ -57,5 +55,4 @@ if(isset($_POST['submit']))
       echo $errorMSG;
     }
   }
-}
 ?>
