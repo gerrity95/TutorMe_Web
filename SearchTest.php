@@ -8,17 +8,17 @@ define('DB_NAME', 'james');
 //Establish connection with the server
 
 		$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-
 //Selecting the database
 
 		//$db = mysqli_select_db($conn, "php_test");
 
 		$root = $_SERVER['DOCUMENT_ROOT'] . "/TutorMe_Web/";
 
+
 //Name search php
 $Cycle = "";
 
-if(isset($_POST['james_submit'])) {
+if(isset($_POST['cycle_submit'])) {
 
   $searchq = $_POST['search'];
   $searchq = preg_replace("#[^0-9a-z]#i","",$searchq);
@@ -63,11 +63,7 @@ if(isset($_POST['location_submit'])) {
       $id = $rowlocation['USER_ID'];
 
       $Location .= '<div>'.$fname.' '.$lname.'</div>';
-      $Test = "hello";
 
-      echo "<script language ='javascript'>
-      window.location = 'SearchOutput.php';
-      </script>";
 
 // $row = $mysqli->query("SELECT.....")->fetch_array();
       }
@@ -96,9 +92,6 @@ if(isset($_POST['subject_submit'])) {
       $id = $rowsubject['USER_ID'];
 
       $Subject .= '<div>'.$fname.' '.$lname.'</div>';
-      echo "<script language ='javascript'>
-      window.location = 'SearchOutput.php';
-      </script>";
 
 //$row = $mysqli->query("SELECT.....")->fetch_array();
       }
@@ -106,3 +99,8 @@ if(isset($_POST['subject_submit'])) {
     }
 }
 ?>
+
+
+<?php echo $Location; ?>
+<?php echo $Cycle; ?>
+<?php echo $Subject; ?>
