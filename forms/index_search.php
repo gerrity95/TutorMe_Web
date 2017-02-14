@@ -27,7 +27,11 @@
 
 					<div class="form-group col-xs-6">
 					  <label for="cycle" class="h4 general_text">Cycle</label><br>
-					  <select id="cycle" title="Cycle" class="selectpicker show-tick form-control"></select>
+					  <select id="cycle" title="Cycle" class="selectpicker show-tick form-control" data-live-search="true">
+						<option>Junior Cert</option>
+						<option>Leaving Cert</option>
+						<option>Third Level</option>
+						</select>
 					</div></div>
 				</div>
           <div class="row">
