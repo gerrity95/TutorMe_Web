@@ -1,5 +1,5 @@
 <?php
-include("SearchTest.php")
+include("SearchOutput.php")
 
  ?>
 <html>
@@ -10,24 +10,26 @@ include("SearchTest.php")
 <!--Search by name form-->
 <body>
 </h1>Search for a tutor by Cycle</h1>
-<form action="SearchTest.php" method="post">
-  <input type = "text" name="search" placeholder = "Enter a cycle"/>
-  <input type = "submit" id ="cycle" name= 'cycle_submit' value =">>"/>
+<form action="SearchOutput.php" method="post">
+  <input type = "text" name="search_cycle" placeholder = "Enter a cycle"/>
+	  <input type = "text" name="search_loc" placeholder = "Enter a Location"/>
+		  <input type = "text" name="search_subj" placeholder = "Enter a Subject"/>
+  <input type = "submit" id ="cycle" name= 'submit' value =">>"/>
 </form>
 
 
 <!--Location-->
-
+<!--
 </h1>Search for a tutor by Location</h1>
-<form action="SearchTest.php" method="post">
+<form action="SearchOutput.php" method="post">
   <input type = "text" name="search" placeholder = "Enter a Location"/>
   <input type = "submit" id= "location" name= 'location_submit' value =">>"/>
 </form>
 
 
-<!--Subjects Form-->
+
 </h1>Search for a tutor by Subject</h1>
-<form action="SearchTest.php" method="post">
+<form action="SearchOutput.php" method="post">
   <input type = "text" name="search" placeholder = "Enter a Subject"/>
   <input type = "submit" id = "subject" name= 'subject_submit' value =">>"/>
 
