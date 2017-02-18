@@ -6,8 +6,8 @@
 <script type="text/javascript">
 function State() {
   $('#cycleChoice').empty();
-  $('#cycleChoice').append("<option>Loading.....</option>");
-  $('#subjectChoice').append("<option value='0'>--Select Subject--</option>");
+  $('#cycleChoice').append("<option>Please Select a Cycle</option>");
+  $('#subjectChoice').append("<option style='display: none' disabled selected hidden value='0'>--Select Subject--</option>");
   $.ajax({
     type:"POST",
     url:"backend/cycleSubject_backend.php",
@@ -15,7 +15,7 @@ function State() {
     dataType:"json",
     success: function(data) {
       $('#cycleChoice').empty();
-      $('#cycleChoice').append("<option value='0'>--Select Cycle--</option>");
+      $('#cycleChoice').append("<option style='display: none' disabled selected hidden value='0'>--Select Cycle--</option>");
       $.each(data,function(i, item) {
         $('#cycleChoice').append('<option value="'+ data[i].cycle_id + '">'+ data[i].cycle_name+'</option>');
       });

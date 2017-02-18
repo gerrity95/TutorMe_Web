@@ -1,6 +1,6 @@
 <?php
 include("connection.php");
-$sql = mysqli_query($conn, "SELECT * FROM Subjects WHERE cycle_id='".$_GET["sid"]."'");
+$sql = mysqli_query($conn, "SELECT * FROM Subjects WHERE cycle_id='".$_GET["sid"]."' ORDER BY subject_name");
 if(mysqli_num_rows($sql)) {
   $data = array();
   while($row=mysqli_fetch_array($sql))

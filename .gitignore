@@ -1,3 +1,6 @@
 backend/connection.php
 backend/check.php
 error_codes.txt
+cycle_check.php
+location_check.php
+subject_check.php
