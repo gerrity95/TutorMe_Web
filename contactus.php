@@ -47,60 +47,23 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="aboutus.html">About</a></li>
-                <li><a href="contactus.php">Contact</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="aboutus.php">About</a></li>
+                <li class="active"><a href="contactus.php">Contact</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">How it Works <span class="caret"></span></a>
                   <ul style="" class="dropdown-menu">
-                    <li><a href="student_how.html">For a student</a></li>
-                    <li><a href="tutor_how.html">For a tutor</a></li>
+                    <li><a href="student_how.php">For a student</a></li>
+                    <li><a href="tutor_how.php">For a tutor</a></li>
                   </ul>
                 </li>
             </ul>
 			<ul class="nav navbar-nav navbar-right">
         <!-- <li><a href="index.html"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a></li> -->
-        <li><a href="register.html" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
+        <li><a href="register.php" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
         <li class="dropdown">
     <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
-    <ul class="dropdown-menu dropdown_width animated slideInRight" style="width:350px" role="menu">
-        <div class="col-lg-12">
-            <div class="text-center"><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Login</h3><br>
-            <form id="" action="" method="post" role="form">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-xs-7">
-                            <input type="checkbox" tabindex="3" name="remember" id="remember">
-                            <label for="remember">Remember Me</label>
-                        </div>
-                        <div class="col-xs-5 pull-right">
-                            <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">
-                                <a href="" tabindex="5" class="forgot-password">Forgot Password?</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </ul>
+  	<?php include($root . "forms/dropdown_login_form.php"); ?>
 </li>
 
         </div>

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap stylesheets -->
-  <title>Forgot Password?</title>
+  <title>Tutor Me - Forgot Password</title>
 <!-- To incorporate Lato - a Google font -->
  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'  type='text/css'>
 
@@ -45,7 +45,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html" target="_blank">Home</a></li>
+                <li class=""><a href="index.html" target="_blank">Home</a></li>
                 <li><a href="aboutus.html">About</a></li>
                 <li><a href="contactus.php">Contact</a></li>
                 <li class="dropdown">
@@ -175,11 +175,6 @@
   </div>
 </div>
 
-<div class="container-fluid" style="padding-left:0px;padding-right:0px;">
-<!-- Add the Google Map in Here -->
-	<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.636004935249!2d-6.259728683839165!3d53.38556197998734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e113b293d85%3A0xc81174de93fa22d6!2sSchool+of+Computing%2C+Dublin+City+University!5e0!3m2!1sen!2sie!4v1480694368387"></iframe>
-
-</div>
 <div class="container-fluid" style="margin-bottom:20px;">
   <?php include("content_pages/footer.html"); ?>
 </div>

@@ -26,26 +26,32 @@ if(isset($_POST['submit'])) {
   {
     $noReturn = "No Input Found";
   }
-  elseif ( (!empty($searchCycle)) && (empty($searchSubj)) )
+  elseif ( (!empty($searchCycle)) && (empty($searchSubj)) && (empty($searchLocation)) )
   {
 
     $checkAgainst = "cycle_id";
     $table = "tutor_subjects";
     singleInput($searchCycle, $table, $checkAgainst, $conn, $i, $anyUsers);
   }
-  elseif (!empty($searchLocation))
+  elseif ( (!empty($searchLocation)) && (empty($searchCycle)) )
   {
       $checkAgainst = "location";
       $table = "users";
       singleInput($searchLocation, $table, $checkAgainst, $conn, $i, $anyUsers);
   }
-  elseif (!empty($searchSubj))
+  elseif ( (!empty($searchSubj)) && (empty($searchLocation)))
   {
-    //$getSubjectId = "SELECT subject_id FROM Subjects WHERE subject_name LIKE '%$searchSubj%' AND cycle_id = 1";
-    //$subjectId = $conn->query($getSubjectId)->fetch_object()->subject_id;
     $checkAgainst = "subject_id";
     $table = "tutor_subjects";
     singleInput($searchSubj, $table, $checkAgainst, $conn, $i, $anyUsers);
+  }
+  elseif ( (!empty($searchLocation)) && (!empty($searchCycle)) && (empty($searchSubj)))
+  {
+    echo "yo dawg";
+  }
+  else //This is if all boxes are filled or basically the location and the subject
+  {
+    echo "Full up";
   }
 
 }
@@ -100,6 +106,51 @@ function singleInput($input, $desiredTable, $check, $connection, $i, $users)
       }
     }
   }
+}
+
+function multipleInput($input, $desiredTable, $check, $connection, $i, $users) {
+  global $relevantUserId;
+  global $firstNames;
+  global $surnames;
+  global $locations;
+  global $noReturn;
+
+
+  $getRelevantUsers = mysqli_query($connection, "");
+
+  $countRelevantUsers = mysqli_num_rows($getRelevantUsers);
+
+  if($countRelevantUsers == 0)
+  {
+    $noReturn = "No Relevant Users";
+    $users = "false";
+    return $noReturn;
+  }
+  else {
+      while($rowlocation = mysqli_fetch_array($getRelevantUsers)){
+      $relevantUserId[$i] = $rowlocation['user_id'];
+      $i++;
+    }
+  }
+
+  if ($users != "false")
+  {
+    $numOfUsers = sizeof($relevantUserId);
+
+
+    for($i = 0; $i < $numOfUsers; $i++)
+    {
+      $userDetails = mysqli_query($connection, "SELECT * FROM users WHERE user_id = '$relevantUserId[$i]' AND user_type= 'tutor'");
+
+      while($row = $userDetails->fetch_assoc())
+      {
+         $firstNames[$i] = $row["first_name"];
+         $surnames[$i] = $row["surname"];
+         $locations[$i] = $row["location"];
+      }
+    }
+  }
+
 }
 
 
