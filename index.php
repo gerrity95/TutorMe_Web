@@ -149,7 +149,9 @@ if((isset($_SESSION['username']) != ''))
 			  <center><img class="feature_images" src="images/greenUser.png"></center>
 		</div>
 
+	</div>
 </div>
+
 
 <div class="container-fluid" style="margin-bottom:20px;">
   <?php include($root . "content_pages/footer.html"); ?>

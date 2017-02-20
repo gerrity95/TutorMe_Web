@@ -71,6 +71,14 @@ background: #383838; /* For browsers that do not support gradients */
 
 }
 
+.tutor_quickview {
+  background-color:#ffffff;
+  margin-left:5%;
+  border-left:1px solid #dbdfe5;
+  border-radius:5px;
+  padding-bottom:10px;
+}
+
 	.feature_images {
 	width:70%;
 	height:70%;
@@ -134,6 +142,7 @@ background: #383838; /* For browsers that do not support gradients */
   overflow-y: scroll;
 }
 
+
 .footer_links {
 
 }
@@ -162,6 +171,18 @@ background: #383838; /* For browsers that do not support gradients */
     font-family: 'Lato', sans-serif;
   	font-weight: 400;
 }
+
+span.stars, span.stars span {
+    display: block;
+    background: url(../images/stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
+}
+
 
 /* General sizing */
 ul.dropdown-lr {
