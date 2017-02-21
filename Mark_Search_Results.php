@@ -45,13 +45,15 @@ if(isset($_POST['submit'])) {
     $table = "tutor_subjects";
     singleInput($searchSubj, $table, $checkAgainst, $conn, $i, $anyUsers);
   }
-  elseif ( (!empty($searchLocation)) && (!empty($searchCycle)) && (empty($searchSubj)))
+  elseif ( (!empty($searchLocation)) && (!empty($searchCycle)) && (empty($searchSubj))) //This is if location and cycle is filled
   {
-    echo "yo dawg";
+    $firstChoice = "cycle_id";
+    multipleInput($searchCycle, $searchLocation, $firstChoice, $conn, $i, $anyUsers);
   }
   else //This is if all boxes are filled or basically the location and the subject
   {
-    echo "Full up";
+    $firstChoice = "subject_id";
+    multipleInput($searchSubj, $searchLocation, $firstChoice, $conn, $i, $anyUsers);
   }
 
 }
@@ -108,7 +110,7 @@ function singleInput($input, $desiredTable, $check, $connection, $i, $users)
   }
 }
 
-function multipleInput($input, $desiredTable, $check, $connection, $i, $users) {
+function multipleInput($firstInput, $locationInput, $firstCheck, $connection, $i, $users) {
   global $relevantUserId;
   global $firstNames;
   global $surnames;
@@ -116,7 +118,7 @@ function multipleInput($input, $desiredTable, $check, $connection, $i, $users) {
   global $noReturn;
 
 
-  $getRelevantUsers = mysqli_query($connection, "");
+  $getRelevantUsers = mysqli_query($connection, "SELECT * from users WHERE user_id IN (SELECT user_id FROM tutor_subjects WHERE $firstCheck = '$firstInput') AND location LIKE '%$locationInput%' AND user_type = 'tutor'");
 
   $countRelevantUsers = mysqli_num_rows($getRelevantUsers);
 

@@ -1,5 +1,6 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
+include($root . "backend/functions.php");
 //include($root . "backend/check.php");
 ?>
 <!DOCTYPE html>
@@ -79,7 +80,7 @@ include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
   		      <h3 style="text-align:center">Tutor Name</h3>
   			  <h3 style="text-align:center"><small>***Small description of the tutor themselves talking about what they can offer to the student ***</small></h3>
           <center>
-            <p class="general_text">***Input star rating here*** </p> <!-- The star rating system was developing using a tutorioal found on stackoverflow -->
+            <p class="general_text"><?php $star = 3; starRating($star); ?> </p> <!-- The star rating system was developing using a tutorioal found on stackoverflow -->
             <a href="">View Profile...</a></center>
 
 
