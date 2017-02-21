@@ -10,7 +10,7 @@ function State() {
   $('#subjectChoice').append("<option style='display: none' disabled selected hidden value='0'>--Select Subject--</option>");
   $.ajax({
     type:"POST",
-    url:"backend/cycleSubject_backend.php",
+    url:"/TutorMe_Web/backend/cycleSubject_backend.php",
     contentType:"application/json; charset=utf-8",
     dataType:"json",
     success: function(data) {
@@ -29,7 +29,7 @@ function District(sid) {
   $('#subjectChoice').append("<option>Loading.....</option>");
   $.ajax({
     type:"POST",
-    url:"backend/subject_backend.php?sid="+sid,
+    url:"/TutorMe_Web/backend/subject_backend.php?sid="+sid,
     contentType:"application/json; charset=utf-8",
     dataType:"json",
     success: function(data) {

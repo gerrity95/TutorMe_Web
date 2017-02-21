@@ -1,5 +1,6 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
+include($root . "search_output.php");
 //include($root . "backend/check.php");
 ?>
 <!DOCTYPE html>
@@ -89,33 +90,25 @@ include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
              <h2><small style="font-family: 'Lato', sans-serif;">Message API Section</small> </h2>
             </div>
 
-        		<div style="margin-top:60px;min-height:200px;" class="index_search_style col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-              <h3 style="text-align:center" class="">Tutor Search</h3><br>
-              <form id="" action="" method="POST" role="form">
+        		<div style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+                      <div class=""><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Tutor Search</h3><br>
+              <form style="" action="search_results.php" method="POST" role="form">
                 <div class="row">
-                  <div class="form-group col-xs-6">
-                      <?php include($root . "forms/dropdown_files/locationDrop.php"); ?>
-                  </div>
-      						<div class="form-group col-xs-6">
-                      <?php include($root . "forms/dropdown_files/subjectDrop.php"); ?>
+      						<div class="form-group col-xs-12">
+      							<?php include($root . "forms/dropdown_files/cycleSubject.php"); ?>
       						</div>
-                </div>
+                  <div class="form-group col-xs-6">
 
-                <div class="row">
-      						<div class="form-group col-xs-7">
-                          <div class="col-xs-10">
-                              <a href="#">Advanced Options...</a> <!-- pop up allowing to specify date and time -->
-                          </div>
+                        <?php include($root . "forms/dropdown_files/locationDrop.php"); ?>
                   </div>
-      						<div class="form-group col-xs-5">
-                          <div class="col-xs-10 pull-right">
-                              <input type="submit" value="Search" class="btn btn-success pull-right"> <!-- Change this a search icon -->
+
+                  <div class="form-group col-xs-6">
+                          <div class="col-xs-6 pull-right">
+                              <input type="submit" name="search_submit" value="Search" class="btn btn-success pull-right">
                           </div>
                   </div>
 
-                </div>
-                  <!-- Error Message -->
-                  <span><?php echo $error; ?></span>
+      					</div>
 
               </form>
         </div>

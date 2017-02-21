@@ -80,16 +80,15 @@
 <div class="container-fluid">
     <div style="padding-top:40px;padding-bottom:40px;background:url('images/blurred-background-4.jpg');background-size:cover;" class="row">
 <div style="margin-left:15px;padding-top:35px;text-align:center;" class="col-sm-6 col-md-4 col-lg-4;">
-  <img src="http://d235mwrq2dn9n5.cloudfront.net/wp-content/uploads/2016/11/rtr_kanye_west_jc_150407_16x9_992-1.jpg" alt="Profile Pic" style = "width:500px;height500px;" align="left;" />
+  <img src="http://d235mwrq2dn9n5.cloudfront.net/wp-content/uploads/2016/11/rtr_kanye_west_jc_150407_16x9_992-1.jpg" alt="Profile Pic" style = "width:300px;height:300px;" align="left;" />
   <h1>Kanye West</h1>
   <a target="_blank"  class="btn btn-success btn-lg">Message Tutor</a>
   </div>
-<div class="col-sm-6 col-md-4 col-lg-4">
+<div class="col-sm-6 col-md-6 col-lg-6">
   <div style = "margin-left:15px;padding-top:10px;">
-<h2><b><u><font color = "#ededed">About $name</font></b></u></h2>
+<h2 class="register_forms">About $name</h2>
     </div>
-  </div>
-    <div class="col-sm-6 col-md-7 col-lg-7">
+
       <div style = "margin-left:15px;">
       <font color = "black"><p>LookIf you hadOne shotOr one opportunityTo seize everything you ever wantedIn one momentWould you capture itOr just let it slip?
 YoHis palms are sweaty, knees weak, arms are heavyThere's vomit on his sweater already,
@@ -98,7 +97,7 @@ mom's spaghettiHe's nervous, but on the surface he lookscalm and readTo drop bom
   </div>
     <div class="col-sm-6 col-md-7 col-lg-7">
       <div style = "margin-left:15px;">
-    <h2><b><u><font color = "#ededed">Experience/Credentials</font></u></b></h2>
+    <h2 class="register_forms">Experience and Credentials</h2>
     </div>
   </div>
     <div class="col-sm-6 col-md-7 col-lg-7">

@@ -1,5 +1,5 @@
 <?php
-include("connection.php");
+include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 $sql = mysqli_query($conn, "SELECT * FROM Cycle");
 if(mysqli_num_rows($sql)) {
   $data = array();

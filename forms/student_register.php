@@ -29,9 +29,10 @@
    </div><br>
    <div class="form-group">
    <label for="phone_number" class="h4 general_text">School *</label>
-      <input style="border-radius:5px" type="text" class="form-control" name="school" id="inputSchool" placeholder="Phone Number" required>
+      <input style="border-radius:5px" type="text" class="form-control" name="school" id="inputSchool" placeholder="School" required>
       <div class="help-block with-errors"></div>
   </div><br>
+     <label for="phone_number" class="h4 general_text">Cycle &#38 Subject *</label>
   <?php include($root . "forms/dropdown_files/cycleSubject.php"); ?>
 
       <input type="submit" name="stu-register_submit" value="Register" id="submit" class="btn btn-success btn-lg pull-right ">

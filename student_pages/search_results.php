@@ -2,6 +2,10 @@
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 include($root . "backend/functions.php");
 //include($root . "backend/check.php");
+
+include($root . "search_output.php");
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -74,29 +78,40 @@ include($root . "backend/functions.php");
 
   <!-- For outputting the tutors we will put them into a grid. we will have this grid default to three sections wide -->
   <div class="container-fluid">
-      <div style="padding-top:40px;padding-bottom:40px;background:#ededed" class="row">
-          <div style="" class="col-sm-6 col-md-3 col-lg-3 tutor_quickview">
-            <br><center><img class="feature_images" src="../images/default_head.jpg"></center>
-  		      <h3 style="text-align:center">Tutor Name</h3>
-  			  <h3 style="text-align:center"><small>***Small description of the tutor themselves talking about what they can offer to the student ***</small></h3>
-          <center>
-            <p class="general_text"><?php $star = 3; starRating($star); ?> </p> <!-- The star rating system was developing using a tutorioal found on stackoverflow -->
-            <a href="">View Profile...</a></center>
+    <?php
+
+    $length = sizeof($relevantUserId);
 
 
-          </div>
-          <div style="border-left:1px solid #dbdfe5;margin-left:5%;" class="col-sm-6 col-md-3 col-lg-3">
-              <h2 style="text-align:center">Messaging</h2>
-  			<h3 style="text-align:center"><small>Connect with your tutor or student seamlessly. No need to go anywhere else to find out what they need or to ask them any questions.</small></h3>
-               <br><center><img class="feature_images" src="images/messaging_symbol.png"></center>
-          </div>
-          <div style="border-left:1px solid #dbdfe5; margin-left:5%;" class="col-sm-6 col-md-3 col-lg-3">
-              <h2 style="text-align:center">Tutor Search</h2>
-  			  <h3 style="text-align:center"><small>Never worry that the tutor doesn't best suit your needs. Easily search through all the tutors in your area to find the one that best suits you.<br></small></h3>
-  			  <center><img class="feature_images" src="images/greenUser.png"></center>
-  		</div>
+      if ($length == 0)
+      {
+        //  echo "No Results man";
+        echo $searchLocation;
+      }
+      else {
 
-  	</div>
+        for($i = 0;$i < $length; $i++)
+        {
+          //echo ("User ID: " + $relevantUserId[$i] + "<br>");
+          echo "<div style='' class='col-sm-6 col-md-3 col-lg-3 tutor_quickview'>";
+          echo "<br><center><img class='feature_images' src='../images/default_head.jpg'></center>";
+          echo "<h3 style='text-align:center'>";
+          echo $firstNames[$i];
+          echo " ";
+          echo $surnames[$i];
+          echo "</h3>";
+          echo "<h3 style='text-align:center'><small>***Small description of the tutor themselves talking about what they can offer to the student ***</small></h3>";
+          echo "<center>";
+          echo "<p class='general_text'>";
+          $star = 3; starRating($star);
+          echo "</p>"; //The star rating system was developing using a tutorioal found on stackoverflow
+          echo "<a href=''>View Profile...</a></center>";
+          echo "</div>";
+        }
+      }
+
+    ?>
+
   </div>
 
 

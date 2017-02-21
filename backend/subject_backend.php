@@ -1,5 +1,5 @@
 <?php
-include("connection.php");
+include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 $sql = mysqli_query($conn, "SELECT * FROM Subjects WHERE cycle_id='".$_GET["sid"]."' ORDER BY subject_name");
 if(mysqli_num_rows($sql)) {
   $data = array();

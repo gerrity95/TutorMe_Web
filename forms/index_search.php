@@ -1,38 +1,25 @@
+<?php
+ ?>
+
+
 <html>
 <head>
 	<link rel="stylesheet" href="css/my_style.css">
 </head>
 
 <body>
-    <div class="index_search_style animated fadeIn col-lg-12" style="">
+    <div style="" class="index_search_style animated fadeIn col-lg-12" style="">
         <div class=""><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Find a Tutor </h3><br>
-        <form id="" action="" method="POST" role="form">
+        <form style="padding-left:25px;padding-right:25px;" action="" method="POST" role="form">
           <div class="row">
-            <div class="form-group col-xs-6">
-							<label for="location" class="h4 general_text">Location</label><br>
-                <select id="location" title="Location" class="selectpicker show-tick form-control" data-live-search="true">
-                  <option>Sligo</option>
-                  <option>Dublin</option>
-                  <option>Cork</option>
-                </select>
-            </div>
 						<div class="form-group col-xs-6">
-							<label for="subject" class="h4 general_text">Subject</label><br>
-							<select id="subject" title="Subject" class="selectpicker show-tick form-control" data-live-search="true">
-								<option>Maths</option>
-								<option>Spanish</option>
-								<option>English</option>
-							</select>
+							<?php include($root . "forms/dropdown_files/cycleSubject.php"); ?>
 						</div>
-
-					<div class="form-group col-xs-6">
-					  <label for="cycle" class="h4 general_text">Cycle</label><br>
-					  <select id="cycle" title="Cycle" class="selectpicker show-tick form-control" data-live-search="true">
-						<option>Junior Cert</option>
-						<option>Leaving Cert</option>
-						<option>Third Level</option>
-						</select>
-					</div></div>
+            <div class="form-group col-xs-6">
+							   <label for="phone_number" class="h4 general_text">Location *</label>
+                  <?php include($root . "forms/dropdown_files/locationDrop.php"); ?>
+            </div>
+					</div>
 				</div>
           <div class="row">
 						<div class="form-group col-xs-7">

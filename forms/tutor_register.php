@@ -22,6 +22,10 @@ include($root . "backend/checkboxConfig.php"); ?>
          <div class="help-block with-errors"></div>
      </div><br>
      <div class="form-group">
+     <label for="bio" class="h4 general_text">Bio *</label><br>
+        <textarea placeholder="Tell us about yourself..." value="bio" class="form-control" rows="5" id="comment"></textarea>
+    </div><br>
+     <div class="form-group">
      <label for="location" class="h4 general_text">Location *</label><br>
         <?php include($root . "forms/dropdown_files/locationDrop.php"); ?>
     </div><br>

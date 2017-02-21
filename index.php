@@ -162,7 +162,7 @@ if((isset($_SESSION['username']) != ''))
 <script src="js/bootstrap-select.js"></script>
 <script type="text/javascript">
 function getForm() {
-$( "#search_form" ).load("index_searchtest.php");
+$( "#search_form" ).load("forms/index_search.php");
 }
 
 </script>

@@ -1,6 +1,5 @@
 <?php
-
-include("backend/connection.php");
+include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 
 
 //Name search php
@@ -11,10 +10,10 @@ $i = 0;
 
 
 
-if(isset($_POST['submit'])) {
+if(isset($_POST['search_submit'])) {
 
   $searchCycle = $_POST['cycle'];
-  $searchLocation = $_POST['search_loc'];
+  $searchLocation = $_POST['location'];
   $searchSubj = $_POST['subjects'];
 
   $relevantUserId = array();
@@ -69,7 +68,7 @@ function singleInput($input, $desiredTable, $check, $connection, $i, $users)
 
   if ($check == "location")
   {
-      $getRelevantUsers = mysqli_query($connection, "SELECT DISTINCT user_id FROM $desiredTable WHERE $check LIKE '%$input%' AND user_type= 'tutor'");
+      $getRelevantUsers = mysqli_query($connection, "SELECT DISTINCT user_id FROM $desiredTable WHERE location IN (SELECT location_name FROM Location WHERE location_id = '$input')");
   }
   else
   {
@@ -118,7 +117,7 @@ function multipleInput($firstInput, $locationInput, $firstCheck, $connection, $i
   global $noReturn;
 
 
-  $getRelevantUsers = mysqli_query($connection, "SELECT * from users WHERE user_id IN (SELECT user_id FROM tutor_subjects WHERE $firstCheck = '$firstInput') AND location LIKE '%$locationInput%' AND user_type = 'tutor'");
+  $getRelevantUsers = mysqli_query($connection, "SELECT * from users WHERE user_id IN (SELECT user_id FROM tutor_subjects WHERE $firstCheck = '$firstInput') AND location IN (SELECT location_name FROM Location WHERE location_id = $locationInput) AND user_type = 'tutor'");
 
   $countRelevantUsers = mysqli_num_rows($getRelevantUsers);
 
@@ -154,31 +153,7 @@ function multipleInput($firstInput, $locationInput, $firstCheck, $connection, $i
   }
 
 }
-
-
 ?>
-
-<?php echo $noReturn; ?><br><br>
-
-
 <?php
 
-$length = sizeof($relevantUserId);
-
-  for($i = 0;$i < $length; $i++)
-  {
-    //echo ("User ID: " + $relevantUserId[$i] + "<br>");
-    echo "User ID: ";
-    echo $relevantUserId[$i];
-    echo "<br>";
-    echo "Name: ";
-    echo $firstNames[$i];
-    echo " ";
-    echo $surnames[$i];
-    echo "<br>";
-    echo "Location: ";
-    echo $locations[$i];
-    echo "<br>";
-  }
-
-?><br><br>
+?>
