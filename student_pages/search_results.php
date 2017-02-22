@@ -70,8 +70,29 @@ include($root . "search_output.php");
 
   <div class="jumbotron">
       <div style="border-bottom: 1px solid #111111" class="container-fluid">
+        <div class="col-sm-8 col-md-6 col-lg-6">
           <p style="margin-top:50px" class="lead">Want to search again?</p>
-          <p style="" class="lead">Include the search form here again</p>
+
+          <form style="" action="" method="POST" role="form">
+
+              <div class="form-group col-xs-12">
+                <?php include($root . "forms/dropdown_files/cycleSubject.php"); ?>
+              </div>
+              <div class="form-group col-xs-6">
+
+                    <?php include($root . "forms/dropdown_files/locationDrop.php"); ?>
+              </div>
+
+              <div class="form-group col-xs-6">
+                <div class="col-xs-6 pull-right">
+                  <button name="search_submit" class="btn btn-success pull-right" type="submit">Submit</button>
+                </div>
+
+              </div>
+
+
+          </form>
+        </div>
           <!-- Include the search form here again -->
       </div>
   </div>
@@ -93,6 +114,7 @@ include($root . "search_output.php");
         for($i = 0;$i < $length; $i++)
         {
           //echo ("User ID: " + $relevantUserId[$i] + "<br>");
+          echo "<a href=''>";
           echo "<div style='' class='col-sm-6 col-md-3 col-lg-3 tutor_quickview'>";
           echo "<br><center><img class='feature_images' src='../images/default_head.jpg'></center>";
           echo "<h3 style='text-align:center'>";
@@ -103,10 +125,11 @@ include($root . "search_output.php");
           echo "<h3 style='text-align:center'><small>***Small description of the tutor themselves talking about what they can offer to the student ***</small></h3>";
           echo "<center>";
           echo "<p class='general_text'>";
-          $star = 3; starRating($star);
+          $star = 1; starRating($star);
           echo "</p>"; //The star rating system was developing using a tutorioal found on stackoverflow
           echo "<a href=''>View Profile...</a></center>";
           echo "</div>";
+          echo "</a>";
         }
       }
 
