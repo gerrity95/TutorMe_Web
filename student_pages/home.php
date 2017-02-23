@@ -91,27 +91,27 @@ include($root . "search_output.php");
             </div>
 
         		<div style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-                      <div class=""><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Tutor Search</h3><br>
-              <form style="" action="search_results.php" method="POST" role="form">
-                <div class="row">
-      						<div class="form-group col-xs-12">
-      							<?php include($root . "forms/dropdown_files/cycleSubject.php"); ?>
-      						</div>
-                  <div class="form-group col-xs-6">
+              <div class=""><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Tutor Search</h3><br>
+                <form style="" action="search_results.php" method="POST" role="form">
+                  <div class="row">
+        						<div class="form-group col-xs-12">
+        							<?php include($root . "forms/dropdown_files/cycleSubject.php"); ?>
+        						</div>
+                    <div class="form-group col-xs-6">
 
-                        <?php include($root . "forms/dropdown_files/locationDrop.php"); ?>
-                  </div>
+                          <?php include($root . "forms/dropdown_files/locationDrop.php"); ?>
+                    </div>
 
-                  <div class="form-group col-xs-6">
-                          <div class="col-xs-6 pull-right">
-                              <input type="submit" name="search_submit" value="Search" class="btn btn-success pull-right">
-                          </div>
-                  </div>
+                    <div class="form-group col-xs-6">
+                            <div class="col-xs-6 pull-right">
+                                <input type="submit" name="search_submit" value="Search" class="btn btn-success pull-right">
+                            </div>
+                    </div>
 
-      					</div>
+        					</div>
 
-              </form>
-        </div>
+                </form>
+              </div>
 
             </div>
           </div>

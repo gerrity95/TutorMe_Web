@@ -80,6 +80,10 @@
 
 <div class="container-fluid">
     <div style="padding-top:40px;padding-bottom:40px;background:url('images/blurred-background-4.jpg');background-size:cover;" class="row">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6bc568db8baa19152cdafecf32df9dbc73ead43c
       <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
                   <div class="panel panel-default">
                       <div class="panel-body">
@@ -112,6 +116,10 @@
 
   </div>
     <div class="col-sm-6 col-md-8 col-lg-8">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6bc568db8baa19152cdafecf32df9dbc73ead43c
       <div style = "margin-left:15px;">
       <font color = "black"><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></font>
     </div>
