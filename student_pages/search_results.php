@@ -48,9 +48,10 @@ include($root . "search_output.php");
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav">
-                <li class=""><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-home"></span>Home</a></li>
+                <li class=""><a id="register_link" href="/TutorMe_Web/student_pages/home.php"><span style="padding-right:10px" class="glyphicon glyphicon-home"></span>Home</a></li>
                 <li><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-envelope"></span>Messages</a></li>
                 <li><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-calendar"></span>Schedule</a></li>
+                <li><a id="register_link" href="/TutorMe_Web/student_pages/search_results.php"><span style="padding-right:10px" class="glyphicon glyphicon-calendar"></span>Search **Change logo**</a></li>
             </ul>
       <ul class="nav navbar-nav navbar-right">
 
@@ -71,7 +72,7 @@ include($root . "search_output.php");
   <div class="jumbotron">
       <div style="border-bottom: 1px solid #111111" class="container-fluid">
         <div class="col-sm-8 col-md-6 col-lg-6">
-          <p style="margin-top:50px" class="lead">Want to search again?</p>
+          <p style="margin-top:50px" class="lead">Search Here...</p>
 
           <form style="" action="" method="POST" role="form">
 
@@ -106,15 +107,15 @@ include($root . "search_output.php");
 
       if ($length == 0)
       {
-        //  echo "No Results man";
-        echo $searchLocation;
+        echo $noReturn;
       }
       else {
 
         for($i = 0;$i < $length; $i++)
         {
           //echo ("User ID: " + $relevantUserId[$i] + "<br>");
-          echo "<a href=''>";
+          $desiredId = $user_identity[$i];
+          echo "<a href='/TutorMe_Web/tutor_pages/Profile.php'>";
           echo "<div style='' class='col-sm-6 col-md-3 col-lg-3 tutor_quickview'>";
           echo "<br><center><img class='feature_images' src='../images/default_head.jpg'></center>";
           echo "<h3 style='text-align:center'>";

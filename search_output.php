@@ -17,6 +17,7 @@ if(isset($_POST['search_submit'])) {
   $searchSubj = $_POST['subjects'];
 
   $relevantUserId = array();
+  $user_identity = array();
   $firstNames = array();
   $surnames = array();
   $locations = array();
@@ -61,6 +62,7 @@ if(isset($_POST['search_submit'])) {
 function singleInput($input, $desiredTable, $check, $connection, $i, $users)
 {
   global $relevantUserId;
+  global $user_identity;
   global $firstNames;
   global $surnames;
   global $locations;
@@ -101,6 +103,7 @@ function singleInput($input, $desiredTable, $check, $connection, $i, $users)
 
       while($row = $userDetails->fetch_assoc())
       {
+         $user_id[$i] = $row['user_id'];
          $firstNames[$i] = $row["first_name"];
          $surnames[$i] = $row["surname"];
          $locations[$i] = $row["location"];
@@ -111,6 +114,7 @@ function singleInput($input, $desiredTable, $check, $connection, $i, $users)
 
 function multipleInput($firstInput, $locationInput, $firstCheck, $connection, $i, $users) {
   global $relevantUserId;
+  global $user_identity;
   global $firstNames;
   global $surnames;
   global $locations;
@@ -145,6 +149,7 @@ function multipleInput($firstInput, $locationInput, $firstCheck, $connection, $i
 
       while($row = $userDetails->fetch_assoc())
       {
+        $user_identity[$i] = $row["user_id"];
          $firstNames[$i] = $row["first_name"];
          $surnames[$i] = $row["surname"];
          $locations[$i] = $row["location"];
