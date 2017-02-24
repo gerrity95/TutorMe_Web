@@ -1,28 +1,12 @@
 <?php
-
-
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
-/*
 include($root . "backend/check.php");
+include ($root . "backend/functions.php");
 
-
-if ($current_user_type == "student")
+if (isset($userSession))
 {
-  if ($current_full_member == "false")
-  {
-    header("Location: /TutorMe_Web/register_full.php");
-  }
-  else {
-    header("Location: /TutorMe_Web/student_pages/home.php");
-  }
+  //Call the user check function
 }
-else {
-  if ($current_full_member == "false")
-  {
-    header("Location: /TutorMe_Web/register_full.php");
-  }
-}
-*/
 
 ?>
 <!DOCTYPE html>

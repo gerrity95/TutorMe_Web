@@ -13,7 +13,7 @@ include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 <body>
     <div style="" class="index_search_style animated fadeIn col-lg-12" style="">
         <div class=""><h3 style="text-align:center;font-family: 'Lato', sans-serif;">Find a Tutor </h3><br>
-            <form style="" action="student_pages/search_results.php" method="POST" role="form">
+            <form style="" action="static_results.php" method="POST" role="form">
               <div class="row">
                 <div class="form-group col-xs-12">
                   <?php include($root . "forms/dropdown_files/cycleSubject.php"); ?>

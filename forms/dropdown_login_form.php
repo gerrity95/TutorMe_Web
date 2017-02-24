@@ -23,7 +23,8 @@ include($root . "backend/loginserv.php");
                         <label for="remember">Remember Me</label>
                     </div>
                     <div class="col-xs-5 pull-right">
-                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                        <!--<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In"> -->
+                        <button name="login-submit" id="login-submit" tabindex="4" class="btn btn-success pull-right" type="submit">Login</button>
                     </div>
                 </div>
             </div>

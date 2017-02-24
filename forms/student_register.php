@@ -1,4 +1,8 @@
-<?php include($root . "backend/stu_fullreg.php"); ?>
+<?php
+include($root . "backend/stu_fullreg.php");
+include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/check.php");
+
+ ?>
 
 <html>
 <head>

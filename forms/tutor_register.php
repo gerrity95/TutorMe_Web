@@ -1,6 +1,8 @@
 <?php
 include($root . "backend/tut_fullreg.php");
-include($root . "backend/checkboxConfig.php"); ?>
+include($root . "backend/checkboxConfig.php");
+include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/check.php");
+ ?>
 
 <html>
 <head>
