@@ -2,6 +2,8 @@
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 //include($root . "student_pages/search_results.php");
 
+$tutorId = $_GET['tutorid'];
+
  ?>
 
 <!DOCTYPE html>
@@ -12,7 +14,7 @@ include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap stylesheets -->
-  <title>$Name Profile</title>
+  <title><?php echo $tutorId; ?> Profile</title>
 <!-- To incorporate Lato - a Google font -->
  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'  type='text/css'>
 
@@ -110,7 +112,7 @@ include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
                   </div>
               </div><div class="col-sm-6 col-md-8 col-lg-8">
   <div style = "margin-left:15px;padding-top:10px;">
-<h2 class="register_forms">About $name</h2>
+<h2 class="register_forms">About <?php echo $tutorId; ?></h2>
     </div>
 
   </div>

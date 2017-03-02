@@ -16,24 +16,21 @@ function starRating($starNumber)
 
 }
 
-function checkUserInfo($userInSesssion, $userType, $membership, $url, $desiredUser, $rejectedUser, $rejectUrl)
+//Below function will check extra details about the user currently in session
+function checkUserInfo($userInSesssion, $userType, $membership, $url, $desiredUser)
 {
 
   if ($membership == "false")
   {
-    //Redirect straight away to register_full
+    	header("Location: /TutorMe_Web/register_full.php");
   }
   else {
-      if ($userType == $desiredUser) //Desired user will depend on the type of page they're on. i.e. on student home the desired user is a student
+      if ($userType != $desiredUser) //Desired user will depend on the type of page they're on. i.e. on student home the desired user is a student
       {
-        //Redirect to $url
+        header("Location: " . $url);
       }
-      elseif ($userType == $rejectedUser) //This will be the opposite of the desired user
-      {
-        //Redirect to $rejectUrl
-      }
-  }
 
+  }
 
 
 }

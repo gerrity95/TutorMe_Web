@@ -2,6 +2,15 @@
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 
 include($root . "backend/check.php");
+include ($root . "backend/functions.php");
+
+$url = "/TutorMe_Web/tutor_pages/home.php";
+
+
+if (isset($userSession))
+{
+  checkUserInfo($userSession, $userType, $current_full_member, $url, "student");
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -55,7 +64,7 @@ include($root . "backend/check.php");
           <a href="#" style="padding-right:20px" class="dropdown-toggle" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Joe Bloggs</a>
           <ul style="" class="dropdown-menu">
             <li><a href="">Settings</a></li>
-            <li><a href="../backend/logout.php">Logout</a></li>
+            <li><a href="/TutorMe_Web/backend/logout.php">Logout</a></li>
           </ul>
         </li>
 

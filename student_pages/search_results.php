@@ -1,7 +1,7 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 include($root . "backend/functions.php");
-include($root . "backend/check.php");
+//include($root . "backend/check.php");
 
 include($root . "search_output.php");
 
@@ -118,12 +118,13 @@ include($root . "search_output.php");
 
         for($i = 0;$i < $length; $i++)
         {
-          //echo ("User ID: " + $relevantUserId[$i] + "<br>");
           $desiredId = $user_identity[$i];
-          echo "<a href='/TutorMe_Web/tutor_pages/Profile.php'>";
+          echo "<a href='/TutorMe_Web/tutor_pages/Profile.php?tutorid=$desiredId'>";
           echo "<div style='' class='col-sm-6 col-md-3 col-lg-3 tutor_quickview'>";
           echo "<br><center><img class='feature_images' src='../images/default_head.jpg'></center>";
           echo "<h3 style='text-align:center'>";
+          echo $desiredId;
+          echo " ";
           echo $firstNames[$i];
           echo " ";
           echo $surnames[$i];
@@ -143,9 +144,18 @@ include($root . "search_output.php");
 
   </div>
 
-
-
-
+<?php
+  $test;
+  $test = "hello";
+  /*
+  echo "<center><h1><a href='/TutorMe_Web/grind_request.php?tutorid=<?php echo $test ?>'";
+  echo "supya";
+  echo "</a></h1><center>";
+*/
+?>
+<!--
+<a href="/TutorMe_Web/grind_request.php?tutorid=<?php echo $test ?>">Hello</a>
+-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

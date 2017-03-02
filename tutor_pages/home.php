@@ -3,9 +3,11 @@ include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 include($root . "backend/check.php");
 include ($root . "backend/functions.php");
 
+$url = "/TutorMe_Web/student_pages/home.php";
+
 if (isset($userSession))
 {
-  //Call the user check function
+  checkUserInfo($userSession, $userType, $current_full_member, $url, "tutor")
 }
 
 ?>
