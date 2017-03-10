@@ -32,7 +32,5 @@ function checkUserInfo($userInSesssion, $userType, $membership, $url, $desiredUs
 
   }
 
-
 }
-
 ?>

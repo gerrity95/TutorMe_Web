@@ -1,7 +1,7 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 include($root . "backend/functions.php");
-//include($root . "backend/check.php");
+include($root . "backend/check.php");
 
 include($root . "search_output.php");
 
@@ -143,19 +143,6 @@ include($root . "search_output.php");
     ?>
 
   </div>
-
-<?php
-  $test;
-  $test = "hello";
-  /*
-  echo "<center><h1><a href='/TutorMe_Web/grind_request.php?tutorid=<?php echo $test ?>'";
-  echo "supya";
-  echo "</a></h1><center>";
-*/
-?>
-<!--
-<a href="/TutorMe_Web/grind_request.php?tutorid=<?php echo $test ?>">Hello</a>
--->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
