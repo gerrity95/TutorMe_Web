@@ -7,7 +7,7 @@ $url = "/TutorMe_Web/student_pages/home.php";
 
 if (isset($userSession))
 {
-  checkUserInfo($userSession, $userType, $current_full_member, $url, "tutor")
+  checkUserInfo($userSession, $userType, $current_full_member, $url, "tutor");
 }
 
 ?>

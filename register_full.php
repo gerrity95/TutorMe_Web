@@ -1,5 +1,5 @@
 <?php
-include($root . "backend/connection.php");
+include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 include($root . "backend/check.php");
 ?>
 

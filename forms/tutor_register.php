@@ -25,7 +25,8 @@ include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/check.php");
      </div><br>
      <div class="form-group">
      <label for="bio" class="h4 general_text">Bio *</label><br>
-        <textarea placeholder="Tell us about yourself..." value="bio" class="form-control" rows="5" id="comment"></textarea>
+        <p class="general_text">Max 400 Characters</p>
+        <textarea maxlength="400" placeholder="Tell us about yourself..." name="bio" class="form-control" rows="5" id="comment"></textarea>
     </div><br>
      <div class="form-group">
      <label for="location" class="h4 general_text">Location *</label><br>

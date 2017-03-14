@@ -17,7 +17,7 @@ $list_subjects = array();
 
   //$rating = $conn->query($check_id)->fetch_object()->rating;
   //$qualifications = $conn->query($check_id)->fetch_object()->qualifications;
-  //$bio = $conn->query($check_id)->fetch_object()->bio;
+  $bio = $conn->query($tutor_specific_details)->fetch_object()->Personal_Statement;
 
 
 function getSubjects($connection, $cycle) //Must add in parameters
@@ -177,27 +177,12 @@ function listSubjects($list)
 
     <div class="col-sm-6 col-md-8 col-lg-8">
       <div style = "margin-left:15px;">
-        <font color = "black"><p>LookIf you hadOne shotOr one opportunityTo seize everything you ever wantedIn one momentWould you capture itOr just let it slip?
-  YoHis palms are sweaty, knees weak, arms are heavyThere's vomit on his sweater already,
-  mom's spaghettiHe's nervous, but on the surface he lookscalm and readTo drop bombs, but he keeps on forgettin'What he wrote down, the whole crowd goes so loudHe opens his mouth, but the words won't come outHe's chokin', how, everybody's jokin' nowThe clocks run out, times up, over, blaow!Snap back to reality, oh there ges gravityOh, there goes Rabbit, he chokedHe's so mad, but he won't give up that easy? NoHe won't have it, he knows his whole back city's ropesIt don't matter, he's dope, he knows that, but he's bro</p></font>
-    </div>
-  </div>
-
-  <div class="col-sm-6 col-md-8 col-lg-8">
-      <div style = "margin-left:15px;">
-        <h2 class="register_forms">Experience and Credentials</h2>
+        <p class="white_text"><?php echo $bio; ?></p>
       </div>
   </div>
 
   <div class="col-sm-6 col-md-8 col-lg-8">
-      <div style = "margin-left:15px;">
-        <p class="white_text">Oh I wish I was a punk rocker with flowers in my hair In 77 and 69 revolution was in the airI was born too late to a world that doesn't careOh I wish I was a punk rocker with flowers
-      in my hairWhen the head of state didn't play guitar,Not everybody drove a carWhen music really mattered and radio was king,When accountants didn't have controlAnd the media couldn't buy your soulAnd computers were still scary and we didn't know everythingOh I wish I was a punk rocker with floers in my hairIn 77 and 69 revolution was in the airI was born too late to a world that doesn't careOh I wish I was a punk rocker with flowers in m</p>
-      </div>
-  </div>
-
-  <div class="col-sm-6 col-md-8 col-lg-8">
-        <h2 style="" class="register_forms">Subjects</h2>
+        <h3 style="margin-left:15px" class="register_forms">Subjects</h2>
   </div>
 
   <div class="row">
