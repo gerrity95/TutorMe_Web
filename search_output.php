@@ -103,7 +103,7 @@ function singleInput($input, $desiredTable, $check, $connection, $i, $users)
 
       while($row = $userDetails->fetch_assoc())
       {
-         $user_id[$i] = $row['user_id'];
+         $user_identity[$i] = $row['user_id'];
          $firstNames[$i] = $row["first_name"];
          $surnames[$i] = $row["surname"];
          $locations[$i] = $row["location"];

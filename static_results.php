@@ -1,6 +1,7 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 include($root . "backend/functions.php");
+include($root . "backend/check.php");
 
 include($root . "search_output.php");
 
@@ -124,7 +125,7 @@ include($root . "search_output.php");
         {
           //echo ("User ID: " + $relevantUserId[$i] + "<br>");
           $desiredId = $user_identity[$i];
-          echo "<a href='/TutorMe_Web/tutor_pages/Profile.php'>";
+          echo "<a href='/TutorMe_Web/tutor_pages/Profile.php?tutorid=$desiredId'>";
           echo "<div style='' class='col-sm-6 col-md-3 col-lg-3 tutor_quickview'>";
           echo "<br><center><img class='feature_images' src='/TutorMe_Web/images/default_head.jpg'></center>";
           echo "<h3 style='text-align:center'>";
