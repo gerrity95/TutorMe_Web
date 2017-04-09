@@ -72,20 +72,20 @@ if((isset($_SESSION['username']) != ''))
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="aboutus.html">About</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="aboutus.php">About</a></li>
                 <li><a href="contactus.php">Contact</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">How it Works <span class="caret"></span></a>
                   <ul style="" class="dropdown-menu">
-                    <li><a href="student_how.html">For a student</a></li>
-                    <li><a href="tutor_how.html">For a tutor</a></li>
+                    <li><a href="student_how.php">For a student</a></li>
+                    <li><a href="tutor_how.php">For a tutor</a></li>
                   </ul>
                 </li>
             </ul>
 						<ul class="nav navbar-nav navbar-right">
-			        <li><a href="register.html" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
-			        <li class="dropdown">
+			        <li><a href="register.php" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
+			        <li class="dropdown active">
 							    <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
 							  	<?php include($root . "forms/dropdown_login_form.php"); ?>
 							</li>
@@ -100,7 +100,7 @@ if((isset($_SESSION['username']) != ''))
 		<h1>TutorMe <small style="font-family: 'Source Sans Pro', sans-serif;">Find the perfect tutor.</small></h1>
 	</div>
         <p style="" class="lead">TutorMe makes sure you never have to worry about a grind again.</p>
-        <p><a href="register.html" target="_blank" class="btn btn-success btn-lg">Get started today</a></p>
+        <p><a href="register.php" class="btn btn-success btn-lg">Get started today</a></p>
     </div>
 </div>
 
@@ -127,7 +127,7 @@ if((isset($_SESSION['username']) != ''))
         <div class="form-group">
             <input style="border-radius:3px" type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
         </div>
-        	<p class="muted"><a style="color:blue;" href="#">Forgot your password...</a></p>
+        	<p class="white_text"><a class="white_text" style="color:white" href="#">Forgot your password...</a></p>
 <!--
         <div class="checkbox">
             <input type="checkbox"><h3><small class="register_forms">Remember Me</small></h3>
@@ -137,7 +137,7 @@ if((isset($_SESSION['username']) != ''))
 				<span><?php echo $error; ?></span>
     </form>
 
-  <p class="muted"><a style="color:blue;" href="#">Not a member yet? Register here.</a></p>
+  <p class="white_text"><a class="white_text" style="color:white" href="register.php">Not a member yet? Register here.</a></p>
 
 		</div>
 

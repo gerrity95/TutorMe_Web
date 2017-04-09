@@ -97,7 +97,7 @@ if((isset($_SESSION['username']) != ''))
 		<h1>TutorMe <small style="font-family: 'Source Sans Pro', sans-serif;">Find the perfect tutor.</small></h1>
 	</div>
         <p style="" class="lead">TutorMe makes sure you never have to worry about a grind again.</p>
-        <p><a href="register.html" target="_blank" class="btn btn-success btn-lg">Get started today</a></p>
+        <p><a href="register.php" class="btn btn-success btn-lg">Get started today</a></p>
     </div>
 </div>
 

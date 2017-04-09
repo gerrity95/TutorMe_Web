@@ -59,7 +59,7 @@ if (isset($userSession))
       <ul class="nav navbar-nav navbar-right">
 
         <li class="dropdown">
-          <a href="#" style="padding-right:20px" class="dropdown-toggle" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Joe Bloggs</a>
+          <a href="#" style="padding-right:20px" class="dropdown-toggle" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span><?php echo $get_firstname; echo " "; echo $get_surname; ?></a>
           <ul style="" class="dropdown-menu">
             <li><a href="">Settings</a></li>
             <li><a href="../backend/logout.php">Logout</a></li>

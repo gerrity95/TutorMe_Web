@@ -1,7 +1,7 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 include($root . "backend/functions.php");
-include($root . "backend/check.php");
+//include($root . "backend/check.php");
 
 include($root . "search_output.php");
 
