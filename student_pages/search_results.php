@@ -51,12 +51,12 @@ include($root . "search_output.php");
                 <li class=""><a id="register_link" href="/TutorMe_Web/student_pages/home.php"><span style="padding-right:10px" class="glyphicon glyphicon-home"></span>Home</a></li>
                 <li><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-envelope"></span>Messages</a></li>
                 <li><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-calendar"></span>Schedule</a></li>
-                <li><a id="register_link" href="/TutorMe_Web/student_pages/search_results.php"><span style="padding-right:10px" class="glyphicon glyphicon-calendar"></span>Search **Change logo**</a></li>
+                <li><a id="register_link" href="/TutorMe_Web/student_pages/search_results.php"><span style="padding-right:10px" class="glyphicon glyphicon-search"></span>Search</a></li>
             </ul>
       <ul class="nav navbar-nav navbar-right">
 
         <li class="dropdown">
-          <a href="#" style="padding-right:20px" class="dropdown-toggle" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Joe Bloggs</a>
+          <a href="#" style="padding-right:20px" class="dropdown-toggle" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span><?php echo $get_firstname; echo " "; echo $get_surname; ?></a>
           <ul style="" class="dropdown-menu">
             <li><a href="">Settings</a></li>
             <li><a href="../backend/logout.php">Logout</a></li>
@@ -123,8 +123,6 @@ include($root . "search_output.php");
           echo "<div style='' class='col-sm-6 col-md-3 col-lg-3 tutor_quickview'>";
           echo "<br><center><img class='feature_images' src='../images/default_head.jpg'></center>";
           echo "<h3 style='text-align:center'>";
-          echo $desiredId;
-          echo " ";
           echo $firstNames[$i];
           echo " ";
           echo $surnames[$i];
@@ -132,7 +130,7 @@ include($root . "search_output.php");
           echo "<h3 style='text-align:center'><small>***Small description of the tutor themselves talking about what they can offer to the student ***</small></h3>";
           echo "<center>";
           echo "<p class='general_text'>";
-          $star = 1; starRating($star);
+          $star = 3; starRating($star);
           echo "</p>"; //The star rating system was developing using a tutorioal found on stackoverflow
           echo "<a href=''>View Profile...</a></center>";
           echo "</div>";
@@ -142,6 +140,10 @@ include($root . "search_output.php");
 
     ?>
 
+  </div>
+
+  <div class="container-fluid" style="margin-bottom:20px;">
+    <?php include($root . "content_pages/user_footer.php"); ?>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

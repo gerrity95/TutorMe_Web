@@ -67,7 +67,7 @@ if((isset($_SESSION['username']) != ''))
                 <span class="icon-bar"></span>
             </button>
 
-			<a href="index.html"><img src="images/smallLogoWhite.png" style="padding-right:50px"></a>
+			<a href="index.php"><img src="images/smallLogoWhite.png" style="padding-right:50px"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -133,12 +133,14 @@ if((isset($_SESSION['username']) != ''))
             <input type="checkbox"><h3><small class="register_forms">Remember Me</small></h3>
         </div> -->
         <input type="submit" name="login-submit" value="Login" id="submit" class="btn btn-success btn-lg pull-right">
-				<!-- Error Message -->
-				<span><?php echo $error; ?></span>
     </form>
-
   <p class="white_text"><a class="white_text" style="color:white" href="register.php">Not a member yet? Register here.</a></p>
 
+  <!-- Error Message -->
+  <span><?php
+  echo "<h3 class='general_text' style='color:red;'>";
+  echo $error;
+  echo "</h3>"; ?></span>
 		</div>
 
 

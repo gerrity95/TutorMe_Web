@@ -6,7 +6,7 @@ include("connection.php"); //Establising connection with the database
 
 $error=""; //variable to store error message;
 
-if(isset($_POST['login-submit']))
+if( (isset($_POST['login-submit'])))
 {
 	if(empty($_POST['username']) || empty($_POST['password']))
 	{
@@ -57,7 +57,6 @@ if(isset($_POST['login-submit']))
 		else
 		{
 			$error = "Username or Password is invalid";
-			$error = "Both fields are required";
 			echo "<script language='javascript'>
 				alert('Username or Password is invalid.');
 			</script>";
@@ -66,5 +65,12 @@ if(isset($_POST['login-submit']))
 
 	}
 }
+else if(isset($_POST['login-form']))
+{
+	echo "<script language='javascript'>
+		alert('waaxxa or Password is invalid.');
+	</script>";
+}
+
 
 ?>

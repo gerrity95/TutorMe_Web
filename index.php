@@ -52,7 +52,8 @@ if((isset($_SESSION['username']) != ''))
 
 </head>
 <body style="background:#dbdfe5">
-  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+	<div style="margin-bottom:0px;background-image: url('images/jez-timms-4728.jpg');background-size:cover;min-height:700px" class="jumbotron">
+  <nav id="myNavbar" style="position:fixed;background-color: #000000;background: #000000;border-color: #000000;" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container-fluid">
         <div class="navbar-header">
@@ -67,8 +68,8 @@ if((isset($_SESSION['username']) != ''))
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Home</a></li>
+            <ul class="nav navbar-nav white_text">
+                <li><a href="index.php">Home</a></li>
                 <li><a href="aboutus.php">About</a></li>
                 <li><a href="contactus.php">Contact</a></li>
                 <li class="dropdown">
@@ -91,30 +92,57 @@ if((isset($_SESSION['username']) != ''))
   </div>
 </nav>
 
-<div class="jumbotron">
-    <div class="container-fluid">
-	<div class="page-header">
-		<h1>TutorMe <small style="font-family: 'Source Sans Pro', sans-serif;">Find the perfect tutor.</small></h1>
-	</div>
-        <p style="" class="lead">TutorMe makes sure you never have to worry about a grind again.</p>
+    <div  class="container-fluid">
+	<div style="border-bottom:0px;" class="page-header" style="padding-top:20px">
+		<h1 style="color:white" class="white_text">TutorMe <small class="white_text"></small></h1>
+	</div><br>
+				<p style="color:white" class="lead">Helping you find the perfect tutor.</p>
+        <p style="color:white" class="lead">We make sure you never have to worry about a grind again.</p><br>
         <p><a href="register.php" class="btn btn-success btn-lg">Get started today</a></p>
     </div>
+</div>
+
+<div class="container-fluid">
+    <div style="padding-top:40px;padding-bottom:40px;background:#ededed" class="row">
+        <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-4">
+					<center><img class="" src="images/calendar.png"></center>
+		      <h2  style="font-family: 'Lato', sans-serif;text-align:center">Scheduling</h2>
+			  <h3 style="font-family: 'Lato', sans-serif;text-align:center"><small>Never forget about a grind ever again. With our scheduling service you will always know when and where you should be.</small></h3>
+			 <br>
+
+
+        </div>
+        <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-4">
+					<center><img class="" src="images/TextUs-icon.png"></center>
+						<h2 style="font-family: 'Lato', sans-serif;text-align:center;text-align:center">Messaging</h2>
+			<h3 style="font-family: 'Lato', sans-serif;text-align:center;text-align:center"><small>Connect with your tutor or student seamlessly. No need to go anywhere else to find out what they need or to ask them any questions.</small></h3>
+             <br>
+        </div>
+        <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-">
+					<center><img class="" src="images/newUser.png"></center>
+            <h2 style="font-family: 'Lato', sans-serif;text-align:center;text-align:center">Tutor Search</h2>
+			  <h3 style="font-family: 'Lato', sans-serif;text-align:center;text-align:center"><small>Never worry that you aren't getting the best tuition possible. Easily search through all the tutors in your area to find the one that best suits you.<br></small></h3>
+		</div>
+
+	</div>
 </div>
 
 
 
 
 <div class="header-2">
-	<div class="page-header header-filter" style="background-image: url('images/blurred-background-4.jpg');background-size:cover;min-height:750px">
+	<div class="" style="background-image: url('images/blurred-background-4.jpg');background-size:cover;min-height:400px">
 	<div class="container-fluid">
 		<div class="row">
+
+<!--
 		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 ">
 			<center><img class="feature_images" src="images/LogoWhiteLarge.png" /></center>
 			<h2 class="register_forms">Finding you the perfect Tutor </h2>
 			<h2><small style="color:white;font-family: 'Lato', sans-serif;">Here at TutorMe our number one focus is finding the best tutor for you.</small> </h2>
 		</div>
-
-		<div style="margin-top:60px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
+-->
+		<div style="margin-top:60px;" class="col-sm-12 col-md-8 col-lg-8 col-xs-offset-1">
 			<li style="list-style: none;" class="dropdown">
 	<a href="#" onClick="getForm()" data-toggle="dropdown"><img alt="Tutor Search" class="search_images" src="images/orig_search.png"></a>
 		<div id="search_form"></div>
@@ -129,28 +157,6 @@ if((isset($_SESSION['username']) != ''))
   </div>
 </div>
 
-<div class="container-fluid">
-    <div style="padding-top:40px;padding-bottom:40px;background:#ededed" class="row">
-        <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-4">
-		      <h2 style="text-align:center">Scheduling</h2>
-			  <h3 style="text-align:center"><small>Never forget about a grind ever again. With our scheduling service you will always know when and where you should be.</small></h3>
-			 <br><center><img class="feature_images" src="images/green_scheduling.png"></center>
-
-
-        </div>
-        <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-4">
-            <h2 style="text-align:center">Messaging</h2>
-			<h3 style="text-align:center"><small>Connect with your tutor or student seamlessly. No need to go anywhere else to find out what they need or to ask them any questions.</small></h3>
-             <br><center><img class="feature_images" src="images/messaging_symbol.png"></center>
-        </div>
-        <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-">
-            <h2 style="text-align:center">Tutor Search</h2>
-			  <h3 style="text-align:center"><small>Never worry that the tutor doesn't best suit your needs. Easily search through all the tutors in your area to find the one that best suits you.<br></small></h3>
-			  <center><img class="feature_images" src="images/greenUser.png"></center>
-		</div>
-
-	</div>
-</div>
 
 
 <div class="container-fluid" style="margin-bottom:20px;">

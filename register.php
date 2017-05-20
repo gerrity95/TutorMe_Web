@@ -129,7 +129,10 @@ if((isset($_SESSION['username']) != ''))
       </form>
         <p class="white_text">* All fields required</p>
         <!-- Error Message -->
-        <span><?php echo $error; ?></span>
+        <span><?php
+        echo "<h3 class='general_text' style='color:red;'>";
+        echo $error;
+        echo "</h3>"; ?></span>
 	<br>
 
 		</div>

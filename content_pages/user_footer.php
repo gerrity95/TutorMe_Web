@@ -13,9 +13,9 @@
   <div style="border-left:1px solid #dbdfe5" class="col-xs-4">
     <h3 style="text-align:center;padding-top:30px;font-family: 'Lato', sans-serif;">Navigation</h3>
     <ul style="padding-top:30px;text-align:center" class="list-unstyled list-inline">
-        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="index.html">Home</a></li>
-      <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="aboutus.html">Messages</a></li>
-      <li> <a class="footer_links" href="contactus.php">Schedule</a></li>
+        <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="home.php">Home</a></li>
+      <li> <a class="footer_links" style="padding-right:10px;border-right: 1px solid #646464" href="#">Messages</a></li>
+      <li> <a class="footer_links" href="#">Schedule</a></li>
     </ul>
 
   </div>

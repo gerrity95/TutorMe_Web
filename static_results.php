@@ -49,7 +49,7 @@ include($root . "search_output.php");
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Home</a></li>
+                <li class=""><a href="index.php">Home</a></li>
                 <li><a href="aboutus.php">About</a></li>
                 <li><a href="contactus.php">Contact</a></li>
                 <li class="dropdown">
@@ -125,7 +125,7 @@ include($root . "search_output.php");
         {
           //echo ("User ID: " + $relevantUserId[$i] + "<br>");
           $desiredId = $user_identity[$i];
-          echo "<a href='/TutorMe_Web/tutor_pages/Profile.php?tutorid=$desiredId'>";
+          echo "<a href='/TutorMe_Web/tutor_pages/static_profile.php?tutorid=$desiredId'>";
           echo "<div style='' class='col-sm-6 col-md-3 col-lg-3 tutor_quickview'>";
           echo "<br><center><img class='feature_images' src='/TutorMe_Web/images/default_head.jpg'></center>";
           echo "<h3 style='text-align:center'>";
@@ -147,10 +147,9 @@ include($root . "search_output.php");
     ?>
 
   </div>
-
-
-
-
+  <div class="container-fluid" style="margin-bottom:20px;">
+    <?php include($root . "content_pages/footer.html"); ?>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

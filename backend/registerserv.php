@@ -44,18 +44,27 @@ if(isset($_POST['register-submit']))
 				mysqli_query($conn, $user_insert);
 				echo "<script language='javascript'>
 					alert('Your account has been created succesfully');
-					window.location = 'login.php';
+					window.location = 'index.php';
 
 				</script>";
 			}
 			else
 			{
-				$error = "Sorry but that email address is already in use!";
+				$error = "Sorry but that email is already in use!";
+				echo "<script language='javascript'>
+					alert('Sorry but that email is already in use!');
+
+				</script>";
 			}
 		}
 		else
 		{
 			$error = "Sorry but that username is already in use!";
+			echo "<script language='javascript'>
+				alert('Sorry but that username is already in use!');
+
+			</script>";
+
 		}
 
 

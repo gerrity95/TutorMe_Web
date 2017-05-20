@@ -55,6 +55,7 @@ if (isset($userSession))
                 <li class=""><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-home"></span>Home</a></li>
                 <li><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-envelope"></span>Messages</a></li>
                 <li><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-calendar"></span>Schedule</a></li>
+                <li><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Profile</a></li>
             </ul>
       <ul class="nav navbar-nav navbar-right">
 
@@ -129,7 +130,8 @@ if (isset($userSession))
                 <div class="row">
       						<div class="form-group col-xs-7">
                           <div class="col-xs-10">
-                              <a href="#">Advanced Options...</a> <!-- pop up allowing to specify date and time -->
+                              <p><a href="#">Advanced Options...</a></p>
+                              <a href="#">View Profile...</a> <!-- pop up allowing to specify date and time -->
                           </div>
                   </div>
       						<div class="form-group col-xs-5">

@@ -2,7 +2,6 @@
 include($_SERVER['DOCUMENT_ROOT'] ."/TutorMe_Web/backend/connection.php");
 //include($root . "student_pages/search_results.php");
 include($root . "backend/functions.php");
-include($root . "backend/check.php");
 
 $tutorId = $_GET['tutorid'];
 $list_subjects = array();
@@ -105,6 +104,7 @@ function listSubjects($list)
 <body style="background:#dbdfe5">
   <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
+
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
@@ -114,31 +114,35 @@ function listSubjects($list)
                 <span class="icon-bar"></span>
             </button>
 
-      <a href="index.html"><img src="../images/smallLogoWhite.png" style="padding-right:50px"></a>
+			<a href="/TutorMe_Web/index.php"><img src="/TutorMe_Web/images/smallLogoWhite.png" style="padding-right:50px"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav">
-                <li class=""><a id="register_link" href="/TutorMe_Web/student_pages/home.php"><span style="padding-right:10px" class="glyphicon glyphicon-home"></span>Home</a></li>
-                <li><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-envelope"></span>Messages</a></li>
-                <li><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-calendar"></span>Schedule</a></li>
-                <li><a id="register_link" href="/TutorMe_Web/student_pages/search_results.php"><span style="padding-right:10px" class="glyphicon glyphicon-search"></span>Search</a></li>
+                <li class=""><a href="/TutorMe_Web/index.php">Home</a></li>
+                <li><a href="/TutorMe_Web/aboutus.php">About</a></li>
+                <li><a href="/TutorMe_Web/contactus.php">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">How it Works <span class="caret"></span></a>
+                  <ul style="" class="dropdown-menu">
+                    <li><a href="/TutorMe_Web/student_how.html">For a student</a></li>
+                    <li><a href="/TutorMe_Web/tutor_how.html">For a tutor</a></li>
+                  </ul>
+                </li>
             </ul>
-      <ul class="nav navbar-nav navbar-right">
 
+			<ul class="nav navbar-nav navbar-right">
+        <li><a href="register.php" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
         <li class="dropdown">
-          <a href="#" style="padding-right:20px" class="dropdown-toggle" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span><?php echo $get_firstname; echo " "; echo $get_surname; ?></a>
-          <ul style="" class="dropdown-menu">
-            <li><a href="">Settings</a></li>
-            <li><a href="../backend/logout.php">Logout</a></li>
-          </ul>
-        </li>
 
-        </div>
+    <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
+  	<?php include($root . "forms/dropdown_login_form.php"); ?>
+</li>
+
       </ul>
     </div>
   </div>
-  </nav>
+</nav>
 
 <!--Profile Picture, credentials and about section-->
 
@@ -163,7 +167,7 @@ function listSubjects($list)
                                   <hr>
                                   <button type="button" class="btn btn-success btn-lg"  data-toggle="modal" data-target="#myModal">Message Tutor</button>
 
-                                  <?php include($root . "grind_request.php"); ?>
+                                  <?php include($root . "login_modal.php"); ?>
 
                               </div>
                           </div>
@@ -237,7 +241,7 @@ function listSubjects($list)
   </div>
 
 <div class="container-fluid" style="margin-bottom:20px;">
-  <?php include($root . "content_pages/user_footer.php"); ?>
+  <?php include($root . "content_pages/footer.html"); ?>
 </div>
 
 
