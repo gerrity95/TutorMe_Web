@@ -52,7 +52,7 @@ if((isset($_SESSION['username']) != ''))
 
 </head>
 <body style="background:#dbdfe5">
-	<div style="margin-bottom:0px;background-image: url('images/baim-hanif-89800.jpg');background-size:cover;min-height:700px" class="jumbotron">
+	<div style="margin-bottom:0px;background-image: url('images/jez-timms-4728.jpg');background-size:cover;min-height:700px" class="jumbotron">
   <nav id="myNavbar" style="position:fixed;background-color: #000000;background: #000000;border-color: #000000;" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container-fluid">
@@ -94,14 +94,14 @@ if((isset($_SESSION['username']) != ''))
 
     <div  class="container-fluid">
 	<div style="border-bottom:0px;" class="page-header" style="padding-top:20px">
-		<h1 style="color:white" class="white_text">TutorMe <small class="white_text"></small></h1>
+		<h2 style="color:white" class="white_text">404 Error: The page can not be found. <small class="white_text"></small></h2>
 	</div><br>
-				<p style="color:white" class="lead">Helping you find the perfect tutor.</p>
-        <p style="color:white" class="lead">We make sure you never have to worry about a grind again.</p><br>
-        <p><a href="register.php" class="btn btn-success btn-lg">Get started today</a></p>
+				<p style="color:white" class="lead">It looks like the page you were looking for doesn't exist.</p>
+        <p><a href="index.php" class="btn btn-success btn-lg">Go back home</a></p>
     </div>
 </div>
 
+<!--
 <div class="container-fluid">
     <div style="padding-top:40px;padding-bottom:40px;background:#ededed" class="row">
         <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-4">
@@ -127,35 +127,8 @@ if((isset($_SESSION['username']) != ''))
 	</div>
 </div>
 
-
-
-
-<div class="header-2">
-	<div class="" style="background-image: url('images/blurred-background-4.jpg');background-size:cover;min-height:400px">
-	<div class="container-fluid">
-		<div class="row">
-
-<!--
-		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 ">
-			<center><img class="feature_images" src="images/LogoWhiteLarge.png" /></center>
-			<h2 class="register_forms">Finding you the perfect Tutor </h2>
-			<h2><small style="color:white;font-family: 'Lato', sans-serif;">Here at TutorMe our number one focus is finding the best tutor for you.</small> </h2>
-		</div>
 -->
-		<div style="margin-top:60px;" class="col-sm-12 col-md-8 col-lg-8 col-xs-offset-1">
-			<li style="list-style: none;" class="dropdown">
-	<a href="#" onClick="getForm()" data-toggle="dropdown"><img alt="Tutor Search" class="search_images" src="images/orig_search.png"></a>
-		<div id="search_form"></div>
-</li>
 
-
-		</div>
-
-
-	 </div>
-	</div>
-  </div>
-</div>
 
 
 

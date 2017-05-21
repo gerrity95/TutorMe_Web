@@ -42,11 +42,20 @@ if(isset($_POST['register-submit']))
 			if ($emailRows == 0)
 			{
 				mysqli_query($conn, $user_insert);
+
+
+				//$check_userType = "SELECT user_type FROM users WHERE username = '$user'";
+
+				//$userType = $conn->query($check_userType)->fetch_object()->user_type;
+
 				echo "<script language='javascript'>
 					alert('Your account has been created succesfully');
-					window.location = 'index.php';
 
 				</script>";
+
+				$_SESSION['username'] = $user;
+				header("Location: ./register_full.php");
+
 			}
 			else
 			{

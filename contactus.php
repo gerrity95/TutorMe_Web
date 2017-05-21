@@ -31,59 +31,58 @@
 
 </head>
 <body style="background:#dbdfe5">
-  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+  <div style="margin-bottom:0px;padding-bottom:0px;background-image: url('images/jez-timms-4728.jpg');background-size:cover;min-height:700px" class="jumbotron">
+    <nav id="myNavbar" style="background-color: #000000;background: #000000;border-color: #000000;" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
 
-			<a href="index.html"><img src="images/smallLogoWhite.png" style="padding-right:50px"></a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="aboutus.php">About</a></li>
-                <li class="active"><a href="contactus.php">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">How it Works <span class="caret"></span></a>
-                  <ul style="" class="dropdown-menu">
-                    <li><a href="student_how.php">For a student</a></li>
-                    <li><a href="tutor_how.php">For a tutor</a></li>
-                  </ul>
-                </li>
-            </ul>
-			<ul class="nav navbar-nav navbar-right">
-        <!-- <li><a href="index.html"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a></li> -->
-        <li><a href="register.php" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
-        <li class="dropdown">
-    <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
-  	<?php include($root . "forms/dropdown_login_form.php"); ?>
-</li>
+        <a href="index.php"><img src="images/smallLogoWhite.png" style="padding-right:50px"></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="nav navbar-nav white_text">
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="aboutus.php">About</a></li>
+                  <li><a href="contactus.php">Contact</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">How it Works <span class="caret"></span></a>
+                    <ul style="" class="dropdown-menu white_text">
+                      <li><a href="student_how.html">For a student</a></li>
+                      <li><a href="tutor_how.html">For a tutor</a></li>
+                    </ul>
+                  </li>
+              </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="register.php" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
+          <li class="dropdown">
+      <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
+      <?php include($root . "forms/dropdown_login_form.php"); ?>
+    </li>
 
-        </div>
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="jumbotron">
-    <div class="container-fluid">
-	<div class="page-header">
-		<h1>TutorMe <small style="font-family: 'Source Sans Pro', sans-serif;">Find the perfect tutor.</small></h1>
+    </nav>
+
+
+    <div style="" class="container-fluid">
+	<div style="border-bottom:0px;" class="page-header">
+			<h1 style="color:white" class="white_text">TutorMe <small class="white_text"></small></h1>
 	</div>
-        <p style="" class="lead">Want to get in touch? Just fill out the form below and we will get back to you as soon as possible.</p>
+        <p style="color:white" class="lead">Need to get in touch?</p><p style="color:white" class="lead">  Just fill out the form below and we will get back to you as soon as possible.</p>
     </div>
 </div>
 
-<div class="header-2">
-	<div class="page-header header-filter" style="margin-bottom:0px;background-image: url('images/blurred-background-4.jpg');background-size:cover;min-height:750px;">
-	<div class="container-fluid">
-		<div class="row">
+
+	<div class="header-filter" style="padding-bottom:50px;background-image: url('images/blurred-background-4.jpg');background-size:cover;min-height:400px;">
+			<div class="row">
 		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1 ">
       <h2 class="register_forms">Contact Us </h2>
 
@@ -141,8 +140,7 @@
 
 		</div>
 	 </div>
-	</div>
-  </div>
+
 </div>
 
 <div class="container-fluid" style="padding-left:0px;padding-right:0px;">
