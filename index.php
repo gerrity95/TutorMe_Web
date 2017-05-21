@@ -80,14 +80,14 @@ if((isset($_SESSION['username']) != ''))
                   </ul>
                 </li>
             </ul>
-			<ul class="nav navbar-nav navbar-right">
-        <li><a href="register.php" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
-        <li class="dropdown">
-    <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
-  	<?php include($root . "forms/dropdown_login_form.php"); ?>
-</li>
+						<ul class="nav navbar-nav navbar-right">
+			        <li><a href="register.php" class="white_text"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
+			        <li class="dropdown">
+			    <a href="#" class="white_text" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
+			    <?php include($root . "forms/dropdown_login_form.php"); ?>
+			  </li>
 
-      </ul>
+			      </ul>
     </div>
   </div>
 </nav>
@@ -143,11 +143,13 @@ if((isset($_SESSION['username']) != ''))
 		</div>
 -->
 		<div style="margin-top:60px;" class="col-sm-12 col-md-8 col-lg-8 col-xs-offset-1">
+			<?php include("forms/index_search.php"); ?>
+<!--
 			<li style="list-style: none;" class="dropdown">
 	<a href="#" onClick="getForm()" data-toggle="dropdown"><img alt="Tutor Search" class="search_images" src="images/orig_search.png"></a>
 		<div id="search_form"></div>
 </li>
-
+-->
 
 		</div>
 

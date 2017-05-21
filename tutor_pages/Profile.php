@@ -103,7 +103,7 @@ function listSubjects($list)
 
 </head>
 <body style="background:#dbdfe5">
-  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <nav id="myNavbar" style="background-color: #000000;background: #000000;border-color: #000000;" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container-fluid">
         <div class="navbar-header">
@@ -118,7 +118,7 @@ function listSubjects($list)
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav">
+            <ul class="white_text nav navbar-nav">
                 <li class=""><a id="register_link" href="/TutorMe_Web/student_pages/home.php"><span style="padding-right:10px" class="glyphicon glyphicon-home"></span>Home</a></li>
                 <li><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-envelope"></span>Messages</a></li>
                 <li><a id="register_link" href="#"><span style="padding-right:10px" class="glyphicon glyphicon-calendar"></span>Schedule</a></li>
@@ -126,11 +126,11 @@ function listSubjects($list)
             </ul>
       <ul class="nav navbar-nav navbar-right">
 
-        <li class="dropdown">
+        <li class="white_text dropdown">
           <a href="#" style="padding-right:20px" class="dropdown-toggle" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span><?php echo $get_firstname; echo " "; echo $get_surname; ?></a>
-          <ul style="" class="dropdown-menu">
+          <ul style="" class="white_text dropdown-menu">
             <li><a href="">Settings</a></li>
-            <li><a href="../backend/logout.php">Logout</a></li>
+            <li><a href="/TutorMe_Web/backend/logout.php">Logout</a></li>
           </ul>
         </li>
 
@@ -142,7 +142,7 @@ function listSubjects($list)
 
 <!--Profile Picture, credentials and about section-->
 
-<div class="page-header header-filter" style="background-image: url('/TutorMe_Web/images/blurred-background-4.jpg');background-size:cover;min-height:750px">
+<div class="page-header header-filter" style="padding-bottom:0px;margin-bottom:0px;background-image: url('/TutorMe_Web/images/blurred-background-4.jpg');background-size:cover;min-height:750px">
 
       <div style="margin-top:40px;" class="col-lg-3 col-md-3 hidden-sm hidden-xs">
                   <div class="panel panel-default">
@@ -229,7 +229,6 @@ function listSubjects($list)
 
   <div class="container-fluid" style="padding-left:0px;padding-right:0px;">
   <!-- Add the Google Map in Here -->
-  <h3 class="regular_text">Find <?php echo $first_name; ?> on the map</h3>
   	<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.636004935249!2d-6.259728683839165!3d53.38556197998734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e113b293d85%3A0xc81174de93fa22d6!2sSchool+of+Computing%2C+Dublin+City+University!5e0!3m2!1sen!2sie!4v1480694368387"></iframe>
 
   </div>

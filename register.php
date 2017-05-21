@@ -67,14 +67,14 @@ if((isset($_SESSION['username']) != ''))
                     </ul>
                   </li>
               </ul>
-  			<ul class="nav navbar-nav navbar-right">
-          <li><a href="register.php" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
-          <li class="dropdown">
-      <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
-    	<?php include($root . "forms/dropdown_login_form.php"); ?>
-  </li>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="register.php" class="white_text"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
+                <li class="dropdown">
+            <a href="#" class="white_text" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
+            <?php include($root . "forms/dropdown_login_form.php"); ?>
+          </li>
 
-        </ul>
+              </ul>
       </div>
     </div>
   </nav>
