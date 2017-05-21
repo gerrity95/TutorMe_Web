@@ -21,6 +21,7 @@ $current_full_member = $conn->query($check_full_member)->fetch_object()->full_re
 $get_firstname = $conn->query($get_fullname)->fetch_object()->first_name;
 $get_surname = $conn->query($get_fullname)->fetch_object()->surname;
 
+
 $login_user=$row['username'];
 
 if(!isset($userSession))

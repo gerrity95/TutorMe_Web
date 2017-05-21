@@ -48,9 +48,9 @@ if( (isset($_POST['login-submit'])))
 
 				if($userType == "student")
 				{
-						header("Location: ./student_pages/home.php"); // Redirect to another page
+						header("Location: /TutorMe_Web/student_pages/home.php"); // Redirect to another page
 				} else {
-						header("Location: ./tutor_pages/home.php"); // Redirect to another page
+						header("Location: /TutorMe_Web/tutor_pages/home.php"); // Redirect to another page
 				}
 			}
 		}

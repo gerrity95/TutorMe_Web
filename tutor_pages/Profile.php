@@ -19,6 +19,8 @@ $list_subjects = array();
   //$rating = $conn->query($check_id)->fetch_object()->rating;
   //$qualifications = $conn->query($check_id)->fetch_object()->qualifications;
   $bio = $conn->query($tutor_specific_details)->fetch_object()->Personal_Statement;
+  $price = $conn->query($tutor_specific_details)->fetch_object()->price;
+
 
 
 function getSubjects($connection, $cycle) //Must add in parameters
@@ -180,6 +182,13 @@ function listSubjects($list)
       <div style = "margin-left:15px;">
         <p class="white_text"><?php echo $bio; ?></p>
       </div>
+  </div>
+
+  <div class="col-sm-6 col-md-8 col-lg-8">
+    <div style = "margin-left:15px;padding-top:10px;">
+      <h3 class="register_forms">Price</h3>
+      <p class="white_text">&euro; <?php echo $price; ?></p>
+    </div>
   </div>
 
   <div class="col-sm-6 col-md-8 col-lg-8">
