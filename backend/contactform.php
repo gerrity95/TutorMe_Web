@@ -26,7 +26,7 @@ $errorMSG = "";
       $message = mysqli_real_escape_string($conn, $_POST['message']);
   }
 
-  $EmailTo = "tutormeire@gmail.com";
+  $EmailTo = "gerrity95@gmail.com";
   $Subject = "New Message Received: Contact Form";
 
   // prepare email body text

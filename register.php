@@ -79,70 +79,19 @@ if((isset($_SESSION['username']) != ''))
     </div>
   </nav>
 
-  <div  class="container-fluid">
+  <div  class="col-sm-8 col-md-6 col-lg-6">
 <div style="border-bottom:0px;" class="page-header" style="padding-top:20px">
-  <h1 style="color:white" class="white_text">TutorMe <small class="white_text"></small></h1>
+  <h1 style="color:white;" class="white_text">TutorMe <small class="white_text"></small></h1>
 </div><br>
-      <p style="color:white" class="lead">Want to join us?</p>
-      <p style="color:white" class="lead">Fill out the form below and you will be up and running in no time.</p><br>
-      <p><a href="index.php" class="btn btn-success btn-lg">Login here</a></p>
+      <p class="lead white_headings">Helping you find the perfect tutor.</p>
+      <p style="color:white" class="lead">We make sure you never have to worry about a grind again.</p><br>
+      <p><a href="register.php" class="btn btn-success btn-lg">Find out more</a></p>
+  </div>
+  <div class="col-sm-8 col-md-6 col-lg-6">
+    <?php include("forms/initial_register.php"); ?>
   </div>
 </div>
 
-
-	<div class="" style="padding-bottom:30px;background-image: url('images/blurred-background-4.jpg');background-size:cover;min-height:500px">
-	<div class="container-fluid">
-		<div class="row">
-		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1 ">
-			<center><img class="feature_images" src="images/LogoWhiteLarge.png" /></center>
-			<h2 style="padding-top:10px;color:white;font-family: 'Lato', sans-serif;">Want to join us at TutorMe? </h2>
-			<h2><small style="color:white;font-family: 'Lato', sans-serif;">We would love to have you. All you have to do is just fill in a few details and then we will be ready to get you started.</small> </h2>
-
-		</div>
-
-		<div style="margin-top:50px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-			<h3 class="register_forms">Register For TutorMe</h3><br>
-			 <form action="" method="POST">
-			 <div class="form-group">
-				<label style="color:white" class="radio-inline">
-					<input type="radio" name="optradio" value="tutor" required>Tutor
-				</label>
-				<label style="color:white" class="radio-inline">
-					<input type="radio" name="optradio" value="student" required>Student
-				</label>
-			</div>
-			 <div class="form-group">
-         <label for="email" class="h4 register_forms">Email *</label>
-            <input style="border-radius:5px" type="email" class="form-control" name="email" id="register-email" placeholder="Email" required>
-            <div class="help-block with-errors"></div>
-        </div><br>
-		<div class="form-group">
-      <label for="username" class="h4 register_forms">Username *</label>
-            <input style="border-radius:5px" type="text" class="form-control" name="username" id="reg-username" placeholder="Username" required>
-            <div class="help-block with-errors"></div>
-        </div><br>
-		<div class="form-group">
-      <label for="password" class="h4 register_forms">Password *</label>
-            <input style="border-radius:5px" type="password" class="form-control" name="password" id="reg-password" placeholder="Password" required>
-            <div class="help-block with-errors"></div>
-        </div><br>
-        <input type="submit" name="register-submit" value="Register" id="reg-submit" class="btn btn-success btn-lg pull-right ">
-
-      </form>
-        <p class="white_text">* All fields required</p>
-        <!-- Error Message -->
-        <span><?php
-        echo "<h3 class='general_text' style='color:red;'>";
-        echo $error;
-        echo "</h3>"; ?></span>
-	<br>
-
-		</div>
-
-
-	</div>
-	</div>
-</div>
 
 <div class="container-fluid">
     <div style="padding-top:40px;padding-bottom:40px;background:#ededed" class="row">

@@ -56,120 +56,50 @@ if((isset($_SESSION['username']) != ''))
 
 </head>
 <body style="background:#dbdfe5">
-  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+  <div style="margin-bottom:0px;background-image: url('images/robert-dickow-46105.jpg');background-size:cover;min-height:650px" class="jumbotron">
+    <nav id="myNavbar" style="position:fixed;background-color: #000000;background: #000000;border-color: #000000;" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
 
-			<a href="index.php"><img src="images/smallLogoWhite.png" style="padding-right:50px"></a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="aboutus.php">About</a></li>
-                <li><a href="contactus.php">Contact</a></li>
+        <a href="index.php"><img src="images/smallLogoWhite.png" style="padding-right:50px"></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="nav navbar-nav white_text">
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="aboutus.php">About</a></li>
+                  <li><a href="contactus.php">Contact</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">How it Works <span class="caret"></span></a>
+                    <ul style="" class="dropdown-menu white_text">
+                      <li><a href="student_how.html">For a student</a></li>
+                      <li><a href="tutor_how.html">For a tutor</a></li>
+                    </ul>
+                  </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="register.php" class="white_text"><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">How it Works <span class="caret"></span></a>
-                  <ul style="" class="dropdown-menu">
-                    <li><a href="student_how.php">For a student</a></li>
-                    <li><a href="tutor_how.php">For a tutor</a></li>
-                  </ul>
-                </li>
-            </ul>
-						<ul class="nav navbar-nav navbar-right">
-			        <li><a href="register.php" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
-			        <li class="dropdown active">
-							    <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
-							  	<?php include($root . "forms/dropdown_login_form.php"); ?>
-							</li>
-			    </ul>
+            <a href="#" class="white_text" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
+            <?php include($root . "forms/dropdown_login_form.php"); ?>
+          </li>
+
+              </ul>
+      </div>
     </div>
+  </nav>
+  <div  class="col-md-6 col-xs-offset-4" style="margin-top:5%;">
+    <?php include("forms/login_form.php"); ?>
   </div>
-</nav>
 
-<div class="jumbotron">
-    <div class="container-fluid">
-	<div class="page-header">
-		<h1>TutorMe <small style="font-family: 'Source Sans Pro', sans-serif;">Find the perfect tutor.</small></h1>
-	</div>
-        <p style="" class="lead">TutorMe makes sure you never have to worry about a grind again.</p>
-        <p><a href="register.php" class="btn btn-success btn-lg">Get started today</a></p>
-    </div>
-</div>
-
-
-
-
-<div class="header-2">
-	<div class="page-header header-filter" style="background-image: url('images/blurred-background-4.jpg');background-size:cover;min-height:750px">
-	<div class="container-fluid">
-		<div class="row">
-		<div style="margin-top:60px" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1 ">
-			<center><img class="feature_images" src="images/LogoWhiteLarge.png" /></center>
-			<h2 class="register_forms">Finding you the perfect Tutor </h2>
-			<h2><small style="color:white;font-family: 'Lato', sans-serif;">Here at TutorMe our number one focus is finding the best tutor for you.</small> </h2>
-		</div>
-
-		<div style="margin-top:50px;" class="col-sm-6 col-md-4 col-lg-4 col-xs-offset-1">
-			<h3 class="register_forms">Login Here</h3>
-			<br>
-			<form action="" method="POST">
-        <div class="form-group">
-            <input style="border-radius:3px" type="text" name="username" class="form-control" id="inputUsername" placeholder="Username">
-        </div><br>
-        <div class="form-group">
-            <input style="border-radius:3px" type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
-        </div>
-        	<p class="white_text"><a class="white_text" style="color:white" href="#">Forgot your password...</a></p>
-<!--
-        <div class="checkbox">
-            <input type="checkbox"><h3><small class="register_forms">Remember Me</small></h3>
-        </div> -->
-        <input type="submit" name="login-submit" value="Login" id="submit" class="btn btn-success btn-lg pull-right">
-    </form>
-  <p class="white_text"><a class="white_text" style="color:white" href="register.php">Not a member yet? Register here.</a></p>
-
-  <!-- Error Message -->
-  <span><?php
-  echo "<h3 class='general_text' style='color:red;'>";
-  echo $error;
-  echo "</h3>"; ?></span>
-		</div>
-
-
-	 </div>
-	</div>
   </div>
-</div>
-
-<div class="container-fluid">
-    <div style="padding-top:40px;padding-bottom:40px;background:#ededed" class="row">
-        <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-4">
-		      <h2 style="text-align:center">Scheduling</h2>
-			  <h3 style="text-align:center"><small>Never forget about a grind ever again. With our scheduling service you will always know when and where you should be.</small></h3>
-			 <br><center><img class="feature_images" src="images/green_scheduling.png"></center>
-
-
-        </div>
-        <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-4">
-            <h2 style="text-align:center">Messaging</h2>
-			<h3 style="text-align:center"><small>Connect with your tutor or student seamlessly. No need to go anywhere else to find out what they need or to ask them any questions.</small></h3>
-             <br><center><img class="feature_images" src="images/messaging_symbol.png"></center>
-        </div>
-        <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-">
-            <h2 style="text-align:center">Tutor Search</h2>
-			  <h3 style="text-align:center"><small>Never worry that the tutor doesn't best suit your needs. Easily search through all the tutors in your area to find the one that best suits you.<br></small></h3>
-			  <center><img class="feature_images" src="images/greenUser.png"></center>
-		</div>
-
-</div>
 
 
 <div class="container-fluid" style="margin-bottom:20px;">

@@ -92,14 +92,17 @@ if((isset($_SESSION['username']) != ''))
   </div>
 </nav>
 
-    <div  class="container-fluid">
+    <div  class="col-sm-8 col-md-6 col-lg-6">
 	<div style="border-bottom:0px;" class="page-header" style="padding-top:20px">
-		<h1 style="color:white" class="white_text">TutorMe <small class="white_text"></small></h1>
+		<h1 style="color:white;" class="white_text">TutorMe <small class="white_text"></small></h1>
 	</div><br>
-				<p style="color:white" class="lead">Helping you find the perfect tutor.</p>
+				<p class="lead white_headings">Helping you find the perfect tutor.</p>
         <p style="color:white" class="lead">We make sure you never have to worry about a grind again.</p><br>
         <p><a href="register.php" class="btn btn-success btn-lg">Get started today</a></p>
     </div>
+		<div class="col-sm-8 col-md-6 col-lg-6">
+			<?php include("forms/initial_register.php"); ?>
+		</div>
 </div>
 
 <div class="container-fluid">
