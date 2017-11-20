@@ -56,10 +56,8 @@ if( (isset($_POST['login-submit'])))
 		}
 		else
 		{
-			$error = "Username or Password is invalid";
-			echo "<script language='javascript'>
-				alert('Username or Password is invalid.');
-			</script>";
+			$error = "Username or password is invalid";
+
 		}
 
 

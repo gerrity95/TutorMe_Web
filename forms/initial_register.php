@@ -10,21 +10,21 @@
     </label>
   </div>
    <div class="form-group">
-     <label for="email" style="font-family: 'Lato', sans-serif" class="h4">Email *</label>
+     <label for="email" style="font-family: 'Lato', sans-serif">Email *</label>
         <input style="border-radius:5px" type="email" class="form-control" name="email" id="register-email" placeholder="Email" required>
         <div class="help-block with-errors"></div>
     </div>
 <div class="form-group">
-  <label for="username" style="font-family: 'Lato', sans-serif" class="h4">Username *</label>
+  <label for="username" style="font-family: 'Lato', sans-serif">Username *</label>
         <input style="border-radius:5px" type="text" class="form-control" name="username" id="reg-username" placeholder="Username" required>
         <div class="help-block with-errors"></div>
     </div>
 <div class="form-group">
-  <label for="password" style="font-family: 'Lato', sans-serif" class="h4">Password *</label>
+  <label for="password" style="font-family: 'Lato', sans-serif">Password *</label>
         <input style="border-radius:5px" type="password" class="form-control" name="password" id="reg-password" placeholder="Password" required>
         <div class="help-block with-errors"></div>
     </div><br>
-    <input type="submit" name="register-submit" value="Register" id="reg-submit" class="btn btn-success btn-lg pull-right ">
+    <input type="submit" name="register-submit" value="Register" id="reg-submit" class="btn btn-success pull-right ">
 
   </form>
     <p style="font-family: 'Lato', sans-serif" class=""><small>Already a member?<a href='login.php'> Login here.</a></small> </p>

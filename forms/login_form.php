@@ -32,7 +32,7 @@
         </div>
     </div>
     <!-- Error Message -->
-    <span><?php echo $error; ?></span>
+    <span><h4 style="color:red;text-align:center;"><?php echo $error; ?></h4></span>
 
 </form>
 </div>
