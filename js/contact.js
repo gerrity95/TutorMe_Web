@@ -12,7 +12,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "backend/contactform.php",
+        url: "forms/emails/contactform.php",
         data: "name=" + name + "&email=" + email + "&message=" + message,
         success : function(text){
             if (text == "success"){

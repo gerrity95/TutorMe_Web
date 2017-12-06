@@ -165,7 +165,7 @@ function listSubjects($list)
                                   <hr>
                                   <button type="button" class="btn btn-success btn-lg"  data-toggle="modal" data-target="#myModal">Message Tutor</button>
 
-                                  <?php include($root . "grind_request.php"); ?>
+                                  <?php include($root . "modals/grind_request.php"); ?>
 
                               </div>
                           </div>

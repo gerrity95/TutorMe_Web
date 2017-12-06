@@ -14,7 +14,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "TutorMe_Web/backend/grind_request_email.php",
+        url: "TutorMe_Web/forms/emails/grind_request_email.php",
         data: "name=" + name + "&email=" + email + "&date" + date + "&time" + time,
         success : function(text){
             if (text == "success"){
