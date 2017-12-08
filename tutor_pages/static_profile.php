@@ -103,47 +103,8 @@ function listSubjects($list)
 
 </head>
 <body style="background:#dbdfe5">
-  <nav id="myNavbar" style="position:fixed;background-color: #000000;background: #000000;border-color: #000000;" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
 
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-			<a href="/TutorMe_Web/index.php"><img src="/TutorMe_Web/images/smallLogoWhite.png" style="padding-right:50px"></a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="white_text nav navbar-nav">
-                <li class="white_text"><a href="/TutorMe_Web/index.php">Home</a></li>
-                <li><a href="/TutorMe_Web/aboutus.php">About</a></li>
-                <li><a href="/TutorMe_Web/contactus.php">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">How it Works <span class="caret"></span></a>
-                  <ul style="" class="dropdown-menu">
-                    <li><a href="/TutorMe_Web/student_how.html">For a student</a></li>
-                    <li><a href="/TutorMe_Web/tutor_how.html">For a tutor</a></li>
-                  </ul>
-                </li>
-            </ul>
-
-			<ul class="white_text nav navbar-nav navbar-right">
-        <li><a href="register.php" class=""><span style="padding-right:10px" class="glyphicon glyphicon-user"></span>Register</a></li>
-        <li class="dropdown">
-
-    <a href="#" class="" data-toggle="dropdown"><span style="padding-right:10px" class="glyphicon glyphicon-log-in"></span>Login</a>
-  	<?php include($root . "forms/dropdown_login_form.php"); ?>
-</li>
-
-      </ul>
-    </div>
-  </div>
-</nav>
+    <?php include($root . "content_pages/menus/tutor_menu.php"); ?>
 
 <!--Profile Picture, credentials and about section-->
 
