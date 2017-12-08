@@ -7,6 +7,7 @@ This is so if the user is already in a session, they are still redirected to the
 */
 
 include("backend/connection.php");
+include("backend/registerserv.php");
 
 
 if((isset($_SESSION['username']) != ''))

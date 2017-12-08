@@ -43,15 +43,22 @@ if(isset($_POST['register-submit']))
 			{
 				mysqli_query($conn, $user_insert);
 
-
-				//$check_userType = "SELECT user_type FROM users WHERE username = '$user'";
-
-				//$userType = $conn->query($check_userType)->fetch_object()->user_type;
-
 				echo "<script language='javascript'>
 					alert('Your account has been created succesfully');
 
 				</script>";
+
+				/*
+				$to = $email;
+				$subject = 'Welcome to TutorMe';
+				$message = 'Welcome to TutorMe. Lets get started.';
+				$headers = 'From: tutormeire@gmail.com' . "\r\n" .
+						'Reply-To: From: tutormeire@gmail.com' . "\r\n" .
+						'X-Mailer: PHP/' . phpversion();
+
+				mail($to, $subject, $message, $headers);
+
+				*/
 
 				$_SESSION['username'] = $user;
 				header("Location: ./register_full.php");
